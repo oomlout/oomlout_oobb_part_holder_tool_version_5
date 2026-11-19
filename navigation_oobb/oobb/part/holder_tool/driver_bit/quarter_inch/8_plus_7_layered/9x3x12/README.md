@@ -1,0 +1,114 @@
+<!-- oobb-presentation:start -->
+# Quarter-inch drive bit
+
+AI-generated CAD images and instructions. Errors possible.
+
+## Summary
+
+OOBB driver bit holder · 8 plus 7 layered.
+
+This is an entirely AI-generated coding project. The generated outputs are included and usually work. The project is published so others can modify and regenerate the designs with their own AI tools.
+
+![CAD views of Quarter-inch drive bit](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12/3dpr_presentation.png)
+
+## Details
+
+| Grid (width × height) | Design depth | Printed thickness |
+| --- | --- | --- |
+| 9 × 3 | 12 mm | 6 mm |
+
+The grid pitch is 15 mm. The dashed line on the plan locates the cross section. [Section drawing](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12/working.svg)
+
+OOMP ID `oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12`
+
+[Part folder](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12/) · [OOBB navigation](../) · [Source design](https://github.com/oomlout/oomlout_oobb_part_tool_holder_vertical/tree/93a962a09e0c275c3cfa62187182ac3203bde1b2/parts/oobb_part_tool_holder_vertical_9_width_3_height_12_mm_depth_tool_screwdriver_bit_quarter_inch_drive_tool_8_multiple_layered_extra)
+
+<details><summary>Complete part metadata</summary>
+
+```yaml
+body_style: vertical_project
+count: 8
+depth: 12
+height: 3
+layered: true
+layout: 8_plus_7_layered
+model: quarter_inch
+offset_mm:
+- 0
+- 10
+- 0
+oobb_details:
+  body_style: vertical_project
+  corner_radius_mm: 5
+  count: 8
+  depth: 12
+  edge_reduction_mm: 1
+  height: 3
+  layered: true
+  offset_mm:
+  - 0
+  - 10
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 100
+    pos:
+    - 0
+    - 0
+    - 0
+    r: 4
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 9
+oobb_type: holder_tool
+profile: quarter_inch
+show_underside: false
+source_id: oobb_part_tool_holder_vertical_9_width_3_height_12_mm_depth_tool_screwdriver_bit_quarter_inch_drive_tool_8_multiple_layered_extra
+spacing_mm: 15
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: false
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: driver_bit
+taxonomy_5: quarter_inch
+taxonomy_6: 8_plus_7_layered
+taxonomy_7: 9x3x12
+taxonomy_8: ''
+taxonomy_9: ''
+title: Quarter-inch drive bit
+tool_type: driver_bit
+width: 9
+id: oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12
+directory: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12
+md5: 4b2073c7fadc3ff99b85303cc83f7fbb
+md5_6: 4b2073
+md5_6_alpha: 2xj03
+```
+
+</details>
+
+## Parts
+
+Use the print mesh in the part folder. Tool and mounting hardware are supplied separately.
+
+## Assembly
+
+Identify the tool pockets in the section drawing before choosing the mounting orientation. [Illustrated guides for the four photo-modelled tools](../../../../../../../../README.md#assembly)
+<!-- oobb-presentation:end -->

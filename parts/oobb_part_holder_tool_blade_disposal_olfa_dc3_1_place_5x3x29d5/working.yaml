@@ -1,0 +1,67 @@
+body_style: vertical_v4
+depth: 29.5
+height: 3
+layout: 1_place
+model: olfa_dc3
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 1
+  depth: 29.5
+  edge_reduction_mm: 1
+  height: 3
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 27.5
+    pos:
+    - 0
+    - 27.5
+    - 0
+    r: 34.5
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: cylinder
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 5
+oobb_type: holder_tool
+profile: tool_knife_utility_blade_disposal_can_olfa_dc_3
+show_underside: false
+source_id: tool_knife_utility_blade_disposal_can_olfa_dc_3
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: false
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: blade_disposal
+taxonomy_5: olfa_dc3
+taxonomy_6: 1_place
+taxonomy_7: 5x3x29d5
+taxonomy_8: ''
+taxonomy_9: ''
+title: OLFA DC-3 blade disposal can
+tool_type: blade_disposal
+width: 5
+id: oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5
+directory: parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5
+md5: bb6a648558439aaac2bc840735685ed6
+md5_6: bb6a64
+md5_6_alpha: 7b97o

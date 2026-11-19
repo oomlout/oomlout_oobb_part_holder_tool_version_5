@@ -1,0 +1,69 @@
+body_style: vertical_project
+count: 1
+depth: 31
+height: 3
+layered: false
+layout: 1_place
+model: picquic_teeny_turner
+offset_mm:
+- 0
+- 8
+- 0
+oobb_details:
+  body_style: vertical_project
+  corner_radius_mm: 5
+  count: 1
+  depth: 31
+  edge_reduction_mm: 1
+  height: 3
+  layered: false
+  offset_mm:
+  - 0
+  - 8
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 28
+    pos:
+    - 0
+    - -14
+    - 0
+    r: 4.75
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 3
+oobb_type: holder_tool
+profile: picquic_teeny_turner
+show_underside: true
+source_id: oobb_part_tool_holder_vertical_3_width_3_height_31_mm_depth_tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic_tool_extra
+spacing_mm: 15
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: true
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: screwdriver
+taxonomy_5: picquic_teeny_turner
+taxonomy_6: 1_place
+taxonomy_7: 3x3x31
+taxonomy_8: ''
+taxonomy_9: ''
+title: Picquic Teeny Turner precision multi-driver
+tool_type: screwdriver
+width: 3

@@ -1,0 +1,137 @@
+assembly_details:
+  alignment: Point the cutting head toward the closed end. Align the steel arms with
+    the widening pocket.
+  check: Leave both red grips clear of the open end. The jaw tips sit short of the
+    end wall in the photographed pose.
+  label: Red side cutters
+  rotation_deg:
+  - 0
+  - 0
+  - 0.24
+  steps:
+  - action: Orient the printed holder with the pocket facing up. Locate its open end.
+    add:
+    - holder
+    key: step_01
+    lift_mm: 0
+  - action: Point the cutting head toward the closed end. Align the steel arms with
+      the widening pocket.
+    add:
+    - tool
+    key: step_02
+    lift_mm: 32
+  - action: Lower the tool into the recess, keeping its nose between the pocket walls.
+    add: []
+    key: step_03
+    lift_mm: 10
+  - action: Leave both red grips clear of the open end. The jaw tips sit short of
+      the end wall in the photographed pose.
+    add: []
+    key: step_04
+    lift_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_side_cutters_110_mm_length_red
+  translation_mm:
+  - -1.84
+  - -16.5
+  - 0
+body_style: vertical_v4
+depth: 13
+height: 5
+layout: 1_place
+model: generic_110mm
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 1
+  depth: 13
+  edge_reduction_mm: 1
+  height: 5
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 11
+    points:
+    - - -11.5
+      - 0
+    - - -11.5
+      - 35
+    - - -33
+      - 60
+    - - -42
+      - 110
+    - - 42
+      - 110
+    - - 33
+      - 60
+    - - 11.5
+      - 35
+    - - 11.5
+      - 0
+    pos:
+    - 0
+    - -24.5
+    - 0
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: polygon
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 5
+oobb_type: holder_tool
+profile: tool_side_cutters_generic_110_mm_red
+show_underside: false
+source_id: tool_side_cutters_generic_110_mm_red
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: false
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: side_cutters
+taxonomy_5: generic_110mm
+taxonomy_6: 1_place
+taxonomy_7: 5x5x13
+taxonomy_8: ''
+taxonomy_9: ''
+title: Red side cutters, 110 mm
+tool_type: side_cutters
+width: 5
+id: oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13
+directory: parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13
+md5: 258c2f6ffecb6703f9bd9710a29de7c4
+md5_6: 258c2f
+md5_6_alpha: 1gqpb

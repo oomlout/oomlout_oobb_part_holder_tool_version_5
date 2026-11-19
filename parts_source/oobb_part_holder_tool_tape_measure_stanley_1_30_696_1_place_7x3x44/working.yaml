@@ -1,0 +1,70 @@
+body_style: vertical_v4
+depth: 44
+height: 3
+layout: 1_place
+model: stanley_1_30_696
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 1
+  depth: 44
+  edge_reduction_mm: 1
+  height: 3
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 42
+    points:
+    - - -39
+      - 0
+    - - -39
+      - 74
+    - - 39
+      - 74
+    - - 39
+      - 0
+    pos:
+    - 0
+    - -9
+    - 0
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: polygon
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 7
+oobb_type: holder_tool
+profile: tool_measure_tape_measure_5000_mm_length_stanley_1_30_696
+show_underside: false
+source_id: tool_measure_tape_measure_5000_mm_length_stanley_1_30_696
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: false
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: tape_measure
+taxonomy_5: stanley_1_30_696
+taxonomy_6: 1_place
+taxonomy_7: 7x3x44
+taxonomy_8: ''
+taxonomy_9: ''
+title: Stanley 1-30-696 tape measure, 5 m
+tool_type: tape_measure
+width: 7

@@ -1,0 +1,191 @@
+{
+  "configuration_title": "Red wire strippers holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "Red wire strippers holder",
+    "cover_subtitle": "Loading the tool into its single-place OOBB holder",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wire_strippers_120_mm_length_red",
+    "details_title": "Tool and holder",
+    "details": [
+      "5 \u00d7 5 OOBB grid. Printed thickness 6.5 mm.",
+      "Use one printed holder and one tool. These views show loading the pocket face-up.",
+      "Point the jaws toward the closed end with the adjustment hardware facing up.",
+      "The offset jaws sit in the narrow pocket and the spread grips extend past the wide opening.",
+      "Open-pose photo trace scaled to the candidate Anvil AV-LDWS catalogue length of 130 mm. The 120 mm OOMP label is retained. Thickness is estimated.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested."
+    ],
+    "summary_title": "Printed part",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13",
+      "name": "Printed holder",
+      "quantity": 1
+    },
+    "tool": {
+      "key": "tool",
+      "id": "tool_wire_strippers_120_mm_length_red",
+      "name": "Red wire strippers",
+      "quantity": 1,
+      "md5": "4684bcf9faf844762ccb39887b7e83e3",
+      "md5_6_alpha": "2r1z0",
+      "short_label": "oom.lt/a/2r1z0",
+      "short_url": "https://oom.lt/a/2r1z0",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wire_strippers_120_mm_length_red"
+    }
+  },
+  "steps": [
+    {
+      "action": "Orient the printed holder with the pocket facing up. Locate its open end.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "lift_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Point the jaws toward the closed end with the adjustment hardware facing up.",
+      "add": [
+        "tool"
+      ],
+      "key": "step_02",
+      "lift_mm": 32,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "tool": 1
+      }
+    },
+    {
+      "action": "Lower the tool into the recess, keeping its nose between the pocket walls.",
+      "add": [],
+      "key": "step_03",
+      "lift_mm": 10,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {}
+    },
+    {
+      "action": "The offset jaws sit in the narrow pocket and the spread grips extend past the wide opening.",
+      "add": [],
+      "key": "step_04",
+      "lift_mm": 0,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 2,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      0,
+      0,
+      -0.65
+    ],
+    "translation_mm": [
+      5.91,
+      -22,
+      -3
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "tool_volume_inside_pocket_mm3": 5115.923,
+    "physical_fit": "Unverified. The OOMP model uses provisional photograph-based dimensions."
+  },
+  "source_sha256": {
+    "holder_stl": "bee0e94b1d65ea848bb2893e221b31d73918dc1dd290fd81ad24ee677946a654",
+    "tool_glb": "65c22f30772548dc33731bfae19e99379163ddc5920395bae5cf6a62162740e2",
+    "tool_stl": "fc2a246a0a8276a2507a049ab91c977f2368a6d741d258a747c8ab10801e03e0",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13",
+        "name": "Printed holder",
+        "quantity": 1
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "tool_wire_strippers_120_mm_length_red",
+        "name": "Red wire strippers",
+        "quantity": 1,
+        "md5": "4684bcf9faf844762ccb39887b7e83e3",
+        "md5_6_alpha": "2r1z0",
+        "short_label": "oom.lt/a/2r1z0",
+        "short_url": "https://oom.lt/a/2r1z0",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wire_strippers_120_mm_length_red"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "summary",
+      "number": 5
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 1
+}

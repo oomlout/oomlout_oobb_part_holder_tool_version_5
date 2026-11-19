@@ -1,0 +1,64 @@
+body_style: vertical_v4
+count: 6
+depth: 15
+height: 5
+layout: 6_place
+model: sharpie
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 6
+  depth: 15
+  edge_reduction_mm: 1
+  height: 5
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 137
+    pos:
+    - 0
+    - -25
+    - -1
+    r: 6.5
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 18.75
+  width: 9
+oobb_type: holder_tool
+profile: tool_marker_sharpie
+show_underside: true
+source_id: tool_marker_sharpie_x6
+spacing_mm: 18.75
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: true
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: marker
+taxonomy_5: sharpie
+taxonomy_6: 6_place
+taxonomy_7: 9x5x15
+taxonomy_8: ''
+taxonomy_9: ''
+title: Sharpie marker, 13 mm v4 profile
+tool_type: marker
+width: 9

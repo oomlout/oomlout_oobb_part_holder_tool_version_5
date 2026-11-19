@@ -1,0 +1,67 @@
+body_style: vertical_v4
+depth: 17
+height: 5
+layout: 1_place
+model: tdpb_m6
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 1
+  depth: 17
+  edge_reduction_mm: 1
+  height: 5
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 100
+    pos:
+    - 0
+    - -25
+    - -1
+    r: 3.3
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 3
+oobb_type: holder_tool
+profile: tool_tdpb_drill_cleaner_m6
+show_underside: true
+source_id: tool_tdpb_drill_cleaner_m6
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: true
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: drill_cleaner
+taxonomy_5: tdpb_m6
+taxonomy_6: 1_place
+taxonomy_7: 3x5x17
+taxonomy_8: ''
+taxonomy_9: ''
+title: TDPB M6 drill cleaner
+tool_type: drill_cleaner
+width: 3
+id: oobb_part_holder_tool_drill_cleaner_tdpb_m6_1_place_3x5x17
+directory: parts/oobb_part_holder_tool_drill_cleaner_tdpb_m6_1_place_3x5x17
+md5: 00c72dcab7c8b9a03da7215e1a8c4fcf
+md5_6: 00c72d
+md5_6_alpha: 13cd

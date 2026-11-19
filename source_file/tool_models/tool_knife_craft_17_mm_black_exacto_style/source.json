@@ -1,0 +1,34 @@
+{
+  "id": "tool_knife_craft_17_mm_black_exacto_style",
+  "title": "Black Exacto-style craft knife, 17 mm",
+  "model_kind": "photo_reference",
+  "model_note": "Closed exterior based on the photo and a provisional 165 mm STANLEY 0-10-151 reference. The 17 mm OOMP label is retained. Size variant awaits measurement.",
+  "md5": "3ed7d22b2fe767aa640e0ad35fbcb6b1",
+  "md5_6_alpha": "2g9ua",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30",
+      "layout": "with_knife",
+      "quantity": 1,
+      "source_id": "tool_tdpb_glue_stick_prit_medium_knife"
+    },
+    {
+      "id": "oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "tool_knife_exacto_17mm_black"
+    },
+    {
+      "id": "oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66",
+      "layout": "bench",
+      "quantity": 1,
+      "source_id": "tool_holder_basic"
+    },
+    {
+      "id": "oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38",
+      "layout": "with_knife",
+      "quantity": 1,
+      "source_id": "tool_screwdriver_multi_quikpik_200_mm_knife"
+    }
+  ]
+}

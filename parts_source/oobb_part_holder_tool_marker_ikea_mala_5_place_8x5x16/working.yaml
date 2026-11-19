@@ -1,0 +1,64 @@
+body_style: vertical_v4
+count: 5
+depth: 16
+height: 5
+layout: 5_place
+model: ikea_mala
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 5
+  depth: 16
+  edge_reduction_mm: 1
+  height: 5
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 136.5
+    pos:
+    - 0
+    - -25
+    - -1
+    r: 7
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 18.75
+  width: 8
+oobb_type: holder_tool
+profile: tool_marker_ikea_mala
+show_underside: true
+source_id: tool_marker_ikea_mala_x5
+spacing_mm: 18.75
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: true
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: marker
+taxonomy_5: ikea_mala
+taxonomy_6: 5_place
+taxonomy_7: 8x5x16
+taxonomy_8: ''
+taxonomy_9: ''
+title: IKEA MÅLA marker
+tool_type: marker
+width: 8

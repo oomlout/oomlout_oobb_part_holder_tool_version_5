@@ -1,0 +1,69 @@
+body_style: vertical_project
+count: 8
+depth: 12
+height: 3
+layered: false
+layout: 8_place
+model: quarter_inch
+offset_mm:
+- 0
+- 10
+- 0
+oobb_details:
+  body_style: vertical_project
+  corner_radius_mm: 5
+  count: 8
+  depth: 12
+  edge_reduction_mm: 1
+  height: 3
+  layered: false
+  offset_mm:
+  - 0
+  - 10
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 100
+    pos:
+    - 0
+    - 0
+    - 0
+    r: 4
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 9
+oobb_type: holder_tool
+profile: quarter_inch
+show_underside: true
+source_id: oobb_part_tool_holder_vertical_9_width_3_height_12_mm_depth_tool_screwdriver_bit_quarter_inch_drive_tool_8_multiple_extra
+spacing_mm: 15
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: true
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: driver_bit
+taxonomy_5: quarter_inch
+taxonomy_6: 8_place
+taxonomy_7: 9x3x12
+taxonomy_8: ''
+taxonomy_9: ''
+title: Quarter-inch drive bit
+tool_type: driver_bit
+width: 9

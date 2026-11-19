@@ -1,0 +1,75 @@
+body_style: vertical_v4
+count: 6
+depth: 11
+height: 5
+layout: 6_place
+model: bic_clear_lid
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 6
+  depth: 11
+  edge_reduction_mm: 1
+  height: 5
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 112
+    pos:
+    - 0
+    - -25
+    - -1
+    r: 5
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  - h: 35
+    pos:
+    - 0
+    - 87
+    - -1
+    r: 6
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 8
+oobb_type: holder_tool
+profile: tool_marker_bic_clear_lid
+show_underside: true
+source_id: tool_marker_bic_clear_lid_x6
+spacing_mm: 15
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: true
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: marker
+taxonomy_5: bic_clear_lid
+taxonomy_6: 6_place
+taxonomy_7: 8x5x11
+taxonomy_8: ''
+taxonomy_9: ''
+title: BIC clear-lid marker
+tool_type: marker
+width: 8

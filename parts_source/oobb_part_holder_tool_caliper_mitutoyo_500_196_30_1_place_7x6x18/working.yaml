@@ -1,0 +1,70 @@
+body_style: vertical_v4
+depth: 18
+height: 6
+layout: 1_place
+model: mitutoyo_500_196_30
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 1
+  depth: 18
+  edge_reduction_mm: 1
+  height: 6
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 16
+    points:
+    - - -39
+      - 0
+    - - -39
+      - 78
+    - - 39
+      - 78
+    - - 39
+      - 0
+    pos:
+    - 0
+    - -32
+    - 0
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: polygon
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 7
+oobb_type: holder_tool
+profile: tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30
+show_underside: false
+source_id: tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: false
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: caliper
+taxonomy_5: mitutoyo_500_196_30
+taxonomy_6: 1_place
+taxonomy_7: 7x6x18
+taxonomy_8: ''
+taxonomy_9: ''
+title: Mitutoyo 500-196-30 digital caliper, 150 mm
+tool_type: caliper
+width: 7

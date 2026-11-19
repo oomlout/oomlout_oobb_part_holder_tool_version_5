@@ -1,0 +1,137 @@
+assembly_details:
+  alignment: Point the jaws toward the closed end with the adjustment hardware facing
+    up.
+  check: The offset jaws sit in the narrow pocket and the spread grips extend past
+    the wide opening.
+  label: Red wire strippers
+  rotation_deg:
+  - 0
+  - 0
+  - -0.65
+  steps:
+  - action: Orient the printed holder with the pocket facing up. Locate its open end.
+    add:
+    - holder
+    key: step_01
+    lift_mm: 0
+  - action: Point the jaws toward the closed end with the adjustment hardware facing
+      up.
+    add:
+    - tool
+    key: step_02
+    lift_mm: 32
+  - action: Lower the tool into the recess, keeping its nose between the pocket walls.
+    add: []
+    key: step_03
+    lift_mm: 10
+  - action: The offset jaws sit in the narrow pocket and the spread grips extend past
+      the wide opening.
+    add: []
+    key: step_04
+    lift_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_wire_strippers_120_mm_length_red
+  translation_mm:
+  - 5.91
+  - -22
+  - -3
+body_style: vertical_v4
+depth: 13
+height: 5
+layout: 1_place
+model: generic_120mm
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 1
+  depth: 13
+  edge_reduction_mm: 1
+  height: 5
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 11
+    points:
+    - - -17
+      - 0
+    - - -17
+      - 35
+    - - -45
+      - 80
+    - - -55
+      - 120
+    - - 55
+      - 120
+    - - 45
+      - 80
+    - - 17
+      - 35
+    - - 17
+      - 0
+    pos:
+    - 0
+    - -24.5
+    - 0
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: polygon
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 5
+oobb_type: holder_tool
+profile: tool_wire_strippers_generic_120_red
+show_underside: false
+source_id: tool_wire_strippers_generic_120_red
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: false
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: wire_strippers
+taxonomy_5: generic_120mm
+taxonomy_6: 1_place
+taxonomy_7: 5x5x13
+taxonomy_8: ''
+taxonomy_9: ''
+title: Red wire strippers, 120 mm
+tool_type: wire_strippers
+width: 5
+id: oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13
+directory: parts/oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13
+md5: ec54bae5bc034fc7562b3cc916c6caff
+md5_6: ec54ba
+md5_6_alpha: 97yre
