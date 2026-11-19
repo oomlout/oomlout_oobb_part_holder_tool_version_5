@@ -175,7 +175,20 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. Load the closed craft knife in the orientation shown. The illustration uses its OOMP photo-based model at catalogue scale. Physical fit is unverified.
+Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.
 
-[Illustrated sequence](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/ASSEMBLY.md) · [Offline step viewer](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/assembly_instructions.html) · [Print booklet](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/assembly_instructions.pdf)
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Keep the knife closed. Turn the housing edge-on and align the nose with the closed end of the slot. [View step 3](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/render/raw/step_03.png)
+4. Lower the tool through the top opening. The housing sits edge-on in the slot. The heel projects above the holder. [View step 4](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the closed craft knife holder](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/pages/page_03.png)
+
+</details>
+
+Closed exterior based on the photo and a provisional 165 mm STANLEY 0-10-151 reference. The 17 mm OOMP label is retained. Size variant awaits measurement. The digital model was checked against both halves. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_craft_17_mm_black_exacto_style)
+
+[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

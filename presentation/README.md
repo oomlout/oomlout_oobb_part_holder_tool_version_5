@@ -28,6 +28,8 @@ The construction settings come from `get_construction()` in populate. Most holde
 
 ## Tool-loaded assembly guides
 
+The project README and each guided holder's main README include the numbered actions and illustrated steps. The catalogue links to those READMEs. Edit the step definitions in populate and regenerate to update both locations. The offline HTML and printable PDF are also available from each README.
+
 The [four loading guides](../README.md#assembly) use the coloured GLB models from the OOMP tool catalogue. Each guide pairs one model with its single-place production STL. The poses, loading instructions and page style are editable in `get_tool_assemblies()`, `get_loading_steps()` and `get_book_style()` in [the populate file](../working_oomp_populate.py). Translations use millimetres and rotations use degrees.
 
 Run `python working.py --filter needle_nose_130mm` to rebuild the pliers guide, or `python working.py` to rebuild the catalogue. The assembly stage also uses manifold3d for mesh intersections, ReportLab and svglib for booklet artwork, and PyMuPDF for page review. Each modelled part has an `assembly/` directory with the offline HTML viewer, printable PDF, illustrated sequence, inventory and source hashes. The presentation sheet shows the tool in the closed holder alongside an exploded view.

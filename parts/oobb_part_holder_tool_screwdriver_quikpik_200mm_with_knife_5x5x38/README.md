@@ -161,5 +161,5 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 Print one half as supplied and mirror the second copy along X in the slicer before printing. Turn one half over and bring the matching pockets and mounting holes together.
 
-These tools also have illustrated single-place holder guides. [Black Exacto-style craft knife, 17 mm](../oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/ASSEMBLY.md)
+These tools also have illustrated single-place holder guides. [Black Exacto-style craft knife, 17 mm](../oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/README.md#assembly)
 <!-- oobb-presentation:end -->

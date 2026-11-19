@@ -183,7 +183,20 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. Load the blue needle-nose pliers in the orientation shown. The illustration uses its OOMP photo-based model at catalogue scale. Physical fit is unverified.
+Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.
 
-[Illustrated sequence](assembly/ASSEMBLY.md) · [Offline step viewer](assembly/assembly_instructions.html) · [Print booklet](assembly/assembly_instructions.pdf)
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Point the long jaws toward the closed end of the recess. Centre the steel nose between the rails. [View step 3](assembly/render/raw/step_03.png)
+4. Lower the tool through the top opening. The blue grips extend beyond the open end, with the pivot inside the holder. [View step 4](assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the blue needle-nose pliers holder](assembly/pages/page_03.png)
+
+</details>
+
+Open-pose photo trace with a provisional 130 mm closed-length reference (Rapid PC-022). Jaw and grip depths are estimated. The digital model was checked against both halves. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_pliers_needle_nose_130_mm_length_blue)
+
+[Offline HTML viewer](assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

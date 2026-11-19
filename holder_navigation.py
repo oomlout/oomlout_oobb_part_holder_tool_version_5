@@ -1,5 +1,6 @@
 """Publish the tool-first directory tree, canonical part pages and inventory."""
 from collections import defaultdict
+import json
 import os
 from pathlib import Path
 
@@ -38,6 +39,40 @@ def write_block(path, content):
     write_file(path, before + BEGIN + "\n" + content.strip() + "\n" + END + after)
 
 
+def assembly_instructions(**kwargs):
+    part = kwargs["part"]
+    folder = kwargs["folder"]
+    recipe = part["assembly_details"]
+    assembly = ROOT / "parts" / part["id"] / "assembly"
+    source_file = ROOT / "source_file" / "tool_models" / recipe["tool_id"] / "source.json"
+    source = json.loads(source_file.read_text(encoding="utf-8"))
+    lines = [
+        "Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.",
+        "",
+    ]
+    for number, step in enumerate(recipe["steps"], start=1):
+        picture = assembly / "render" / "raw" / (step["key"] + ".png")
+        action = f"{number}. {step['action']}"
+        if picture.is_file():
+            action += f" [View step {number}]({relative(folder, picture)})"
+        lines.append(action)
+    manifest = assembly / "assembly_manifest.json"
+    if manifest.is_file():
+        pages = json.loads(manifest.read_text(encoding="utf-8"))["book_pages"]
+        lines.extend(["", "<details><summary>Illustrated assembly steps</summary>", ""])
+        for number, page in enumerate(pages, start=1):
+            if page["kind"] == "instructions":
+                picture = assembly / "pages" / f"page_{number:02d}.png"
+                lines.append(f"![Assembly steps for the {recipe['label'].lower()} holder]({relative(folder, picture)})")
+        lines.extend(["", "</details>"])
+    lines.extend([
+        "",
+        f"{source['model_note']} The digital model was checked against both halves. Physical fit remains unverified. "
+        f"[OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/{recipe['tool_id']})",
+    ])
+    return "\n".join(lines)
+
+
 def part_page(**kwargs):
     part = kwargs["part"]
     folder = kwargs["folder"]
@@ -61,15 +96,13 @@ def part_page(**kwargs):
     guide_index = relative(folder, ROOT / "README.md") + "#assembly"
     if part.get("assembly_details"):
         assembly = canonical / "assembly"
+        instruction = assembly_instructions(part=part, folder=folder)
         instruction += (
-            f" Load the {part['assembly_details']['label'].lower()} in the orientation shown. "
-            "The illustration uses its OOMP photo-based model at catalogue scale. Physical fit is unverified.\n\n"
-            f"[Illustrated sequence]({relative(folder, assembly/'ASSEMBLY.md')}) · "
-            f"[Offline step viewer]({relative(folder, assembly/'assembly_instructions.html')}) · "
-            f"[Print booklet]({relative(folder, assembly/'assembly_instructions.pdf')})"
+            f"\n\n[Offline HTML viewer]({relative(folder, assembly/'assembly_instructions.html')}) · "
+            f"[Print booklet (PDF)]({relative(folder, assembly/'assembly_instructions.pdf')})"
         )
     elif guide_holders:
-        references = [f"[{label}]({relative(folder, path/'assembly/ASSEMBLY.md')})"
+        references = [f"[{label}]({relative(folder, path/'README.md')}#assembly)"
                       for label, path in guide_holders]
         instruction += "\n\nThese tools also have illustrated single-place holder guides. " + " · ".join(references)
     else:
@@ -124,12 +157,11 @@ def publish_catalogue(**kwargs):
     parts = {}
     leaves = set()
     related = defaultdict(list)
-    import json
     for source in sorted((root/"source_file/tool_models").glob("*/source.json")):
         tool = json.loads(source.read_text(encoding="utf-8"))
         single = next(h["id"] for h in tool["holders"] if h["layout"] == "1_place")
         path = root/"parts"/single
-        if (path/"assembly/ASSEMBLY.md").is_file():
+        if (path/"assembly/assembly_manifest.json").is_file():
             for holder in tool["holders"]:
                 related[holder["id"]].append((tool["title"], path))
     for part_id in manifest.read_text().splitlines():
@@ -210,14 +242,18 @@ def publish_catalogue(**kwargs):
     hero = parts[hero_id]
     destination = f"parts/{hero_id}/"
     guide_table = [
-        "| Tool and illustrated sequence | Offline viewer | Print booklet |",
+        "| Holder README | Offline viewer | Print booklet |",
         "| --- | --- | --- |",
     ]
+    sequences = []
     for guide in guides:
-        path = f"parts/{guide['id']}/assembly"
+        part_path = f"parts/{guide['id']}"
+        path = f"{part_path}/assembly"
         label = guide["assembly_details"]["label"]
-        guide_table.append(f"| [{label}]({path}/ASSEMBLY.md) | [Open HTML]({path}/assembly_instructions.html) | [Download PDF]({path}/assembly_instructions.pdf) |")
+        guide_table.append(f"| [{label}]({part_path}/README.md#assembly) | [Offline HTML]({path}/assembly_instructions.html) | [Download PDF]({path}/assembly_instructions.pdf) |")
+        sequences.extend([f"### {label}", assembly_instructions(part=guide, folder=root)])
     guide_links = "\n".join(guide_table) if guides else ""
+    guide_steps = "\n\n".join(sequences)
     landing = f"""# OOBB tool holders
 
 {NOTICE}
@@ -228,9 +264,9 @@ Printable holders for workshop hand tools on the 15 mm OOBB grid. These designs 
 
 {PROJECT_ORIGIN}
 
-[![CAD views of {hero['title']}]({destination}3dpr_presentation.png)]({destination})
+[![CAD views of {hero['title']}]({destination}3dpr_presentation.png)]({destination}README.md)
 
-[{hero['title']}]({destination})
+[{hero['title']}]({destination}README.md)
 
 ## Details
 
@@ -246,9 +282,11 @@ Width and height use 15 mm grid units. A 3 × 5 holder has a nominal footprint o
 
 Four single-place holders have two-piece assembly and loading instructions illustrated with the original OOMP photo-based tool models. Each viewer opens offline. The print booklets use landscape A4 pages. Physical fit remains unverified.
 
+For future renders, show vertical holders as they sit on the wall, with the opening and tool handles pointing up. Show the halves touching in the assembled view and move the front half outward along the mounting holes for the exploded view. The combined Prit and knife layout supplies both halves in one print. The mixed-tool bench stand prints as one piece.
+
 {guide_links}
 
-For future renders, show vertical holders as they sit on the wall, with the opening and tool handles pointing up. Show the halves touching in the assembled view and move the front half outward along the mounting holes for the exploded view. The combined Prit and knife layout supplies both halves in one print. The mixed-tool bench stand prints as one piece.
+{guide_steps}
 """
     write_block(root / "README.md", landing)
 

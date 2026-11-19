@@ -36,10 +36,12 @@ def export_guides(**kwargs):
     base_root = kwargs["base_root"]
     base_index = base_root / "presentation/tool-holders"
     tools_refs = tools_root / "source_file/tool_references/holders"
+    project_url = "https://github.com/oomlout/oomlout_oobb_part_holder_tool_version_5"
     index = [
         "# Tool-holder loading guides", "",
         "Each guide shows a photo-based OOMP tool model lowered into a two-piece wall holder. In the exploded view the front half moves away from the wall to reveal the pocket. The booklets print on landscape A4 paper. Physical fit is unverified.", "",
-        "| Tool | Print booklet | Tool model |", "| --- | --- | --- |",
+        f"[Tool-holder project README and assembly instructions]({project_url}#assembly)", "",
+        "| Holder README | Print booklet | Tool model |", "| --- | --- | --- |",
     ]
     for identifier, folder, part in records():
         recipe = part.get("assembly_details")
@@ -55,8 +57,8 @@ def export_guides(**kwargs):
         write_file(tools_refs/(identifier+".pdf"), guide)
         tool = recipe["tool_id"]
         url = "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/" + tool
-        index.append(f"| {recipe['label']} | [Download PDF]({part['model']}.pdf) | [OOMP record]({url}) |")
-    index.extend(["", "[Full holder catalogue and offline viewers in a sibling checkout](../../../oomlout_oobb_part_holder_tool_version_5/README.md#assembly)"])
+        readme = f"{project_url}/blob/main/parts/{identifier}/README.md#assembly"
+        index.append(f"| [{recipe['label']}]({readme}) | [Download PDF]({part['model']}.pdf) | [OOMP record]({url}) |")
     write_file(base_index/"README.md", "\n".join(index)+"\n")
     subprocess.run([sys.executable, "working_action.py"], cwd=tools_root, check=True)
     subprocess.run([sys.executable, "presentation/scripts/build_project_thumbnails.py", "--filter", "tool-holders",
