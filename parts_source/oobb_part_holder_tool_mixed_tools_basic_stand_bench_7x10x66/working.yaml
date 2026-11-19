@@ -1,4 +1,8 @@
 body_style: stand
+construction:
+  mirror_second_print_x: false
+  mode: stand
+  pocket_on_underside: false
 depth: 66
 height: 10
 layout: bench

@@ -53,14 +53,16 @@ def part_page(**kwargs):
     source = VERSION_4 + "/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_make_sets.py#L626"
     if part["body_style"] == "vertical_project":
         source = VERTICAL + "/tree/93a962a09e0c275c3cfa62187182ac3203bde1b2/parts/" + part["source_id"]
-    instruction = "The stand prints as one piece. Tools enter the pockets from the top." if stand else "Identify the tool pockets in the section drawing before choosing the mounting orientation."
+    instruction = "The stand prints as one piece. Tools enter the pockets from the top." if stand else "Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends."
+    if part["construction"]["mirror_second_print_x"]:
+        instruction = "Print one half as supplied and mirror the second copy along X in the slicer before printing. Turn one half over and bring the matching pockets and mounting holes together."
     if part["body_style"] == "paired_v4":
-        instruction = "Print both faces in the supplied layout. The two faces form the glue-stick and craft-knife holder."
+        instruction = "Print the supplied two-body layout once. Move the right-hand half onto the left-hand half, keeping the pocket faces together and the openings aligned."
     guide_index = relative(folder, ROOT / "README.md") + "#assembly"
     if part.get("assembly_details"):
         assembly = canonical / "assembly"
-        instruction = (
-            f"Load the {part['assembly_details']['label'].lower()} in the orientation shown. "
+        instruction += (
+            f" Load the {part['assembly_details']['label'].lower()} in the orientation shown. "
             "The illustration uses its OOMP photo-based model at catalogue scale. Physical fit is unverified.\n\n"
             f"[Illustrated sequence]({relative(folder, assembly/'ASSEMBLY.md')}) · "
             f"[Offline step viewer]({relative(folder, assembly/'assembly_instructions.html')}) · "
@@ -86,7 +88,7 @@ OOBB {part['tool_type'].replace('_', ' ')} holder · {layout}.
 
 ## Details
 
-| Grid (width × height) | Design depth | Printed thickness |
+| Grid (width × height) | Assembled thickness | Thickness per printed piece |
 | --- | --- | --- |
 | {part['width']} × {part['height']} | {depth:g} mm | {thickness:g} mm |
 
@@ -238,15 +240,15 @@ Run `python working.py` to rebuild. The [build notes](presentation/README.md) co
 
 ## Parts
 
-Width and height use 15 mm grid units. A 3 × 5 holder has a nominal footprint of 44 × 74 mm. The last size value is the source design depth in millimetres. The vertical print layouts use half that depth per face. Each part page gives its printed thickness, a section drawing and a CAD preview.
+Width and height use 15 mm grid units. A 3 × 5 holder has a nominal footprint of 44 × 74 mm. The last size value is the source design depth in millimetres. Vertical holders use two half-depth pieces. Stack them with the pockets facing inward and the holes aligned. Each part page gives its printed thickness, a section drawing and a CAD preview.
 
 ## Assembly
 
-Four single-place holders have loading instructions illustrated with the original OOMP photo-based tool models. Each viewer opens offline. The print booklets use landscape A4 pages. Physical fit remains unverified.
+Four single-place holders have two-piece assembly and loading instructions illustrated with the original OOMP photo-based tool models. Each viewer opens offline. The print booklets use landscape A4 pages. Physical fit remains unverified.
 
 {guide_links}
 
-The mixed-tool stand prints as one piece. The combined Prit and knife holder prints as two faces.
+For future renders, show vertical holders as they sit on the wall, with the opening and tool handles pointing up. Show the halves touching in the assembled view and move the front half outward along the mounting holes for the exploded view. The combined Prit and knife layout supplies both halves in one print. The mixed-tool bench stand prints as one piece.
 """
     write_block(root / "README.md", landing)
 

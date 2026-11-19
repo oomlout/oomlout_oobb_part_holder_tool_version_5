@@ -1,7 +1,13 @@
 """Regression checks for the source-profile mix-up and the two multi-row layouts."""
 from copy import deepcopy
 
+import numpy as np
+import trimesh
+from shapely.ops import unary_union
+
+from holder_catalogue import records
 from holder_geometry import get_holder_tool
+from holder_layers import assembled_layers
 from working_oomp_populate import get_options, get_profiles
 
 
@@ -50,4 +56,25 @@ def test_glue_and_knife_faces_use_complementary_depths():
     for first, second in zip(cutters[:2], cutters[2:]):
         assert second["pos"][0] - first["pos"][0] == 80
         assert second["pos"][2] - first["pos"][2] == -15
+
+
+def test_all_vertical_holder_layers_meet_with_matching_pockets():
+    for identifier, folder, part in records():
+        source = trimesh.load_mesh(folder / "3dpr.stl")
+        layers = assembled_layers(mesh=source, construction=part["construction"])
+        if part["body_style"] == "stand":
+            assert len(layers) == 1
+            continue
+        lower, upper = layers
+        seam = lower.bounds[1, 2]
+        assert np.isclose(upper.bounds[0, 2], seam), identifier
+        assert np.isclose(upper.bounds[1, 2] - lower.bounds[0, 2], part["depth"]), identifier
+        # Use the same world XY frame for both cross sections. Matching outlines
+        # alone would miss offset pockets or mounting holes in the wrong half.
+        sections = []
+        for layer, offset in ((lower, -0.002), (upper, 0.002)):
+            section = layer.section(plane_normal=[0, 0, 1], plane_origin=[0, 0, seam + offset])
+            flat, _ = section.to_2D(to_2D=np.eye(4), check=False)
+            sections.append(unary_union(flat.polygons_full))
+        assert sections[0].symmetric_difference(sections[1]).area < 2, identifier
 

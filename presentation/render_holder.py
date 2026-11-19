@@ -8,6 +8,22 @@ import bpy
 from mathutils import Vector
 
 
+# World Z is vertical. The camera looks at the front and the open top edge.
+WALL_VIEW = (1.0, -1.8, 0.72)
+
+
+def orient_for_wall(**kwargs):
+    objects = kwargs["objects"]
+    mount = bpy.data.objects.new("Wall mounting plane", None)
+    bpy.context.scene.collection.objects.link(mount)
+    # Local +Y is the tool opening. Local +Z points out of the wall.
+    mount.rotation_euler.x = math.radians(90)
+    for obj in objects:
+        obj.parent = mount
+    bpy.context.view_layer.update()
+    return mount
+
+
 def linear(v):
     return v / 12.92 if v <= .04045 else ((v + .055) / 1.055) ** 2.4
 
@@ -25,10 +41,26 @@ def aim(obj, point):
     obj.rotation_euler = (Vector(point) - obj.location).to_track_quat('-Z', 'Y').to_euler()
 
 
+def import_layers(**kwargs):
+    sources = kwargs["sources"]
+    colours = (
+        ("Deep teal PLA", (0, 115, 123)),
+        ("Turquoise PLA", (0, 177, 183)),
+    )
+    layers = []
+    for source, (name, colour) in zip(sources, colours, strict=False):
+        bpy.ops.wm.stl_import(filepath=source)
+        layer = bpy.context.object
+        layer.scale = (0.001, 0.001, 0.001)
+        layer.data.materials.append(material(name, colour))
+        layers.append(layer)
+    bpy.context.view_layer.update()
+    return layers
+
+
 def render(**kwargs):
-    source = kwargs["source"]
+    sources = kwargs["sources"]
     directory = Path(kwargs["directory"])
-    underside = kwargs.get("show_underside", False)
     bpy.ops.wm.read_factory_settings(use_empty=True)
     scene = bpy.context.scene
     scene.render.engine = 'CYCLES'
@@ -57,19 +89,13 @@ def render(**kwargs):
     scene.world.use_nodes = True
     scene.world.node_tree.nodes['Background'].inputs[0].default_value = (.8, .8, .8, 1)
     scene.world.node_tree.nodes['Background'].inputs[1].default_value = .35
-    bpy.ops.wm.stl_import(filepath=source)
-    part = bpy.context.object
-    # STL is in millimetres. Preserve geometry; translate to the floor and centre.
-    if underside:
-        part.rotation_euler.x = math.pi
-    part.scale = (.001,) * 3
-    bpy.context.view_layer.update()
-    corners = [part.matrix_world @ Vector(v) for v in part.bound_box]
+    layers = import_layers(sources=sources)
+    mount = orient_for_wall(objects=layers) if len(layers) == 2 else None
+    corners = [part.matrix_world @ Vector(v) for part in layers for v in part.bound_box]
     lo = Vector([min(v[i] for v in corners) for i in range(3)])
     hi = Vector([max(v[i] for v in corners) for i in range(3)])
-    part.location -= Vector(((lo.x + hi.x) / 2, (lo.y + hi.y) / 2, lo.z))
+    centre = (hi + lo) / 2
     size = hi - lo
-    part.data.materials.append(material('Satin teal PLA', (0, 177, 183)))
     # No remeshing, bevel modifier or smoothing of real holes and sharp edges.
     # An open background keeps through-holes legible; floor shadows can resemble hardware.
     span = max(size)
@@ -90,11 +116,19 @@ def render(**kwargs):
     cam = bpy.data.objects.new('Camera', data)
     scene.collection.objects.link(cam)
     scene.camera = cam
-    for view, pos in [('angle', (1.0, 1.5, 1.95)), ('top', (0, 0, 3))]:
-        cam.location = Vector(pos) * span
-        aim(cam, (0, 0, size.z / 2))
+    for view in ("angle", "detail"):
+        eye = Vector(WALL_VIEW if mount else (0.8, 1.65, 1.0))
+        focus = centre.copy()
+        if view == "detail" and len(layers) == 2:
+            lift = span * 0.48
+            layers[1].location.z += lift
+            focus += mount.matrix_world.to_3x3() @ Vector((0, 0, lift / 2))
+        elif view == "detail":
+            eye = Vector((0, 0, 3))
+        cam.location = focus + eye * span
+        aim(cam, focus)
         bpy.context.view_layer.update()
-        bounds = [cam.matrix_world.inverted() @ (part.matrix_world @ Vector(v)) for v in part.bound_box]
+        bounds = [cam.matrix_world.inverted() @ (part.matrix_world @ Vector(v)) for part in layers for v in part.bound_box]
         extent = max(max(v[i] for v in bounds) - min(v[i] for v in bounds) for i in (0, 1))
         data.ortho_scale = extent * 1.23
         data.clip_start = .0001

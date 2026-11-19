@@ -1522,15 +1522,15 @@ def get_tool_assemblies(**kwargs):
             "translation_mm": [-7.5, -23.1, 8.96],
             "rotation_deg": [0, 90, 0],
             "alignment": "Keep the knife closed. Turn the housing edge-on and align the nose with the closed end of the slot.",
-            "check": "The housing stands on its narrow edge. The heel projects past the open end of the holder.",
+            "check": "The housing sits edge-on in the slot. The heel projects above the holder.",
         },
         "needle_nose_130mm": {
             "tool_id": "tool_pliers_needle_nose_130_mm_length_blue",
             "label": "Blue needle-nose pliers",
-            "translation_mm": [-6.75, -24.4, 0],
-            "rotation_deg": [0, 0, 4.15],
+            "translation_mm": [-9.55, -24.21, 0.25],
+            "rotation_deg": [0, 0, 2.16],
             "alignment": "Point the long jaws toward the closed end of the recess. Centre the steel nose between the rails.",
-            "check": "The blue grips extend beyond the open end, with the pivot visible above the recess.",
+            "check": "The blue grips extend beyond the open end, with the pivot inside the holder.",
         },
         "generic_110mm": {
             "tool_id": "tool_side_cutters_110_mm_length_red",
@@ -1545,8 +1545,8 @@ def get_tool_assemblies(**kwargs):
             "label": "Red wire strippers",
             "translation_mm": [5.91, -22, -3],
             "rotation_deg": [0, 0, -0.65],
-            "alignment": "Point the jaws toward the closed end with the adjustment hardware facing up.",
-            "check": "The offset jaws sit in the narrow pocket and the spread grips extend past the wide opening.",
+            "alignment": "Point the jaws down into the opening with the adjustment hardware facing the room.",
+            "check": "The jaws seat inside the two-piece pocket and the spread grips extend past the wide opening.",
         },
     }
 
@@ -1556,27 +1556,31 @@ def get_loading_steps(**kwargs):
     return [
         {
             "key": "step_01",
-            "action": "Orient the printed holder with the pocket facing up. Locate its open end.",
+            "action": "Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.",
             "add": ["holder"],
-            "lift_mm": 0,
+            "upper_lift_mm": 0,
+            "withdraw_mm": 0,
         },
         {
             "key": "step_02",
-            "action": tool["alignment"],
-            "add": ["tool"],
-            "lift_mm": 32,
+            "action": "Face the front half toward the rear pocket. Align the mounting holes and both top openings.",
+            "add": ["holder"],
+            "upper_lift_mm": 36,
+            "withdraw_mm": 0,
         },
         {
             "key": "step_03",
-            "action": "Lower the tool into the recess, keeping its nose between the pocket walls.",
-            "add": [],
-            "lift_mm": 10,
+            "action": "Bring the halves together until their rims meet. " + tool["alignment"],
+            "add": ["tool"],
+            "upper_lift_mm": 0,
+            "withdraw_mm": 70,
         },
         {
             "key": "step_04",
-            "action": tool["check"],
+            "action": "Lower the tool through the top opening. " + tool["check"],
             "add": [],
-            "lift_mm": 0,
+            "upper_lift_mm": 0,
+            "withdraw_mm": 0,
         },
     ]
 
@@ -1598,6 +1602,24 @@ def get_book_style(**kwargs):
         "font_code_pt": 6.4,
         "font_url_prefix_pt": 4.8,
         "quantity_pt": 5.8,
+    }
+
+
+def get_construction(**kwargs):
+    option = kwargs["option"]
+    style = option["body_style"]
+    mode_by_style = {
+        "stand": "stand",
+        "paired_v4": "paired_layout",
+        "vertical_v4": "repeat_half",
+        "vertical_project": "repeat_half",
+    }
+    # These pockets are handed about the axis running from the mouth to the tip.
+    handed_models = ("small_metric_set", "quikpik_200mm")
+    return {
+        "mode": mode_by_style[style],
+        "pocket_on_underside": option.get("show_underside", False) or option.get("layered", False),
+        "mirror_second_print_x": option["model"] in handed_models,
     }
 
 
@@ -1661,6 +1683,7 @@ def main(**kwargs):
             "oobb_type": geometry["oobb_type"],
             "oobb_details": geometry,
             "svg_details": drawing,
+            "construction": get_construction(option=option),
         }
         if option["model"] in assemblies:
             tool = deepcopy(assemblies[option["model"]])

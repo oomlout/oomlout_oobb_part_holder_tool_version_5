@@ -13,7 +13,7 @@ This is an entirely AI-generated coding project. The generated outputs are inclu
 
 ## Details
 
-| Grid (width × height) | Design depth | Printed thickness |
+| Grid (width × height) | Assembled thickness | Thickness per printed piece |
 | --- | --- | --- |
 | 4 × 5 | 30 mm | 15 mm |
 
@@ -27,6 +27,10 @@ OOMP ID `oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30`
 
 ```yaml
 body_style: vertical_v4
+construction:
+  mirror_second_print_x: false
+  mode: repeat_half
+  pocket_on_underside: false
 depth: 30
 height: 5
 layout: 1_place
@@ -103,5 +107,5 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Identify the tool pockets in the section drawing before choosing the mounting orientation. [Illustrated guides for the four photo-modelled tools](../../../../../../../../README.md#assembly)
+Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. [Illustrated guides for the four photo-modelled tools](../../../../../../../../README.md#assembly)
 <!-- oobb-presentation:end -->

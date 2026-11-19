@@ -13,7 +13,7 @@ This is an entirely AI-generated coding project. The generated outputs are inclu
 
 ## Details
 
-| Grid (width × height) | Design depth | Printed thickness |
+| Grid (width × height) | Assembled thickness | Thickness per printed piece |
 | --- | --- | --- |
 | 5 × 5 | 38 mm | 19 mm |
 
@@ -27,6 +27,10 @@ OOMP ID `oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38`
 
 ```yaml
 body_style: vertical_v4
+construction:
+  mirror_second_print_x: true
+  mode: repeat_half
+  pocket_on_underside: false
 depth: 38
 height: 5
 layout: with_knife
@@ -155,7 +159,7 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Identify the tool pockets in the section drawing before choosing the mounting orientation.
+Print one half as supplied and mirror the second copy along X in the slicer before printing. Turn one half over and bring the matching pockets and mounting holes together.
 
 These tools also have illustrated single-place holder guides. [Black Exacto-style craft knife, 17 mm](../oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/ASSEMBLY.md)
 <!-- oobb-presentation:end -->

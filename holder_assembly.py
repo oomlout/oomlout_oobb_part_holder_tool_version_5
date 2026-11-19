@@ -1,4 +1,5 @@
 """Build tool-loaded CAD sheets and the four OOBB loading booklets."""
+from collections import Counter
 import csv
 import hashlib
 import io
@@ -13,6 +14,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 import trimesh
 
+import holder_layers
 from holder_catalogue import ROOT, records, write_file
 from presentation import assembly_booklet, assembly_viewer
 
@@ -25,29 +27,38 @@ def digest(path):
 
 
 def verify_pose(**kwargs):
-    holder = trimesh.load_mesh(kwargs["holder"])
+    layers = kwargs["layers"]
+    lower, upper = layers
     tool = trimesh.load_mesh(kwargs["tool"])
     recipe = kwargs["recipe"]
     rotation = trimesh.transformations.euler_matrix(*np.radians(recipe["rotation_deg"]))
     tool.apply_transform(rotation)
     tool.apply_translation(recipe["translation_mm"])
-    if not (holder.is_volume and tool.is_volume):
+    if not all(mesh.is_volume for mesh in [lower, upper, tool]):
         raise ValueError("The pose check requires closed production solids")
-    overlap = trimesh.boolean.intersection([holder, tool], engine="manifold")
-    volume = abs(float(overlap.volume)) if len(overlap.faces) else 0.0
-    if volume > 0.0001:
-        raise ValueError(f"{recipe['label']} intersects the printed holder by {volume:g} mm³")
-    # A lifted or misplaced tool can also have zero overlap. Check that its nose
-    # occupies the recessed space below the rim, inside the holder footprint.
-    half = holder.extents / 2
-    probe = trimesh.creation.box([holder.extents[0], holder.extents[1], holder.bounds[1,2]])
-    probe.apply_translation([0, 0, holder.bounds[1,2] / 2])
+    travel = max(step["withdraw_mm"] for step in recipe["steps"])
+    greatest_overlap = 0.0
+    for distance in np.linspace(0, travel, 15):
+        moving = tool.copy()
+        moving.apply_translation([0, distance, 0])
+        for layer in layers:
+            overlap = trimesh.boolean.intersection([layer, moving], engine="manifold")
+            if len(overlap.faces) and np.all(overlap.extents > 0.00001):
+                greatest_overlap = max(greatest_overlap, abs(float(overlap.volume)))
+    if greatest_overlap > 0.0001:
+        raise ValueError(f"{recipe['label']} intersects a holder half by {greatest_overlap:g} mm3")
+    low = lower.bounds[0]
+    high = upper.bounds[1]
+    probe = trimesh.creation.box(high - low)
+    probe.apply_translation((low + high) / 2)
     seated = trimesh.boolean.intersection([probe, tool], engine="manifold")
     occupied = float(seated.volume) if len(seated.faces) else 0.0
     if occupied < 1:
         raise ValueError(f"{recipe['label']} misses the pocket")
     return {
-        "holder_intersection_mm3": volume,
+        "holder_intersection_mm3": greatest_overlap,
+        "insertion_positions_checked": 15,
+        "printed_halves_checked": len(layers),
         "tool_volume_inside_pocket_mm3": round(occupied, 3),
         "physical_fit": "Unverified. The OOMP model uses provisional photograph-based dimensions.",
     }
@@ -57,7 +68,7 @@ def make_sheet(**kwargs):
     raw = kwargs["raw"]
     title = kwargs["title"]
     sheet = Image.new("RGB", (1280, 724), "#f6f4ef")
-    for index, name in enumerate(("book_cover", "loaded_top")):
+    for index, name in enumerate(("book_cover", "exploded")):
         with Image.open(raw / (name + ".png")) as source:
             image = source.convert("RGBA")
             box = image.getchannel("A").getbbox()
@@ -66,8 +77,8 @@ def make_sheet(**kwargs):
             sheet.paste(image, (320 + 640*index - image.width//2, 332-image.height//2), image)
     draw = ImageDraw.Draw(sheet)
     draw.text((25, 16), title, font=ImageFont.load_default(size=29), fill="#243a3b")
-    draw.text((26, 615), "Seated tool", font=ImageFont.load_default(size=21), fill="#243a3b")
-    draw.text((665, 615), "Pocket alignment", font=ImageFont.load_default(size=21), fill="#243a3b")
+    draw.text((26, 615), "Wall-mounted holder and tool", font=ImageFont.load_default(size=21), fill="#243a3b")
+    draw.text((665, 615), "Exploded view - two printed halves", font=ImageFont.load_default(size=21), fill="#243a3b")
     draw.text((26, 682), "OOMP photo-based tool model · Physical fit unverified · AI-generated CAD illustration.",
               font=ImageFont.load_default(size=17), fill="#536361")
     buffer = io.BytesIO()
@@ -83,13 +94,13 @@ def publish_book(**kwargs):
     reference = REFERENCES / recipe["tool_id"]
     source = json.loads((reference / "source.json").read_text(encoding="utf-8"))
     source_url = "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/" + source["id"]
-    fit = verify_pose(holder=folder/"3dpr.stl", tool=reference/"working.stl", recipe=recipe)
+    fit = kwargs["fit"]
     parts = {
         "holder": {
             "key": "holder",
             "id": part["id"],
-            "name": "Printed holder",
-            "quantity": 1,
+            "name": "Holder half",
+            "quantity": 2,
         },
         "tool": {
             "key": "tool",
@@ -113,12 +124,12 @@ def publish_book(**kwargs):
             "number": number,
             "loose_parts": dict.fromkeys(step["add"], 1),
         })
-    if sorted(added) != sorted(parts):
+    if Counter(added) != {key: item["quantity"] for key, item in parts.items()}:
         raise ValueError("Each physical item must enter the assembly once")
     title = recipe["label"] + " holder"
     details = [
-        f"{part['width']} × {part['height']} OOBB grid. Printed thickness {part['depth']/2:g} mm.",
-        "Use one printed holder and one tool. These views show loading the pocket face-up.",
+        f"{part['width']} × {part['height']} OOBB grid. Each half is {part['depth']/2:g} mm thick. The assembled holder is {part['depth']:g} mm thick.",
+        "Print the holder STL twice. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
         recipe["alignment"], recipe["check"], source["model_note"],
         "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
         "AI-generated CAD images and instructions. Physical fit has yet to be tested.",
@@ -128,12 +139,12 @@ def publish_book(**kwargs):
         "style": recipe["style"],
         "book": {
             "cover_title": title,
-            "cover_subtitle": "Loading the tool into its single-place OOBB holder",
+            "cover_subtitle": "Assembling the two halves and loading the tool",
             "project_name": ROOT.name + " / OOMP tool reference",
             "project_url": source_url,
             "details_title": "Tool and holder",
             "details": details,
-            "summary_title": "Printed part",
+            "summary_title": "Printed halves",
             "hardware_title": "Workshop tool",
             "summary_view": "loaded_top",
             "signature_pages": 4,
@@ -144,7 +155,7 @@ def publish_book(**kwargs):
         },
         "parts": parts,
         "steps": steps,
-        "physical_item_count": 2,
+        "physical_item_count": 3,
         "printed_keys": ["holder"],
         "pose": {
             "rotation_deg": recipe["rotation_deg"],
@@ -170,7 +181,9 @@ AI-generated CAD images and instructions. Errors possible.
 
 ![Tool seated in the printed holder](../3dpr_presentation.png)
 
-## Loading sequence
+## Assembly and loading
+
+Print two copies of the holder STL. The dark teal half sits against the wall. The light teal half faces the room. The opening and tool handles point up.
 
 {sequence}
 
@@ -194,7 +207,7 @@ def build_assemblies(**kwargs):
     selected = kwargs.get("filter", "")
     force = kwargs.get("force", False)
     blender = kwargs.get("blender") or os.environ.get("BLENDER_EXE") or shutil.which("blender")
-    scripts = [Path(__file__), STUDIO/"assembly_booklet.py", STUDIO/"assembly_viewer.py",
+    scripts = [Path(__file__), Path(holder_layers.__file__), STUDIO/"assembly_booklet.py", STUDIO/"assembly_viewer.py",
                STUDIO/"assembly_viewer.html", STUDIO/"render_loaded.py", STUDIO/"render_holder.py"]
     inputs = [digest(p) for p in scripts]
     for _, folder, part in records(filter=selected):
@@ -221,8 +234,15 @@ def build_assemblies(**kwargs):
         with tempfile.TemporaryDirectory(dir=cache) as scratch:
             work = Path(scratch)
             output = work / "assembly"
+            layers = holder_layers.assembled_layers(mesh=trimesh.load_mesh(folder/"3dpr.stl"), construction=part["construction"])
+            fit = verify_pose(layers=layers, tool=reference/"working.stl", recipe=recipe)
+            sources = []
+            for number, layer in enumerate(layers, start=1):
+                path = work / f"layer_{number}.stl"
+                write_file(path, layer.export(file_type="stl"))
+                sources.append(str(path))
             job = {
-                "holder": str(folder/"3dpr.stl"),
+                "sources": sources,
                 "tool": str(reference/"working.glb"),
                 "output": str(output/"render/raw"),
                 "recipe": recipe,
@@ -233,7 +253,7 @@ def build_assemblies(**kwargs):
             with (cache/"blender.log").open("w") as log:
                 subprocess.run([blender,"--background","--python-exit-code","1","--python",str(STUDIO/"render_loaded.py"),
                                 "--",str(batch)],stdout=log,stderr=subprocess.STDOUT,check=True)
-            sheet = publish_book(folder=folder, part=part, output=output)
+            sheet = publish_book(folder=folder, part=part, output=output, fit=fit)
             write_file(work/"3dpr_presentation.png", sheet)
             published = {}
             for src in [work/"3dpr_presentation.png", *sorted(output.rglob("*"))]:

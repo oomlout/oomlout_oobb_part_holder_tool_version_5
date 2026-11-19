@@ -13,7 +13,7 @@ This is an entirely AI-generated coding project. The generated outputs are inclu
 
 ## Details
 
-| Grid (width × height) | Design depth | Printed thickness |
+| Grid (width × height) | Assembled thickness | Thickness per printed piece |
 | --- | --- | --- |
 | 3 × 5 | 29.5 mm | 14.75 mm |
 
@@ -29,34 +29,40 @@ OOMP ID `oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5`
 assembly_details:
   alignment: Keep the knife closed. Turn the housing edge-on and align the nose with
     the closed end of the slot.
-  check: The housing stands on its narrow edge. The heel projects past the open end
-    of the holder.
+  check: The housing sits edge-on in the slot. The heel projects above the holder.
   label: Closed craft knife
   rotation_deg:
   - 0
   - 90
   - 0
   steps:
-  - action: Orient the printed holder with the pocket facing up. Locate its open end.
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
     add:
     - holder
     key: step_01
-    lift_mm: 0
-  - action: Keep the knife closed. Turn the housing edge-on and align the nose with
-      the closed end of the slot.
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Keep the knife closed.
+      Turn the housing edge-on and align the nose with the closed end of the slot.
     add:
     - tool
-    key: step_02
-    lift_mm: 32
-  - action: Lower the tool into the recess, keeping its nose between the pocket walls.
-    add: []
     key: step_03
-    lift_mm: 10
-  - action: The housing stands on its narrow edge. The heel projects past the open
-      end of the holder.
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tool through the top opening. The housing sits edge-on in the
+      slot. The heel projects above the holder.
     add: []
     key: step_04
-    lift_mm: 0
+    upper_lift_mm: 0
+    withdraw_mm: 0
   style:
     border: '000000'
     border_radius_mm: 3
@@ -81,6 +87,10 @@ assembly_details:
   - -23.1
   - 8.96
 body_style: vertical_v4
+construction:
+  mirror_second_print_x: false
+  mode: repeat_half
+  pocket_on_underside: false
 depth: 29.5
 height: 5
 layout: 1_place
@@ -165,7 +175,7 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Load the closed craft knife in the orientation shown. The illustration uses its OOMP photo-based model at catalogue scale. Physical fit is unverified.
+Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. Load the closed craft knife in the orientation shown. The illustration uses its OOMP photo-based model at catalogue scale. Physical fit is unverified.
 
 [Illustrated sequence](assembly/ASSEMBLY.md) · [Offline step viewer](assembly/assembly_instructions.html) · [Print booklet](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

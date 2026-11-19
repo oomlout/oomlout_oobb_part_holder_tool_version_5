@@ -8,7 +8,7 @@ import bpy
 from mathutils import Vector
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from render_holder import aim, material
+from render_holder import WALL_VIEW, aim, import_layers, orient_for_wall
 
 
 def corners(objects):
@@ -19,7 +19,7 @@ def corners(objects):
 def shoot(scene, camera, **kwargs):
     points = kwargs["bounds"]
     output = kwargs["output"]
-    eye = Vector(kwargs.get("eye", [0.95, -1.25, 1.75])).normalized()
+    eye = Vector(kwargs.get("eye", WALL_VIEW)).normalized()
     low = Vector([min(p[i] for p in points) for i in range(3)])
     high = Vector([max(p[i] for p in points) for i in range(3)])
     centre = (high + low) / 2
@@ -64,10 +64,7 @@ def render(**kwargs):
     scene.world = bpy.data.worlds.new("Studio")
     scene.world.use_nodes = True
     scene.world.node_tree.nodes["Background"].inputs[1].default_value = 0.55
-    bpy.ops.wm.stl_import(filepath=kwargs["holder"])
-    holder = bpy.context.object
-    holder.scale = [0.001]*3
-    holder.data.materials.append(material("Turquoise PLA", [0, 177, 183]))
+    lower, upper = import_layers(sources=kwargs["sources"])
     existing = set(scene.objects)
     bpy.ops.import_scene.gltf(filepath=kwargs["tool"])
     imported = set(scene.objects) - existing
@@ -79,6 +76,7 @@ def render(**kwargs):
             obj.parent = assembly
     assembly.rotation_euler = [math.radians(v) for v in spec["rotation_deg"]]
     assembly.location = position
+    orient_for_wall(objects=[lower, upper, assembly])
     for name, xyz, power in [
         ("Key", [-0.24,-0.30,0.42], 8), ("Fill", [0.32,-0.07,0.32], 4),
         ("Rim", [0,0.31,0.36], 6),
@@ -97,26 +95,34 @@ def render(**kwargs):
     camera.data.clip_start = 0.001
     scene.camera = camera
     folder.mkdir(parents=True, exist_ok=True)
-    holder_bounds = corners([holder])
+    lower_bounds = corners([lower])
     tool_bounds = corners(meshes)
-    full_bounds = holder_bounds + tool_bounds
-    lift = max(step["lift_mm"] for step in spec["steps"])/1000
-    step_bounds = full_bounds + [p + Vector([0,0,lift]) for p in tool_bounds]
-    holder.hide_render = True
+    full_bounds = corners([lower, upper, *meshes])
+    lower.hide_render = upper.hide_render = True
     shoot(scene, camera, bounds=tool_bounds, output=folder/"part_tool.png")
-    holder.hide_render = False
+    lower.hide_render = False
     for obj in meshes:
         obj.hide_render = True
-    shoot(scene, camera, bounds=holder_bounds, output=folder/"part_holder.png")
-    shown = set()
+    shoot(scene, camera, bounds=lower_bounds, output=folder/"part_holder.png")
+
+    half_count = 0
+    tool_visible = False
     for step in spec["steps"]:
-        shown.update(step["add"])
+        half_count += step["add"].count("holder")
+        tool_visible = tool_visible or "tool" in step["add"]
+        upper.hide_render = half_count < 2
+        upper.location.z = step["upper_lift_mm"] / 1000
+        assembly.location = position + Vector([0, step["withdraw_mm"] / 1000, 0])
         for obj in meshes:
-            obj.hide_render = "tool" not in shown
-        assembly.location = position + Vector([0,0,step["lift_mm"]/1000])
-        shoot(scene, camera, bounds=step_bounds, output=folder/(step["key"]+".png"))
+            obj.hide_render = not tool_visible
+        visible = [obj for obj in [lower, upper, *meshes] if not obj.hide_render]
+        shoot(scene, camera, bounds=corners(visible), output=folder/(step["key"]+".png"))
+
     shoot(scene, camera, bounds=full_bounds, output=folder/"book_cover.png")
-    shoot(scene, camera, bounds=full_bounds, eye=[0,0,1], output=folder/"loaded_top.png")
+    # The original top-of-print view is the front elevation on the wall.
+    shoot(scene, camera, bounds=full_bounds, eye=[0,-1,0], output=folder/"loaded_top.png")
+    upper.location.z = max(step["upper_lift_mm"] for step in spec["steps"]) / 1000
+    shoot(scene, camera, bounds=corners([lower, upper, *meshes]), output=folder/"exploded.png")
 
 
 if __name__ == "__main__":

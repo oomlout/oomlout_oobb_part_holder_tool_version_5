@@ -21,11 +21,11 @@ Run `python working.py` to rebuild. The [build notes](presentation/README.md) co
 
 ## Parts
 
-Width and height use 15 mm grid units. A 3 × 5 holder has a nominal footprint of 44 × 74 mm. The last size value is the source design depth in millimetres. The vertical print layouts use half that depth per face. Each part page gives its printed thickness, a section drawing and a CAD preview.
+Width and height use 15 mm grid units. A 3 × 5 holder has a nominal footprint of 44 × 74 mm. The last size value is the source design depth in millimetres. Vertical holders use two half-depth pieces. Stack them with the pockets facing inward and the holes aligned. Each part page gives its printed thickness, a section drawing and a CAD preview.
 
 ## Assembly
 
-Four single-place holders have loading instructions illustrated with the original OOMP photo-based tool models. Each viewer opens offline. The print booklets use landscape A4 pages. Physical fit remains unverified.
+Four single-place holders have two-piece assembly and loading instructions illustrated with the original OOMP photo-based tool models. Each viewer opens offline. The print booklets use landscape A4 pages. Physical fit remains unverified.
 
 | Tool and illustrated sequence | Offline viewer | Print booklet |
 | --- | --- | --- |
@@ -34,5 +34,5 @@ Four single-place holders have loading instructions illustrated with the origina
 | [Red side cutters](parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/assembly/ASSEMBLY.md) | [Open HTML](parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/assembly/assembly_instructions.pdf) |
 | [Red wire strippers](parts/oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13/assembly/ASSEMBLY.md) | [Open HTML](parts/oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13/assembly/assembly_instructions.pdf) |
 
-The mixed-tool stand prints as one piece. The combined Prit and knife holder prints as two faces.
+For future renders, show vertical holders as they sit on the wall, with the opening and tool handles pointing up. Show the halves touching in the assembled view and move the front half outward along the mounting holes for the exploded view. The combined Prit and knife layout supplies both halves in one print. The mixed-tool bench stand prints as one piece.
 <!-- oobb-presentation:end -->

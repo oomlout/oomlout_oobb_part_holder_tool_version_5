@@ -13,7 +13,7 @@ This is an entirely AI-generated coding project. The generated outputs are inclu
 
 ## Details
 
-| Grid (width × height) | Design depth | Printed thickness |
+| Grid (width × height) | Assembled thickness | Thickness per printed piece |
 | --- | --- | --- |
 | 5 × 5 | 30 mm | 15 mm |
 
@@ -27,6 +27,10 @@ OOMP ID `oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30`
 
 ```yaml
 body_style: paired_v4
+construction:
+  mirror_second_print_x: false
+  mode: paired_layout
+  pocket_on_underside: false
 depth: 30
 height: 5
 layout: with_knife
@@ -122,7 +126,7 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print both faces in the supplied layout. The two faces form the glue-stick and craft-knife holder.
+Print the supplied two-body layout once. Move the right-hand half onto the left-hand half, keeping the pocket faces together and the openings aligned.
 
 These tools also have illustrated single-place holder guides. [Black Exacto-style craft knife, 17 mm](../oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/assembly/ASSEMBLY.md)
 <!-- oobb-presentation:end -->

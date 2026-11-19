@@ -1,4 +1,8 @@
 body_style: paired_v4
+construction:
+  mirror_second_print_x: false
+  mode: paired_layout
+  pocket_on_underside: false
 depth: 30
 height: 5
 layout: with_knife

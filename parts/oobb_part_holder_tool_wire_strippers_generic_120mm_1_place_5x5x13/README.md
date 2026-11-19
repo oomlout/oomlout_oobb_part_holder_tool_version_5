@@ -13,7 +13,7 @@ This is an entirely AI-generated coding project. The generated outputs are inclu
 
 ## Details
 
-| Grid (width × height) | Design depth | Printed thickness |
+| Grid (width × height) | Assembled thickness | Thickness per printed piece |
 | --- | --- | --- |
 | 5 × 5 | 13 mm | 6.5 mm |
 
@@ -27,9 +27,9 @@ OOMP ID `oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13`
 
 ```yaml
 assembly_details:
-  alignment: Point the jaws toward the closed end with the adjustment hardware facing
-    up.
-  check: The offset jaws sit in the narrow pocket and the spread grips extend past
+  alignment: Point the jaws down into the opening with the adjustment hardware facing
+    the room.
+  check: The jaws seat inside the two-piece pocket and the spread grips extend past
     the wide opening.
   label: Red wire strippers
   rotation_deg:
@@ -37,26 +37,33 @@ assembly_details:
   - 0
   - -0.65
   steps:
-  - action: Orient the printed holder with the pocket facing up. Locate its open end.
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
     add:
     - holder
     key: step_01
-    lift_mm: 0
-  - action: Point the jaws toward the closed end with the adjustment hardware facing
-      up.
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Point the jaws down into
+      the opening with the adjustment hardware facing the room.
     add:
     - tool
-    key: step_02
-    lift_mm: 32
-  - action: Lower the tool into the recess, keeping its nose between the pocket walls.
-    add: []
     key: step_03
-    lift_mm: 10
-  - action: The offset jaws sit in the narrow pocket and the spread grips extend past
-      the wide opening.
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tool through the top opening. The jaws seat inside the two-piece
+      pocket and the spread grips extend past the wide opening.
     add: []
     key: step_04
-    lift_mm: 0
+    upper_lift_mm: 0
+    withdraw_mm: 0
   style:
     border: '000000'
     border_radius_mm: 3
@@ -81,6 +88,10 @@ assembly_details:
   - -22
   - -3
 body_style: vertical_v4
+construction:
+  mirror_second_print_x: false
+  mode: repeat_half
+  pocket_on_underside: false
 depth: 13
 height: 5
 layout: 1_place
@@ -173,7 +184,7 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Load the red wire strippers in the orientation shown. The illustration uses its OOMP photo-based model at catalogue scale. Physical fit is unverified.
+Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. Load the red wire strippers in the orientation shown. The illustration uses its OOMP photo-based model at catalogue scale. Physical fit is unverified.
 
 [Illustrated sequence](assembly/ASSEMBLY.md) · [Offline step viewer](assembly/assembly_instructions.html) · [Print booklet](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

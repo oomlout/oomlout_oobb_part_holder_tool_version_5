@@ -13,7 +13,7 @@ This is an entirely AI-generated coding project. The generated outputs are inclu
 
 ## Details
 
-| Grid (width × height) | Design depth | Printed thickness |
+| Grid (width × height) | Assembled thickness | Thickness per printed piece |
 | --- | --- | --- |
 | 5 × 3 | 29.5 mm | 14.75 mm |
 
@@ -27,6 +27,10 @@ OOMP ID `oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5`
 
 ```yaml
 body_style: vertical_v4
+construction:
+  mirror_second_print_x: false
+  mode: repeat_half
+  pocket_on_underside: false
 depth: 29.5
 height: 3
 layout: 1_place
@@ -103,5 +107,5 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Identify the tool pockets in the section drawing before choosing the mounting orientation. [Illustrated guides for the four photo-modelled tools](../../../../../../../../README.md#assembly)
+Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. [Illustrated guides for the four photo-modelled tools](../../../../../../../../README.md#assembly)
 <!-- oobb-presentation:end -->

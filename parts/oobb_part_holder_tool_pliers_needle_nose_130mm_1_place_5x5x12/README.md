@@ -13,7 +13,7 @@ This is an entirely AI-generated coding project. The generated outputs are inclu
 
 ## Details
 
-| Grid (width × height) | Design depth | Printed thickness |
+| Grid (width × height) | Assembled thickness | Thickness per printed piece |
 | --- | --- | --- |
 | 5 × 5 | 12 mm | 6 mm |
 
@@ -29,34 +29,40 @@ OOMP ID `oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12`
 assembly_details:
   alignment: Point the long jaws toward the closed end of the recess. Centre the steel
     nose between the rails.
-  check: The blue grips extend beyond the open end, with the pivot visible above the
-    recess.
+  check: The blue grips extend beyond the open end, with the pivot inside the holder.
   label: Blue needle-nose pliers
   rotation_deg:
   - 0
   - 0
-  - 4.15
+  - 2.16
   steps:
-  - action: Orient the printed holder with the pocket facing up. Locate its open end.
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
     add:
     - holder
     key: step_01
-    lift_mm: 0
-  - action: Point the long jaws toward the closed end of the recess. Centre the steel
-      nose between the rails.
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Point the long jaws toward
+      the closed end of the recess. Centre the steel nose between the rails.
     add:
     - tool
-    key: step_02
-    lift_mm: 32
-  - action: Lower the tool into the recess, keeping its nose between the pocket walls.
-    add: []
     key: step_03
-    lift_mm: 10
-  - action: The blue grips extend beyond the open end, with the pivot visible above
-      the recess.
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tool through the top opening. The blue grips extend beyond the
+      open end, with the pivot inside the holder.
     add: []
     key: step_04
-    lift_mm: 0
+    upper_lift_mm: 0
+    withdraw_mm: 0
   style:
     border: '000000'
     border_radius_mm: 3
@@ -77,10 +83,14 @@ assembly_details:
     thumbnail_height_mm: 8.5
   tool_id: tool_pliers_needle_nose_130_mm_length_blue
   translation_mm:
-  - -6.75
-  - -24.4
-  - 0
+  - -9.55
+  - -24.21
+  - 0.25
 body_style: vertical_v4
+construction:
+  mirror_second_print_x: false
+  mode: repeat_half
+  pocket_on_underside: false
 depth: 12
 height: 5
 layout: 1_place
@@ -173,7 +183,7 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Load the blue needle-nose pliers in the orientation shown. The illustration uses its OOMP photo-based model at catalogue scale. Physical fit is unverified.
+Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. Load the blue needle-nose pliers in the orientation shown. The illustration uses its OOMP photo-based model at catalogue scale. Physical fit is unverified.
 
 [Illustrated sequence](assembly/ASSEMBLY.md) · [Offline step viewer](assembly/assembly_instructions.html) · [Print booklet](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

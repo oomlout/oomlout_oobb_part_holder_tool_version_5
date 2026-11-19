@@ -6,12 +6,14 @@ AI-generated CAD images and instructions. Errors possible.
 
 ![Tool seated in the printed holder](../3dpr_presentation.png)
 
-## Loading sequence
+## Assembly and loading
 
-1. Orient the printed holder with the pocket facing up. Locate its open end.
-2. Point the jaws toward the closed end with the adjustment hardware facing up.
-3. Lower the tool into the recess, keeping its nose between the pocket walls.
-4. The offset jaws sit in the narrow pocket and the spread grips extend past the wide opening.
+Print two copies of the holder STL. The dark teal half sits against the wall. The light teal half faces the room. The opening and tool handles point up.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings.
+3. Bring the halves together until their rims meet. Point the jaws down into the opening with the adjustment hardware facing the room.
+4. Lower the tool through the top opening. The jaws seat inside the two-piece pocket and the spread grips extend past the wide opening.
 
 ## Model and fit
 

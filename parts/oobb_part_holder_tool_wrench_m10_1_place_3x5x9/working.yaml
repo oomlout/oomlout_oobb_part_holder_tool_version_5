@@ -1,4 +1,8 @@
 body_style: vertical_v4
+construction:
+  mirror_second_print_x: false
+  mode: repeat_half
+  pocket_on_underside: false
 depth: 9
 height: 5
 layout: 1_place

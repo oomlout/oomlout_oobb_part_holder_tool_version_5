@@ -1,4 +1,8 @@
 body_style: vertical_project
+construction:
+  mirror_second_print_x: false
+  mode: repeat_half
+  pocket_on_underside: true
 count: 7
 depth: 12
 height: 4

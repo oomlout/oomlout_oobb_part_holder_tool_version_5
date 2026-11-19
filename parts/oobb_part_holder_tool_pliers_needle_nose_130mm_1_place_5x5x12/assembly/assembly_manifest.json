@@ -22,20 +22,20 @@
   },
   "book": {
     "cover_title": "Blue needle-nose pliers holder",
-    "cover_subtitle": "Loading the tool into its single-place OOBB holder",
+    "cover_subtitle": "Assembling the two halves and loading the tool",
     "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
     "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_pliers_needle_nose_130_mm_length_blue",
     "details_title": "Tool and holder",
     "details": [
-      "5 \u00d7 5 OOBB grid. Printed thickness 6 mm.",
-      "Use one printed holder and one tool. These views show loading the pocket face-up.",
+      "5 \u00d7 5 OOBB grid. Each half is 6 mm thick. The assembled holder is 12 mm thick.",
+      "Print the holder STL twice. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
       "Point the long jaws toward the closed end of the recess. Centre the steel nose between the rails.",
-      "The blue grips extend beyond the open end, with the pivot visible above the recess.",
+      "The blue grips extend beyond the open end, with the pivot inside the holder.",
       "Open-pose photo trace with a provisional 130 mm closed-length reference (Rapid PC-022). Jaw and grip depths are estimated.",
       "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
       "AI-generated CAD images and instructions. Physical fit has yet to be tested."
     ],
-    "summary_title": "Printed part",
+    "summary_title": "Printed halves",
     "hardware_title": "Workshop tool",
     "summary_view": "loaded_top",
     "signature_pages": 4,
@@ -48,8 +48,8 @@
     "holder": {
       "key": "holder",
       "id": "oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12",
-      "name": "Printed holder",
-      "quantity": 1
+      "name": "Holder half",
+      "quantity": 2
     },
     "tool": {
       "key": "tool",
@@ -65,12 +65,13 @@
   },
   "steps": [
     {
-      "action": "Orient the printed holder with the pocket facing up. Locate its open end.",
+      "action": "Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.",
       "add": [
         "holder"
       ],
       "key": "step_01",
-      "lift_mm": 0,
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
       "title": "Loading operation 1",
       "number": 1,
       "loose_parts": {
@@ -78,38 +79,45 @@
       }
     },
     {
-      "action": "Point the long jaws toward the closed end of the recess. Centre the steel nose between the rails.",
+      "action": "Face the front half toward the rear pocket. Align the mounting holes and both top openings.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 36,
+      "withdraw_mm": 0,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Bring the halves together until their rims meet. Point the long jaws toward the closed end of the recess. Centre the steel nose between the rails.",
       "add": [
         "tool"
       ],
-      "key": "step_02",
-      "lift_mm": 32,
-      "title": "Loading operation 2",
-      "number": 2,
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
       "loose_parts": {
         "tool": 1
       }
     },
     {
-      "action": "Lower the tool into the recess, keeping its nose between the pocket walls.",
-      "add": [],
-      "key": "step_03",
-      "lift_mm": 10,
-      "title": "Loading operation 3",
-      "number": 3,
-      "loose_parts": {}
-    },
-    {
-      "action": "The blue grips extend beyond the open end, with the pivot visible above the recess.",
+      "action": "Lower the tool through the top opening. The blue grips extend beyond the open end, with the pivot inside the holder.",
       "add": [],
       "key": "step_04",
-      "lift_mm": 0,
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
       "title": "Loading operation 4",
       "number": 4,
       "loose_parts": {}
     }
   ],
-  "physical_item_count": 2,
+  "physical_item_count": 3,
   "printed_keys": [
     "holder"
   ],
@@ -117,17 +125,19 @@
     "rotation_deg": [
       0,
       0,
-      4.15
+      2.16
     ],
     "translation_mm": [
-      -6.75,
-      -24.4,
-      0
+      -9.55,
+      -24.21,
+      0.25
     ]
   },
   "fit_check": {
     "holder_intersection_mm3": 0.0,
-    "tool_volume_inside_pocket_mm3": 1648.748,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 2,
+    "tool_volume_inside_pocket_mm3": 3889.354,
     "physical_fit": "Unverified. The OOMP model uses provisional photograph-based dimensions."
   },
   "source_sha256": {
@@ -141,8 +151,8 @@
       {
         "key": "holder",
         "id": "oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12",
-        "name": "Printed holder",
-        "quantity": 1
+        "name": "Holder half",
+        "quantity": 2
       }
     ],
     "hardware": [
@@ -187,5 +197,5 @@
       "kind": "back"
     }
   ],
-  "printed_piece_count": 1
+  "printed_piece_count": 2
 }

@@ -38,21 +38,21 @@ def export_guides(**kwargs):
     tools_refs = tools_root / "source_file/tool_references/holders"
     index = [
         "# Tool-holder loading guides", "",
-        "Each guide shows a photo-based OOMP tool model being seated in its single-place OOBB holder. The booklets print on landscape A4 paper. Physical fit is unverified.", "",
+        "Each guide shows a photo-based OOMP tool model lowered into a two-piece wall holder. In the exploded view the front half moves away from the wall to reveal the pocket. The booklets print on landscape A4 paper. Physical fit is unverified.", "",
         "| Tool | Print booklet | Tool model |", "| --- | --- | --- |",
     ]
     for identifier, folder, part in records():
         recipe = part.get("assembly_details")
-        if not recipe:
-            continue
-        guide = (folder/"assembly/assembly_instructions.pdf").read_bytes()
-        write_file(base_index/(part["model"]+".pdf"), guide)
-        write_file(tools_refs/(identifier+".pdf"), guide)
         buffer = io.BytesIO()
         with Image.open(folder/"3dpr_presentation.png") as img:
             img.thumbnail((880,550), Image.Resampling.LANCZOS)
             img.convert("RGB").save(buffer, format="JPEG", quality=92)
         write_file(tools_refs/(identifier+".jpg"), buffer.getvalue())
+        if not recipe:
+            continue
+        guide = (folder/"assembly/assembly_instructions.pdf").read_bytes()
+        write_file(base_index/(part["model"]+".pdf"), guide)
+        write_file(tools_refs/(identifier+".pdf"), guide)
         tool = recipe["tool_id"]
         url = "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/" + tool
         index.append(f"| {recipe['label']} | [Download PDF]({part['model']}.pdf) | [OOMP record]({url}) |")

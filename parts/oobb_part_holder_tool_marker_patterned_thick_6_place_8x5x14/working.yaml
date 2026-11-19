@@ -1,4 +1,8 @@
 body_style: vertical_v4
+construction:
+  mirror_second_print_x: false
+  mode: repeat_half
+  pocket_on_underside: true
 count: 6
 depth: 14
 height: 5

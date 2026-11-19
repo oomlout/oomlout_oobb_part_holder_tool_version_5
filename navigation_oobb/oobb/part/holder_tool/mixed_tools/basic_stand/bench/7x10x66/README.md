@@ -13,7 +13,7 @@ This is an entirely AI-generated coding project. The generated outputs are inclu
 
 ## Details
 
-| Grid (width × height) | Design depth | Printed thickness |
+| Grid (width × height) | Assembled thickness | Thickness per printed piece |
 | --- | --- | --- |
 | 7 × 10 | 66 mm | 66 mm |
 
@@ -27,6 +27,10 @@ OOMP ID `oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66`
 
 ```yaml
 body_style: stand
+construction:
+  mirror_second_print_x: false
+  mode: stand
+  pocket_on_underside: false
 depth: 66
 height: 10
 layout: bench

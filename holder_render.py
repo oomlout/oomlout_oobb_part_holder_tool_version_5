@@ -11,6 +11,7 @@ import tempfile
 from PIL import Image, ImageDraw, ImageFont
 import trimesh
 
+import holder_layers
 from holder_catalogue import ROOT, records, write_file, cli_options
 
 
@@ -27,10 +28,10 @@ def render_parts(**kwargs):
         if part.get("assembly_details"):
             continue
         mesh = folder / "3dpr.stl"
-        underside = part["svg_details"]["show_underside"]
+        construction = part["construction"]
         label = f"{part['title']}  ·  {part['layout'].replace('_', ' ')}"
         key = hashlib.sha256(mesh.read_bytes() + worker.read_bytes() + Path(__file__).read_bytes()
-                             + str(underside).encode() + label.encode()).hexdigest()
+                             + Path(holder_layers.__file__).read_bytes() + json.dumps(construction).encode() + label.encode()).hexdigest()
         directory = cache / key
         sheet = folder / "3dpr_presentation.png"
         stamp = directory / "image.sha256"
@@ -38,13 +39,18 @@ def render_parts(**kwargs):
             if stamp.read_text() == hashlib.sha256(sheet.read_bytes()).hexdigest():
                 continue
         directory.mkdir(exist_ok=True)
+        layers = holder_layers.assembled_layers(mesh=trimesh.load_mesh(mesh), construction=construction)
+        sources = []
+        for number, layer in enumerate(layers, start=1):
+            path = directory / f"layer_{number}.stl"
+            write_file(path, layer.export(file_type="stl"))
+            sources.append(str(path))
         job = {
-            "source": str(mesh),
+            "sources": sources,
             "directory": str(directory),
-            "show_underside": underside,
         }
         jobs.append(job)
-        sheets.append((directory, sheet, label, mesh))
+        sheets.append((directory, sheet, label, layers))
     if not jobs:
         return
     if not executable:
@@ -61,16 +67,20 @@ def render_parts(**kwargs):
             subprocess.run([executable, "--background", "--python-exit-code", "1",
                             "--python", str(worker), "--", str(batch)], check=True,
                            stdout=log, stderr=subprocess.STDOUT)
-    for directory, sheet, label, mesh in sheets:
+    for directory, sheet, label, layers in sheets:
         canvas = Image.new("RGB", (1280, 724), "#f6f4ef")
-        for index, view in enumerate(("angle", "top")):
+        for index, view in enumerate(("angle", "detail")):
             with Image.open(directory / f"{view}.png") as source:
                 image = source.convert("RGBA")
                 canvas.paste(image, (640 * index, 24), image)
         draw = ImageDraw.Draw(canvas)
         draw.text((26, 15), label, font=ImageFont.load_default(size=26), fill="#243a3b")
-        dimensions = " × ".join(f"{v:.1f}".removesuffix(".0") for v in trimesh.load_mesh(mesh).extents)
-        draw.text((26, 655), f"Print envelope   {dimensions} mm",
+        dimensions = " x ".join(f"{v:.1f}".removesuffix(".0") for v in trimesh.util.concatenate(layers).extents)
+        caption = "Wall-mounted holder" if len(layers) == 2 else "Assembled holder"
+        draw.text((26, 615), caption, font=ImageFont.load_default(size=21), fill="#243a3b")
+        legend = "Exploded view - two printed halves" if len(layers) == 2 else "Top view - one-piece bench stand"
+        draw.text((665, 615), legend, font=ImageFont.load_default(size=21), fill="#243a3b")
+        draw.text((26, 655), f"Assembled dimensions   {dimensions} mm",
                   font=ImageFont.load_default(size=21), fill="#243a3b")
         draw.text((26, 692), "AI-generated CAD illustration. Errors possible.",
                   font=ImageFont.load_default(size=15), fill="#536361")

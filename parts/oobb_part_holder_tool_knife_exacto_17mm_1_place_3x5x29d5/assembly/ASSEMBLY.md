@@ -6,12 +6,14 @@ AI-generated CAD images and instructions. Errors possible.
 
 ![Tool seated in the printed holder](../3dpr_presentation.png)
 
-## Loading sequence
+## Assembly and loading
 
-1. Orient the printed holder with the pocket facing up. Locate its open end.
-2. Keep the knife closed. Turn the housing edge-on and align the nose with the closed end of the slot.
-3. Lower the tool into the recess, keeping its nose between the pocket walls.
-4. The housing stands on its narrow edge. The heel projects past the open end of the holder.
+Print two copies of the holder STL. The dark teal half sits against the wall. The light teal half faces the room. The opening and tool handles point up.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings.
+3. Bring the halves together until their rims meet. Keep the knife closed. Turn the housing edge-on and align the nose with the closed end of the slot.
+4. Lower the tool through the top opening. The housing sits edge-on in the slot. The heel projects above the holder.
 
 ## Model and fit
 
