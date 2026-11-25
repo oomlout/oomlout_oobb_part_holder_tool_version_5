@@ -1,0 +1,3488 @@
+oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_knife_utility_blade_disposal_can_olfa_dc_3: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/working.yaml
+  production_stl: parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 29.5
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 27.5
+      pos:
+      - 0
+      - 27.5
+      - 0
+      r: 34.5
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 5
+oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/working.yaml
+  production_stl: parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 18
+    edge_reduction_mm: 1
+    height: 6
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 16
+      points:
+      - - -39
+        - 0
+      - - -39
+        - 78
+      - - 39
+        - 78
+      - - 39
+        - 0
+      pos:
+      - 0
+      - -32
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 7
+oobb_part_holder_tool_drill_cleaner_tdpb_m3_1_place_3x5x17:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_drill_cleaner_m3_tdpb: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_drill_cleaner_tdpb_m3_1_place_3x5x17/working.yaml
+  production_stl: parts/oobb_part_holder_tool_drill_cleaner_tdpb_m3_1_place_3x5x17/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 17
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 1.8
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_drill_cleaner_tdpb_m6_1_place_3x5x17:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_drill_cleaner_m6_tdpb: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_drill_cleaner_tdpb_m6_1_place_3x5x17/working.yaml
+  production_stl: parts/oobb_part_holder_tool_drill_cleaner_tdpb_m6_1_place_3x5x17/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 17
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 3.3
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_driver_bit_driver_bit_60mm_1_place_3x3x10:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_screwdriver_bit_60_mm_profile: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_1_place_3x3x10/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_1_place_3x3x10/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 10
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 60
+      pos:
+      - 0
+      - -10
+      - 4
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_driver_bit_driver_bit_60mm_4_place_5x3x10:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_screwdriver_bit_60_mm_profile: 4
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_4_place_5x3x10/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_4_place_5x3x10/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 4
+    depth: 10
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 60
+      pos:
+      - 0
+      - -10
+      - 4
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 5
+oobb_part_holder_tool_driver_bit_driver_bit_60mm_6_place_7x3x10:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_screwdriver_bit_60_mm_profile: 6
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_6_place_7x3x10/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_6_place_7x3x10/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 6
+    depth: 10
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 60
+      pos:
+      - 0
+      - -10
+      - 4
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 7
+oobb_part_holder_tool_driver_bit_driver_bit_60mm_8_place_9x3x10:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_screwdriver_bit_60_mm_profile: 8
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_8_place_9x3x10/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_8_place_9x3x10/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 8
+    depth: 10
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 60
+      pos:
+      - 0
+      - -10
+      - 4
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x3x12:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screwdriver_bit_quarter_inch_drive: 7
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x3x12/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x3x12/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    bottom_m6_clearance_mm: 1.5
+    corner_radius_mm: 5
+    count: 7
+    depth: 12
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x4x12:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screwdriver_bit_quarter_inch_drive: 7
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x4x12/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x4x12/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    bottom_m6_clearance_mm: 1.5
+    corner_radius_mm: 5
+    count: 7
+    depth: 12
+    edge_reduction_mm: 1
+    height: 4
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x3x12:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screwdriver_bit_quarter_inch_drive: 8
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x3x12/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x3x12/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    bottom_m6_clearance_mm: 1.5
+    corner_radius_mm: 5
+    count: 8
+    depth: 12
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screwdriver_bit_quarter_inch_drive: 8
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    bottom_m6_clearance_mm: 1.5
+    corner_radius_mm: 5
+    count: 8
+    depth: 12
+    edge_reduction_mm: 1
+    height: 4
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screwdriver_bit_quarter_inch_drive: 15
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    bottom_m6_clearance_mm: 1.5
+    corner_radius_mm: 5
+    count: 8
+    depth: 12
+    edge_reduction_mm: 1
+    height: 3
+    layered: true
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screwdriver_bit_quarter_inch_drive: 15
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    bottom_m6_clearance_mm: 1.5
+    corner_radius_mm: 5
+    count: 8
+    depth: 12
+    edge_reduction_mm: 1
+    height: 4
+    layered: true
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24:
+  construction:
+    mirror_second_print_x: false
+    mode: block
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_screwdriver_bit_quarter_inch_drive: 23
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: bit_block
+    bottom_m6_clearance_mm: 1.5
+    corner_radius_mm: 5
+    count: 8
+    depth: 24
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    row_count: 3
+    row_pitch_mm: 6
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36:
+  construction:
+    mirror_second_print_x: false
+    mode: block
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_screwdriver_bit_quarter_inch_drive: 38
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: bit_block
+    bottom_m6_clearance_mm: 1.5
+    corner_radius_mm: 5
+    count: 8
+    depth: 36
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    row_count: 5
+    row_pitch_mm: 6
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48:
+  construction:
+    mirror_second_print_x: false
+    mode: block
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_screwdriver_bit_quarter_inch_drive: 53
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/working.yaml
+  production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: bit_block
+    bottom_m6_clearance_mm: 1.5
+    corner_radius_mm: 5
+    count: 8
+    depth: 48
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 4
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    row_count: 7
+    row_pitch_mm: 6
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    stationery_glue_stick_medium_prit_style: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30/working.yaml
+  production_stl: parts/oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 30
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 96
+      pos:
+      - 0
+      - -25
+      - 14
+      r: 14
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 4
+oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30:
+  construction:
+    mirror_second_print_x: false
+    mode: paired_layout
+    pocket_on_underside: false
+  members_and_quantities:
+    stationery_glue_stick_medium_prit_style: 1
+    tool_knife_craft_17_mm_black_exacto_style: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30/working.yaml
+  production_stl: parts/oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: paired_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 30
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 27.5
+      points:
+      - - -23.5
+        - 0
+      - - -23.5
+        - 160
+      - - -6.5
+        - 160
+      - - -6.5
+        - 0
+      pos:
+      - 0
+      - -23.75
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    - h: 96
+      pos:
+      - 11
+      - -25
+      - 14
+      r: 14
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 5
+oobb_part_holder_tool_hex_key_small_metric_set_6_forward_5x5x8:
+  construction:
+    mirror_second_print_x: false
+    mode: handed_pair
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_hex_key_1_5_mm: 1
+    tool_hex_key_2_5_mm: 1
+    tool_hex_key_2_mm: 1
+    tool_hex_key_3_mm: 1
+    tool_hex_key_4_mm: 1
+    tool_hex_key_5_mm: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_hex_key_small_metric_set_6_forward_5x5x8/working.yaml
+  production_stl: parts/oobb_part_holder_tool_hex_key_small_metric_set_6_forward_5x5x8/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: handed_pair
+    corner_radius_mm: 5
+    count: 1
+    depth: 8
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - -22.5
+      - -1
+      - -1
+      r: 1.55
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - -13.5
+      - -5
+      - -1
+      r: 1.8
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - -4.5
+      - -7
+      - -1
+      r: 1.95
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - 4.5
+      - -13
+      - -1
+      r: 2.25
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - 13.5
+      - -19
+      - -1
+      r: 2.75
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - 22.5
+      - -25
+      - -1
+      r: 3.25
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 5
+oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8:
+  construction:
+    mirror_second_print_x: false
+    mode: handed_pair
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_hex_key_1_5_mm: 1
+    tool_hex_key_2_5_mm: 1
+    tool_hex_key_2_mm: 1
+    tool_hex_key_3_mm: 1
+    tool_hex_key_4_mm: 1
+    tool_hex_key_5_mm: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8/working.yaml
+  production_stl: parts/oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: handed_pair
+    corner_radius_mm: 5
+    count: 1
+    depth: 8
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - -22.5
+      - -25
+      - -1
+      r: 3.25
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - -13.5
+      - -19
+      - -1
+      r: 2.75
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - -4.5
+      - -13
+      - -1
+      r: 2.25
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - 4.5
+      - -7
+      - -1
+      r: 1.95
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - 13.5
+      - -5
+      - -1
+      r: 1.8
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - 22.5
+      - -1
+      - -1
+      r: 1.55
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 5
+oobb_part_holder_tool_knife_utility_17mm_1_place_3x5x29d5:
+  construction:
+    mirror_second_print_x: false
+    mode: handed_pair
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_knife_craft_17_mm_black_exacto_style: 1
+    tool_knife_utility_17_mm_blade: 1
+  published_guide_tools:
+  - tool_knife_craft_17_mm_black_exacto_style
+  occupancy: alternate tools in one pocket
+  source: parts/oobb_part_holder_tool_knife_utility_17mm_1_place_3x5x29d5/working.yaml
+  production_stl: parts/oobb_part_holder_tool_knife_utility_17mm_1_place_3x5x29d5/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: paired_face_up
+    corner_radius_mm: 5
+    count: 1
+    depth: 29.5
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 27.5
+      points:
+      - - -8.5
+        - 0
+      - - -8.5
+        - 160
+      - - 8.5
+        - 160
+      - - 8.5
+        - 0
+      pos:
+      - 0
+      - -16.25
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_marker_bic_clear_lid_1_place_3x5x11:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_clear_lid_bic: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_bic_clear_lid_1_place_3x5x11/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_bic_clear_lid_1_place_3x5x11/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 11
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 112
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 35
+      pos:
+      - 0
+      - 87
+      - -1
+      r: 6
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_marker_bic_clear_lid_6_place_8x5x11:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_clear_lid_bic: 6
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_bic_clear_lid_6_place_8x5x11/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_bic_clear_lid_6_place_8x5x11/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 6
+    depth: 11
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 112
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 35
+      pos:
+      - 0
+      - 87
+      - -1
+      r: 6
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 8
+oobb_part_holder_tool_marker_german_big_1_place_3x5x22:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_large_german_style: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_german_big_1_place_3x5x22/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_german_big_1_place_3x5x22/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 22
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 115
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 10
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_marker_german_big_4_place_8x5x22:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_large_german_style: 4
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_german_big_4_place_8x5x22/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_german_big_4_place_8x5x22/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 4
+    depth: 22
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 115
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 10
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 25
+    width: 8
+oobb_part_holder_tool_marker_ikea_mala_1_place_3x5x16:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_mala_ikea: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_ikea_mala_1_place_3x5x16/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_ikea_mala_1_place_3x5x16/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 16
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 136.5
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 7
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_marker_ikea_mala_5_place_8x5x16:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_mala_ikea: 5
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_ikea_mala_5_place_8x5x16/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_ikea_mala_5_place_8x5x16/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 5
+    depth: 16
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 136.5
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 7
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 18.75
+    width: 8
+oobb_part_holder_tool_marker_patterned_thick_1_place_3x5x14:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_thick_patterned: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_patterned_thick_1_place_3x5x14/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_patterned_thick_1_place_3x5x14/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 14
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 140
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 6
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_marker_patterned_thick_6_place_8x5x14:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_thick_patterned: 6
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_patterned_thick_6_place_8x5x14/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_patterned_thick_6_place_8x5x14/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 6
+    depth: 14
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 140
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 6
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 8
+oobb_part_holder_tool_marker_sharpie_1_place_3x5x15:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_sharpie_1_place_3x5x15/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_sharpie_1_place_3x5x15/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 15
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 137
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 6.5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_marker_sharpie_2_place_5x5x15:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie: 2
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_sharpie_2_place_5x5x15/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_sharpie_2_place_5x5x15/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 2
+    depth: 15
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 137
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 6.5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 30
+    width: 5
+oobb_part_holder_tool_marker_sharpie_5_place_8x5x15:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie: 5
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_sharpie_5_place_8x5x15/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_sharpie_5_place_8x5x15/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 5
+    depth: 15
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 137
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 6.5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 18.75
+    width: 8
+oobb_part_holder_tool_marker_sharpie_6_place_9x5x15:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie: 6
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_sharpie_6_place_9x5x15/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_sharpie_6_place_9x5x15/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 6
+    depth: 15
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 137
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 6.5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 18.75
+    width: 9
+oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x1x17:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x1x17/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x1x17/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    corner_radius_mm: 5
+    count: 1
+    depth: 17
+    edge_reduction_mm: 1
+    height: 1
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 137
+      pos:
+      - 0
+      - -68.5
+      - 0
+      r: 7
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    corner_radius_mm: 5
+    count: 1
+    depth: 17
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 45.5
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 137
+      pos:
+      - 0
+      - -68.5
+      - 0
+      r: 7
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 20
+    width: 3
+oobb_part_holder_tool_marker_sharpie_style_13mm_2_place_4x5x17:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 2
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_2_place_4x5x17/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_2_place_4x5x17/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    corner_radius_mm: 5
+    count: 2
+    depth: 17
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 45.5
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 137
+      pos:
+      - 0
+      - -68.5
+      - 0
+      r: 7
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 20
+    width: 4
+oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 3
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    corner_radius_mm: 5
+    count: 3
+    depth: 17
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 45.5
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 137
+      pos:
+      - 0
+      - -68.5
+      - 0
+      r: 7
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 20
+    width: 5
+oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 4
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    corner_radius_mm: 5
+    count: 4
+    depth: 17
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 45.5
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 137
+      pos:
+      - 0
+      - -68.5
+      - 0
+      r: 7
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 20
+    width: 7
+oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 5
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17/working.yaml
+  production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    corner_radius_mm: 5
+    count: 5
+    depth: 17
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 45.5
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 137
+      pos:
+      - 0
+      - -68.5
+      - 0
+      r: 7
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 20
+    width: 8
+oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66:
+  construction:
+    mirror_second_print_x: false
+    mode: stand
+    pocket_on_underside: false
+  members_and_quantities:
+    stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie: 1
+    tool_hex_key_1_5_mm: 1
+    tool_hex_key_2_5_mm: 1
+    tool_hex_key_2_mm: 1
+    tool_hex_key_3_mm: 1
+    tool_hex_key_4_mm: 1
+    tool_knife_craft_17_mm_black_exacto_style: 1
+    tool_pliers_needle_nose_130_mm_length_blue: 1
+    tool_screw_driver_multi_driver_200_mm_quikpik: 1
+    tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001: 1
+    tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001: 1
+    tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_mm_wera_2054_series_05118068001: 1
+    tool_side_cutters_110_mm_length_red: 1
+    tool_wire_strippers_120_mm_length_red: 1
+    tool_wrench_m10: 2
+    tool_wrench_m7: 1
+    tool_wrench_m8: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/working.yaml
+  production_stl: parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: stand
+    corner_radius_mm: 5
+    count: 1
+    depth: 66
+    edge_reduction_mm: 1
+    height: 10
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 11
+      points:
+      - - -11.5
+        - -30
+      - - -11.5
+        - 5
+      - - -33
+        - 30
+      - - -42
+        - 80
+      - - 42
+        - 80
+      - - 33
+        - 30
+      - - 11.5
+        - 5
+      - - 11.5
+        - -30
+      pos:
+      - 0
+      - -47
+      - 0
+      rot:
+      - 90
+      - 0
+      - 0
+      shape: polygon
+    - h: 10
+      points:
+      - - -17
+        - -30
+      - - -17
+        - 24
+      - - -46
+        - 63
+      - - -50
+        - 95
+      - - 50
+        - 95
+      - - 46
+        - 63
+      - - 17
+        - 24
+      - - 17
+        - -30
+      pos:
+      - 0
+      - -32.5
+      - 0
+      rot:
+      - 90
+      - 0
+      - 0
+      shape: polygon
+    - h: 11
+      points:
+      - - -17
+        - -30
+      - - -17
+        - 5
+      - - -45
+        - 50
+      - - -55
+        - 90
+      - - 55
+        - 90
+      - - 45
+        - 50
+      - - 17
+        - 5
+      - - 17
+        - -30
+      pos:
+      - 0
+      - -17
+      - 0
+      rot:
+      - 90
+      - 0
+      - 0
+      shape: polygon
+    - h: 60
+      pos:
+      - -37.5
+      - 0
+      - -30
+      r: 1.75
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 98
+      pos:
+      - -37.5
+      - 0
+      - 30
+      r: 9
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 60
+      pos:
+      - -15
+      - 0
+      - -30
+      r: 1.75
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 98
+      pos:
+      - -15
+      - 0
+      - 30
+      r: 9
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 60
+      pos:
+      - 7.5
+      - 0
+      - -30
+      r: 2.5
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 98
+      pos:
+      - 7.5
+      - 0
+      - 30
+      r: 9
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 57
+      pos:
+      - -30
+      - 37.5
+      - -30
+      r: 3.85
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 30
+      pos:
+      - -30
+      - 37.5
+      - 27
+      r: 5.5
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 17
+      pos:
+      - -30
+      - 37.5
+      - 57
+      r: 6.5
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - -30
+      - 37.5
+      - 74
+      r: 18
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 4.5
+      points:
+      - - 22
+        - -30
+      - - 22
+        - 80
+      - - 38
+        - 80
+      - - 38
+        - -30
+      pos:
+      - 0
+      - 2.25
+      - 0
+      rot:
+      - 90
+      - 0
+      - 0
+      shape: polygon
+    - h: 5.5
+      points:
+      - - 21
+        - -30
+      - - 21
+        - 90
+      - - 39
+        - 90
+      - - 39
+        - -30
+      pos:
+      - 0
+      - 17.75
+      - 0
+      rot:
+      - 90
+      - 0
+      - 0
+      shape: polygon
+    - h: 7
+      points:
+      - - 18.5
+        - -30
+      - - 18.5
+        - 110
+      - - 41.5
+        - 110
+      - - 41.5
+        - -30
+      pos:
+      - 0
+      - 33.5
+      - 0
+      rot:
+      - 90
+      - 0
+      - 0
+      shape: polygon
+    - h: 7
+      points:
+      - - 18.5
+        - -30
+      - - 18.5
+        - 110
+      - - 41.5
+        - 110
+      - - 41.5
+        - -30
+      pos:
+      - 0
+      - 48.5
+      - 0
+      rot:
+      - 90
+      - 0
+      - 0
+      shape: polygon
+    - h: 27.5
+      points:
+      - - -8.5
+        - -30
+      - - -8.5
+        - 130
+      - - 8.5
+        - 130
+      - - 8.5
+        - -30
+      pos:
+      - 0
+      - 51.25
+      - 0
+      rot:
+      - 90
+      - 0
+      - 0
+      shape: polygon
+    - h: 100
+      pos:
+      - -32.5
+      - -67.5
+      - -7
+      r: 1.55
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - -27.5
+      - -67.5
+      - -12
+      r: 1.8
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - -22.5
+      - -67.5
+      - -17
+      r: 1.95
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - -17.5
+      - -67.5
+      - -22
+      r: 2.25
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - -12.5
+      - -67.5
+      - -27
+      r: 2.75
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    - h: 137
+      pos:
+      - 30
+      - 60
+      - -30
+      r: 6.5
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 7
+oobb_part_holder_tool_nozzle_changer_tdpb_1_place_3x5x14:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_nozzle_changer_tdpb: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_nozzle_changer_tdpb_1_place_3x5x14/working.yaml
+  production_stl: parts/oobb_part_holder_tool_nozzle_changer_tdpb_1_place_3x5x14/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 14
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 100
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 6
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_pliers_needle_nose_130_mm_length_blue: 1
+  published_guide_tools:
+  - tool_pliers_needle_nose_130_mm_length_blue
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12/working.yaml
+  production_stl: parts/oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 12
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 10
+      points:
+      - - -17
+        - 0
+      - - -17
+        - 54
+      - - -46
+        - 93
+      - - -50
+        - 125
+      - - 50
+        - 125
+      - - 46
+        - 93
+      - - 17
+        - 54
+      - - 17
+        - 0
+      pos:
+      - 0
+      - -25
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 5
+oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/working.yaml
+  production_stl: parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_project
+    corner_radius_mm: 5
+    count: 1
+    depth: 31
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 8
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 28
+      pos:
+      - 0
+      - -14
+      - 0
+      r: 4.75
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20/working.yaml
+  production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 20
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 60
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 1.75
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 98
+      pos:
+      - 0
+      - 35
+      - -1
+      r: 9
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2_1_place_3x5x20:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_mm_wera_2054_series_05118068001: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2_1_place_3x5x20/working.yaml
+  production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2_1_place_3x5x20/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 20
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 60
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 1.75
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 98
+      pos:
+      - 0
+      - 35
+      - -1
+      r: 9
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_1_place_3x5x20:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_1_place_3x5x20/working.yaml
+  production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_1_place_3x5x20/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 20
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 60
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 2.5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 98
+      pos:
+      - 0
+      - 35
+      - -1
+      r: 9
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001: 2
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20/working.yaml
+  production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 2
+    depth: 20
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 60
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 2.5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 98
+      pos:
+      - 0
+      - 35
+      - -1
+      r: 9
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 30
+    width: 5
+oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001: 4
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20/working.yaml
+  production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 4
+    depth: 20
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 60
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 2.5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 98
+      pos:
+      - 0
+      - 35
+      - -1
+      r: 9
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 25
+    width: 7
+oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: true
+  members_and_quantities:
+    tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001: 5
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20/working.yaml
+  production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 5
+    depth: 20
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 60
+      pos:
+      - 0
+      - -25
+      - -1
+      r: 2.5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 98
+      pos:
+      - 0
+      - 35
+      - -1
+      r: 9
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 25
+    width: 9
+oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38:
+  construction:
+    mirror_second_print_x: false
+    mode: handed_pair
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_knife_craft_17_mm_black_exacto_style: 1
+    tool_screw_driver_multi_driver_200_mm_quikpik: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/working.yaml
+  production_stl: parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: paired_face_up
+    corner_radius_mm: 5
+    count: 1
+    depth: 38
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 27.5
+      points:
+      - - -23.5
+        - 0
+      - - -23.5
+        - 160
+      - - -6.5
+        - 160
+      - - -6.5
+        - 0
+      pos:
+      - 0
+      - -23.75
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    - h: 57
+      pos:
+      - 15
+      - -25
+      - 18
+      r: 3.85
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 30
+      pos:
+      - 15
+      - 32
+      - 18
+      r: 5.5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 17
+      pos:
+      - 15
+      - 62
+      - 18
+      r: 6.5
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    - h: 100
+      pos:
+      - 15
+      - 79
+      - 18
+      r: 18
+      rot:
+      - -90
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 5
+oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_side_cutters_110_mm_length_red: 1
+  published_guide_tools:
+  - tool_side_cutters_110_mm_length_red
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/working.yaml
+  production_stl: parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 13
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 11
+      points:
+      - - -11.5
+        - 0
+      - - -11.5
+        - 35
+      - - -33
+        - 60
+      - - -42
+        - 110
+      - - 42
+        - 110
+      - - 33
+        - 60
+      - - 11.5
+        - 35
+      - - 11.5
+        - 0
+      pos:
+      - 0
+      - -24.5
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 5
+oobb_part_holder_tool_spanner_m10_1_place_3x5x9:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_wrench_m10: 1
+  published_guide_tools:
+  - tool_wrench_m10
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_spanner_m10_1_place_3x5x9/working.yaml
+  production_stl: parts/oobb_part_holder_tool_spanner_m10_1_place_3x5x9/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 9
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 7
+      points:
+      - - -11.5
+        - 0
+      - - -11.5
+        - 140
+      - - 11.5
+        - 140
+      - - 11.5
+        - 0
+      pos:
+      - 0
+      - -26.5
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_spanner_m10_2_place_5x5x9:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_wrench_m10: 2
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_spanner_m10_2_place_5x5x9/working.yaml
+  production_stl: parts/oobb_part_holder_tool_spanner_m10_2_place_5x5x9/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 2
+    depth: 9
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 7
+      points:
+      - - -11.5
+        - 0
+      - - -11.5
+        - 140
+      - - 11.5
+        - 140
+      - - 11.5
+        - 0
+      pos:
+      - 0
+      - -26.5
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 30
+    width: 5
+oobb_part_holder_tool_spanner_m10_3_place_7x5x9:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_wrench_m10: 3
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_spanner_m10_3_place_7x5x9/working.yaml
+  production_stl: parts/oobb_part_holder_tool_spanner_m10_3_place_7x5x9/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 3
+    depth: 9
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 7
+      points:
+      - - -11.5
+        - 0
+      - - -11.5
+        - 140
+      - - 11.5
+        - 140
+      - - 11.5
+        - 0
+      pos:
+      - 0
+      - -26.5
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 30
+    width: 7
+oobb_part_holder_tool_spanner_m10_4_place_9x5x9:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_wrench_m10: 4
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_spanner_m10_4_place_9x5x9/working.yaml
+  production_stl: parts/oobb_part_holder_tool_spanner_m10_4_place_9x5x9/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 4
+    depth: 9
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 7
+      points:
+      - - -11.5
+        - 0
+      - - -11.5
+        - 140
+      - - 11.5
+        - 140
+      - - 11.5
+        - 0
+      pos:
+      - 0
+      - -26.5
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 30
+    width: 9
+oobb_part_holder_tool_spanner_m13_1_place_3x5x10:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_wrench_m13: 1
+  published_guide_tools:
+  - tool_wrench_m13
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_spanner_m13_1_place_3x5x10/working.yaml
+  production_stl: parts/oobb_part_holder_tool_spanner_m13_1_place_3x5x10/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 10
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 8
+      points:
+      - - -14
+        - 0
+      - - -14
+        - 160
+      - - 14
+        - 160
+      - - 14
+        - 0
+      pos:
+      - 0
+      - -26
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10:
+  construction:
+    mirror_second_print_x: false
+    mode: handed_pair
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_wrench_m10: 1
+    tool_wrench_m13: 1
+    tool_wrench_m7: 1
+    tool_wrench_m8: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/working.yaml
+  production_stl: parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: paired_face_up
+    corner_radius_mm: 5
+    count: 1
+    depth: 10
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 8
+      points:
+      - - -14
+        - 0
+      - - -14
+        - 70
+      - - 14
+        - 70
+      - - 14
+        - 0
+      pos:
+      - -41
+      - -25
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    - h: 7
+      points:
+      - - -11.5
+        - 0
+      - - -11.5
+        - 70
+      - - 11.5
+        - 70
+      - - 11.5
+        - 0
+      pos:
+      - -11
+      - -25
+      - 0.5
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    - h: 5.5
+      points:
+      - - -9
+        - 0
+      - - -9
+        - 70
+      - - 9
+        - 70
+      - - 9
+        - 0
+      pos:
+      - 15
+      - -25
+      - 1.25
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    - h: 4.5
+      points:
+      - - -8
+        - 0
+      - - -8
+        - 70
+      - - 8
+        - 70
+      - - 8
+        - 0
+      pos:
+      - 39
+      - -25
+      - 1.75
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 9
+oobb_part_holder_tool_spanner_m21_1_place_5x5x12:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_wrench_m21: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/working.yaml
+  production_stl: parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 12
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 10
+      points:
+      - - -22
+        - 0
+      - - -22
+        - 140
+      - - 22
+        - 140
+      - - 22
+        - 0
+      pos:
+      - 0
+      - -25
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 5
+oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_wrench_m7: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/working.yaml
+  production_stl: parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 6.5
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 4.5
+      points:
+      - - -8
+        - 0
+      - - -8
+        - 110
+      - - 8
+        - 110
+      - - 8
+        - 0
+      pos:
+      - 0
+      - -27.75
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_wrench_m8: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/working.yaml
+  production_stl: parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 7.5
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 5.5
+      points:
+      - - -9
+        - 0
+      - - -9
+        - 120
+      - - 9
+        - 120
+      - - 9
+        - 0
+      pos:
+      - 0
+      - -27.25
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 3
+oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_measure_tape_measure_5000_mm_length_stanley_1_30_696: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/working.yaml
+  production_stl: parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 44
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 42
+      points:
+      - - -39
+        - 0
+      - - -39
+        - 74
+      - - 39
+        - 74
+      - - 39
+        - 0
+      pos:
+      - 0
+      - -9
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 7
+oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_timer_80_mm_diameter_30_mm_depth_black: 1
+  published_guide_tools: []
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34/working.yaml
+  production_stl: parts/oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 34
+    edge_reduction_mm: 1
+    height: 3
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 32
+      pos:
+      - 0
+      - 33
+      - 0
+      r: 41
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: cylinder
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 7
+oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13:
+  construction:
+    mirror_second_print_x: false
+    mode: repeat_half
+    pocket_on_underside: false
+  members_and_quantities:
+    tool_wire_strippers_120_mm_length_red: 1
+  published_guide_tools:
+  - tool_wire_strippers_120_mm_length_red
+  occupancy: simultaneous
+  source: parts/oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13/working.yaml
+  production_stl: parts/oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13/3dpr.stl
+  positioned_pockets_and_repeat_settings:
+    body_style: vertical_v4
+    corner_radius_mm: 5
+    count: 1
+    depth: 13
+    edge_reduction_mm: 1
+    height: 5
+    layered: false
+    offset_mm:
+    - 0
+    - 0
+    - 0
+    oobb_type: holder_tool
+    pitch_mm: 15
+    profile:
+    - h: 11
+      points:
+      - - -17
+        - 0
+      - - -17
+        - 35
+      - - -45
+        - 80
+      - - -55
+        - 120
+      - - 55
+        - 120
+      - - 45
+        - 80
+      - - 17
+        - 35
+      - - 17
+        - 0
+      pos:
+      - 0
+      - -24.5
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      shape: polygon
+    run_scad: true
+    run_solidcraft: false
+    spacing_mm: 15
+    width: 5

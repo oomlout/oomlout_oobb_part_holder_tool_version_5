@@ -1,0 +1,67 @@
+title: Mitutoyo 500-196-30 digital caliper, 150 mm
+oomp_id: tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30
+populate_key: tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30
+model_kind: caliper
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Reuse the closed caliper model and compare the
+  slider and jaw landmarks to the local Mitutoyo drawing. Keep the jaws closed and
+  display visible. Check the depth of the slider separately from the beam.
+existing_model_note: Closed caliper. Overall length, beam width and outside jaw length
+  follow the Mitutoyo dimensional drawing. Slider, jaws and display are simplified
+  for identification.
+declared_tool_parameters:
+  beam_width_mm: 16
+  outside_jaw_mm: 40
+  overall_length_mm: 233
+pocket_reference_only_mm:
+- h: 16
+  points:
+  - - -39
+    - 0
+  - - -39
+    - 78
+  - - 39
+    - 78
+  - - 39
+    - 0
+  pos:
+  - 0
+  - 0
+  - 0
+  rot:
+  - 0
+  - 0
+  - 0
+  shape: polygon
+staged_drawing_from_handoff: resources/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30.svg
+staged_photo_from_handoff: null
+local_originals:
+- path_from_tools_repo: parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30/datasheet.pdf
+  sha256: f6a10610074d84da809fc9dfb51c8972728aab809c345ea068f2369a22b26d6c
+- path_from_tools_repo: parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30/drawing.cdr
+  sha256: 471e0c8696752c5db77b15ef9f3b0ed005446ba348fd1279fdbc17f1a26efd77
+source_record_from_tools_repo: parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30/working.yaml
+model_files_from_tools_repo: parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30/three_d_model
+source_evidence:
+- file: mitutoyo_aos.pdf
+  part_file: datasheet.pdf
+  supports: Model identity, range and dimensional drawing.
+  title: Mitutoyo AOS dimensional catalogue
+  url: https://www.mitutoyo.com/webfoo/wp-content/uploads/2129-AOS-Calipers.pdf
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+- supports: Legacy taxonomy, identity and archived sourcing fields.
+  title: Archived OOMP part
+  url: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30
+- file: tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30.cdr
+  part_file: drawing.cdr
+  supports: Original CorelDRAW reference drawing.
+  title: Archived OOMP outline
+  url: https://github.com/oomlout/oomlout_oomp_version_1_messy/blob/main/parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30/drawing.cdr
+additional_manufacturer_references: []
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18
+  quantity: 1
+  layout: 1_place

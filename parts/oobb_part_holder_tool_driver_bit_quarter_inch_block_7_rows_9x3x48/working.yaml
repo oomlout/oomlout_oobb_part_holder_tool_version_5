@@ -1,0 +1,78 @@
+body_style: bit_block
+bottom_m6_clearance_mm: 1.5
+construction:
+  mirror_second_print_x: false
+  mode: block
+  pocket_on_underside: false
+count: 8
+cross_section_y_fraction: 0.5
+depth: 48
+height: 3
+layout: block_7_rows
+model: quarter_inch
+oobb_details:
+  body_style: bit_block
+  bottom_m6_clearance_mm: 1.5
+  corner_radius_mm: 5
+  count: 8
+  depth: 48
+  edge_reduction_mm: 1
+  height: 3
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 100
+    pos:
+    - 0
+    - 0
+    - 0
+    r: 4
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  row_count: 7
+  row_pitch_mm: 6
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 9
+oobb_type: holder_tool
+profile: quarter_inch
+row_count: 7
+row_pitch_mm: 6
+spacing_mm: 15
+svg_details:
+  cross_section_y_fraction: 0.5
+  near_face_fraction: 0.08
+  show_underside: false
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: driver_bit
+taxonomy_5: quarter_inch
+taxonomy_6: block_7_rows
+taxonomy_7: 9x3x48
+taxonomy_8: ''
+taxonomy_9: ''
+title: Quarter-inch drive bit block, 7 rows
+tool_type: driver_bit
+width: 9
+id: oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48
+directory: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48
+md5: 844e28ebeb0a25ba4cd28184db35a4aa
+md5_6: 844e28
+md5_6_alpha: 55ueg

@@ -1,0 +1,76 @@
+title: Closed utility knife, 17 mm
+oomp_id: tool_knife_craft_17_mm_black_exacto_style
+populate_key: tool_knife_exacto_17mm_black
+model_kind: photo_reference
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Reuse the photographed closed utility knife and
+  its documented edge-on pose. Apply the companion-pocket offset for the Prit, Quikpik
+  and bench layouts. Use utility knife in public text and retain the existing OOMP
+  ID.
+existing_model_note: Closed exterior based on the photo and a provisional 165 mm STANLEY
+  0-10-151 reference. The 17 mm OOMP label is retained. Size variant awaits measurement.
+declared_tool_parameters:
+  axis_px:
+  - 0.045
+  - 1
+  photo: PXL_20261119_134702730.jpg
+  recipe: knife
+  reference_length_mm: 165
+  scale_path_px:
+  - - 112.5
+    - 60
+  - - 142.7
+    - 409.7
+  trace_divisor: 8
+pocket_reference_only_mm:
+- h: 27.5
+  points:
+  - - -8.5
+    - 0
+  - - -8.5
+    - 160
+  - - 8.5
+    - 160
+  - - 8.5
+    - 0
+  pos:
+  - 0
+  - 0.0
+  - 0
+  rot:
+  - 0
+  - 0
+  - 0
+  shape: polygon
+staged_drawing_from_handoff: resources/tool_knife_exacto_17mm_black.svg
+staged_photo_from_handoff: resources/tool_knife_exacto_17mm_black.jpg
+local_originals:
+- path_from_tools_repo: parts/tool_knife_craft_17_mm_black_exacto_style/measurements.md
+  sha256: bdff2f0382a1964825b8448d357a0bd331925582c03206a691f1a05bf3d1f1c2
+- path_from_tools_repo: parts/tool_knife_craft_17_mm_black_exacto_style/photo_overlay.svg
+  sha256: 9a933e8261b5e24ff68d6c9caeada40e4f0b01ccb47a6d8a2c2b098cee48f318
+- path_from_tools_repo: parts/tool_knife_craft_17_mm_black_exacto_style/PXL_20261119_134702730.jpg
+  sha256: e04c0a0dd8cf4608b47d435735e92e9874e3acd476ec4dde837e4e0edf5d15fd
+- path_from_tools_repo: parts/tool_knife_craft_17_mm_black_exacto_style/research_2026-11-19.md
+  sha256: 9115344ab788161c98cb998d415466560c9bb0f78b3e8d5653de83b6940647dc
+source_record_from_tools_repo: parts/tool_knife_craft_17_mm_black_exacto_style/working.yaml
+model_files_from_tools_repo: parts/tool_knife_craft_17_mm_black_exacto_style/three_d_model
+source_evidence:
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+additional_manufacturer_references: []
+existing_loaded_guides:
+- id: oobb_part_holder_tool_knife_utility_17mm_1_place_3x5x29d5
+  quantity: 1
+  layout: 1_place
+remaining_holder_views:
+- id: oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30
+  quantity: 1
+  layout: with_knife
+- id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
+  quantity: 1
+  layout: bench
+- id: oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38
+  quantity: 1
+  layout: with_knife

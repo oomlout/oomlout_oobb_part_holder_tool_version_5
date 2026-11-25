@@ -1,0 +1,57 @@
+title: OLFA DC-3 blade disposal can
+oomp_id: tool_knife_utility_blade_disposal_can_olfa_dc_3
+populate_key: tool_knife_utility_blade_disposal_can_olfa_dc_3
+model_kind: disc
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Use the existing Ø67 × 24 body, the archived OLFA
+  photo and the linked specifications. Add the rim and closed sliding door for recognition
+  if needed. Orient the broad face outward and check the door and rim against the
+  lip.
+existing_model_note: Round body approximation using OLFA's overall length and thickness.
+  The sliding door and rim details are omitted.
+declared_tool_parameters:
+  depth_mm: 24
+  diameter_mm: 67
+pocket_reference_only_mm:
+- h: 27.5
+  pos:
+  - 0
+  - 0.0
+  - 0
+  r: 34.5
+  rot:
+  - 0
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/tool_knife_utility_blade_disposal_can_olfa_dc_3.svg
+staged_photo_from_handoff: resources/tool_knife_utility_blade_disposal_can_olfa_dc_3.jpg
+local_originals:
+- path_from_tools_repo: parts/tool_knife_utility_blade_disposal_can_olfa_dc_3/image.jpg
+  sha256: 6e42daa531e438c19a47e578ffcaa116e866408c940ed9a26f1c756e4e0c193e
+source_record_from_tools_repo: parts/tool_knife_utility_blade_disposal_can_olfa_dc_3/working.yaml
+model_files_from_tools_repo: parts/tool_knife_utility_blade_disposal_can_olfa_dc_3/three_d_model
+source_evidence:
+- supports: Overall length of 67 mm and thickness of 24 mm.
+  title: OLFA Corporation DC-3 dimensions
+  url: https://www.olfa.co.jp/en/products/504.html
+- supports: Identifies the pocket disposal can and OLFA article 1056984.
+  title: OLFA DC-3 product page
+  url: https://olfa.com/products/dc-3-pocket-size-blade-disposal-can
+- file: olfa_dc3.jpg
+  part_file: image.jpg
+  supports: Manufacturer photograph of the DC-3.
+  title: OLFA product photograph
+  url: https://olfa.com/cdn/shop/products/2e875173077f4421b16fb9e034db3cad.800.jpg?v=1629300618
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+- supports: Legacy taxonomy, identity and archived sourcing fields.
+  title: Archived OOMP part
+  url: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/tool_knife_utility_blade_disposal_can_olfa_dc_3
+additional_manufacturer_references: []
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5
+  quantity: 1
+  layout: 1_place

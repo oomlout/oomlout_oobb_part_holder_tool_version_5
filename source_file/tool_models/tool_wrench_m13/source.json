@@ -1,0 +1,22 @@
+{
+  "id": "tool_wrench_m13",
+  "title": "M13 spanner",
+  "model_kind": "combination_spanner",
+  "model_note": "Generic 13 mm combination spanner using the Bahco 111M-13 as a dimensional reference. Length and head widths and thicknesses follow the catalogue. The straight shank, jaw outline and six-point ring are simplified. The workshop specimen has not been measured.",
+  "md5": "d087ebb5b1940036c394143ed6aff92d",
+  "md5_6_alpha": "84wyz",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_spanner_m13_1_place_3x5x10",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "oobb_part_holder_tool_spanner_m13_1_place_3x5x10"
+    },
+    {
+      "id": "oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10",
+      "layout": "4_place",
+      "quantity": 1,
+      "source_id": "oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10"
+    }
+  ]
+}

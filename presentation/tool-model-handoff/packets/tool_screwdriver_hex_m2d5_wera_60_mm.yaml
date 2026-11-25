@@ -1,0 +1,82 @@
+title: Tall precision hex screwdriver, 2.5 × 60 mm
+oomp_id: tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001
+populate_key: tool_screwdriver_hex_m2d5_wera_60_mm
+model_kind: wera
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Use the 2.5 mm hex tip and 4 mm shaft from this
+  record's own datasheet. Compare the grip to the local photograph. Seat the shaft
+  down and leave the rotating cap clear. Use screwdriver_precision_tall in holder
+  taxonomy.
+existing_model_note: Wera specifies the shaft diameter, shaft length and handle length.
+  The archived OOMP record supplies the 18 mm handle envelope. Grip taper, cap and
+  tip transition are illustrative.
+declared_tool_parameters:
+  across_flats_mm: 2.5
+  handle_diameter_mm: 18
+  handle_length_mm: 97
+  shaft_diameter_mm: 4
+  shaft_length_mm: 60
+pocket_reference_only_mm:
+- h: 60
+  pos:
+  - 0
+  - 0
+  - 0
+  r: 2.5
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+- h: 98
+  pos:
+  - 0
+  - 60
+  - 0
+  r: 9
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/tool_screwdriver_hex_m2d5_wera_60_mm.svg
+staged_photo_from_handoff: resources/tool_screwdriver_hex_m2d5_wera_60_mm.jpg
+local_originals:
+- path_from_tools_repo: parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001/datasheet.pdf
+  sha256: bdd8686ae89926d3f043b3b8b8de98b482ae5e0963c86c53800380d6d63cd5b6
+- path_from_tools_repo: parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001/image.jpg
+  sha256: cdb17987edf5f35bea3b892bb64285b8d1fa5419a6d234194a8835ace5e118c4
+source_record_from_tools_repo: parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001/working.yaml
+model_files_from_tools_repo: parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001/three_d_model
+source_evidence:
+- file: wera_05118070001.pdf
+  image: wera_05118070001.jpg
+  part_file: datasheet.pdf
+  part_image: image.jpg
+  supports: Article number, hex size, blade diameter and lengths.
+  title: Wera 2054 Micro datasheet
+  url: https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05118070001.pdf
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+- supports: Legacy taxonomy, identity and archived sourcing fields.
+  title: Archived OOMP part
+  url: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001
+additional_manufacturer_references: []
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
+  quantity: 1
+  layout: bench
+- id: oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_1_place_3x5x20
+  quantity: 1
+  layout: m2d5_1_place
+- id: oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20
+  quantity: 2
+  layout: m2d5_2_place
+- id: oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20
+  quantity: 4
+  layout: m2d5_4_place
+- id: oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20
+  quantity: 5
+  layout: m2d5_5_place

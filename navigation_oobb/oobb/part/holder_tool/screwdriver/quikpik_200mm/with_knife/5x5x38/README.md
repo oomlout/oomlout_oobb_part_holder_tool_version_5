@@ -1,5 +1,5 @@
 <!-- oobb-presentation:start -->
-# Quikpik 200 mm multi-driver and craft knife
+# Quikpik 200 mm multi-driver and utility knife
 
 AI-generated CAD images and instructions. Errors possible.
 
@@ -9,7 +9,7 @@ OOBB screwdriver holder · with knife.
 
 This is an entirely AI-generated coding project. The generated outputs are included and usually work. The project is published so others can modify and regenerate the designs with their own AI tools.
 
-![CAD views of Quikpik 200 mm multi-driver and craft knife](../../../../../../../../parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/3dpr_presentation.png)
+![CAD views of Quikpik 200 mm multi-driver and utility knife](../../../../../../../../parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/3dpr_presentation.png)
 
 ## Details
 
@@ -26,17 +26,17 @@ OOMP ID `oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38`
 <details><summary>Complete part metadata</summary>
 
 ```yaml
-body_style: vertical_v4
+body_style: paired_face_up
 construction:
-  mirror_second_print_x: true
-  mode: repeat_half
+  mirror_second_print_x: false
+  mode: handed_pair
   pocket_on_underside: false
 depth: 38
 height: 5
 layout: with_knife
 model: quikpik_200mm
 oobb_details:
-  body_style: vertical_v4
+  body_style: paired_face_up
   corner_radius_mm: 5
   count: 1
   depth: 38
@@ -141,7 +141,7 @@ taxonomy_6: with_knife
 taxonomy_7: 5x5x38
 taxonomy_8: ''
 taxonomy_9: ''
-title: Quikpik 200 mm multi-driver and craft knife
+title: Quikpik 200 mm multi-driver and utility knife
 tool_type: screwdriver
 width: 5
 id: oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38
@@ -159,7 +159,7 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print one half as supplied and mirror the second copy along X in the slicer before printing. Turn one half over and bring the matching pockets and mounting holes together.
+Print the supplied layout once with both pockets facing up. Flip the right-hand piece over the left, face the pockets inward and align the holes.
 
-These tools also have illustrated single-place holder guides. [Black Exacto-style craft knife, 17 mm](../../../../../../../../parts/oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/README.md#assembly)
+These tools also have illustrated single-place holder guides. [Closed utility knife](../../../../../../../../parts/oobb_part_holder_tool_knife_utility_17mm_1_place_3x5x29d5/README.md#assembly)
 <!-- oobb-presentation:end -->

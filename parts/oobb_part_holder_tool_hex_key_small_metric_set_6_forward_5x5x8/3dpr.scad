@@ -1,3 +1,4 @@
+module rear() { translate([0,0,2]) rotate([0,180,0]) {
 $fn = 50;
 
 difference() {
@@ -127,3 +128,7 @@ difference() {
 		}
 	}
 }
+
+} }
+rear();
+translate([80,0,0]) mirror([1,0,0]) rear();

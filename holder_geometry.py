@@ -51,24 +51,33 @@ def get_holder_tool(thing, **kwargs):
     pitch = kwargs.get("pitch_mm", 15)
     corner_radius = kwargs.get("corner_radius_mm", 5)
     edge_reduction = kwargs.get("edge_reduction_mm", 1)
+    clearance = kwargs.get("bottom_m6_clearance_mm")
+    hole_radii = kwargs.get("hole_radii_mm", [3.25, 1.8])
+    row_count = kwargs.get("row_count", 1)
+    row_pitch = kwargs.get("row_pitch_mm", 6)
+    profile_z = kwargs.get("profile_z_mm", 0)
     stand = style == "stand"
     bottom = -1
     if stand:
         bottom = -depth / 2
-    elif style == "vertical_project":
+    elif style in ("vertical_project", "bit_block"):
         bottom = 0
-    printed_depth = depth if stand else depth / 2
-    faces = [[0, 0]]
+    printed_depth = depth if stand or style == "bit_block" else depth / 2
+    faces = [[0, profile_z]]
     if style == "paired_v4":
         faces.append([width * pitch + 5, -printed_depth])
     rows = [[count, 0]]
     if layered:
         rows.append([count - 1, depth / 2])
+    if style == "bit_block":
+        first_row = (depth - (row_count - 1) * row_pitch) / 2
+        rows = [(count - row % 2, first_row + row * row_pitch) for row in range(row_count)]
     hole_options = {
         "width": width,
         "height": height,
         "corners_only": stand,
         "pitch_mm": pitch,
+        "hole_radii_mm": hole_radii,
     }
     holes = mounting_holes(**hole_options)
     for face_x, tool_z in faces:
@@ -94,10 +103,13 @@ def get_holder_tool(thing, **kwargs):
                 shift_x = (index - (places - 1) / 2) * spacing
                 for segment in profile:
                     x, y, z = segment["pos"]
+                    pocket_y = y + offset[1]
+                    if clearance is not None:
+                        pocket_y = -(height - 1) * pitch / 2 + hole_radii[0] + clearance
                     cutter = {
                         **deepcopy(segment),
                         "type": "negative",
-                        "pos": [face_x + x + offset[0] + shift_x, y + offset[1], z + offset[2] + row_z + tool_z],
+                        "pos": [face_x + x + offset[0] + shift_x, pocket_y, z + offset[2] + row_z + tool_z],
                     }
                     thing["components"].append(cutter)
 
@@ -119,6 +131,28 @@ def build_mesh(directory, **kwargs):
         scratch = Path(temporary)
         scad = scratch / "3dpr.scad"
         opsc.opsc_make_object(str(scad), thing["components"], mode="3dpr", resolution=resolution)
+        if geometry["body_style"] in ("handed_pair", "paired_face_up"):
+            shift = geometry["width"] * geometry["pitch_mm"] + 5
+            thickness = geometry["depth"] / 2
+            # Turn a face over about Y, leaving its flat back on the print plane.
+            turn = f"translate([0,0,{thickness - 2:g}]) rotate([0,180,0])"
+            first = scad.read_text()
+            if geometry["body_style"] == "handed_pair":
+                # The hex-key source pocket opens on the underside.
+                scad.write_text(f"module rear() {{ {turn} {{\n{first}\n}} }}\nrear();\n"
+                                f"translate([{shift},0,0]) mirror([1,0,0]) rear();\n")
+            else:
+                second = {
+                    "components": [],
+                }
+                get_holder_tool(second, **geometry, profile_z_mm=-thickness)
+                opsc.opsc_make_object(str(scad), second["components"], mode="3dpr", resolution=resolution)
+                front = scad.read_text()
+                scad.write_text(f"{first}\ntranslate([{shift},0,0]) {turn} {{\n{front}\n}}\n")
+        elif geometry["body_style"] == "bit_block":
+            height_mm = geometry["height"] * geometry["pitch_mm"] - geometry["edge_reduction_mm"]
+            body = scad.read_text()
+            scad.write_text(f"translate([0,{geometry['depth']/2:g},{height_mm/2:g}]) rotate([90,0,0]) {{\n{body}\n}}\n")
         content = scad.read_bytes()
         if not export_mesh:
             write_file(source, content)

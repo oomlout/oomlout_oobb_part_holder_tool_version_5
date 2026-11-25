@@ -1,0 +1,76 @@
+title: Quikpik multi-driver, 200 mm
+oomp_id: tool_screw_driver_multi_driver_200_mm_quikpik
+populate_key: tool_screwdriver_multi_quikpik_200_mm_knife
+model_kind: holder_envelope
+model_task: Build an external tool model
+modelling_and_seating_instructions: Identify the 200 mm multi-driver independently
+  of the shorter Teeny Turner. Measure grip envelope, shoulders, shaft and exposed
+  bit. Stage the compound scene with the separate closed knife in its own slot and
+  check both insertion paths.
+existing_model_note: Geometry follows the holder clearance profile. Its dimensions
+  describe the pocket used in the source design. Physical tool dimensions and fit
+  have yet to be measured.
+declared_tool_parameters: {}
+pocket_reference_only_mm:
+- h: 57
+  pos:
+  - 0
+  - 0
+  - 0
+  r: 3.85
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+- h: 30
+  pos:
+  - 0
+  - 57
+  - 0
+  r: 5.5
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+- h: 17
+  pos:
+  - 0
+  - 87
+  - 0
+  r: 6.5
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+- h: 100
+  pos:
+  - 0
+  - 104
+  - 0
+  r: 18
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/tool_screwdriver_multi_quikpik_200_mm_knife.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/tool_screw_driver_multi_driver_200_mm_quikpik/working.yaml
+model_files_from_tools_repo: parts/tool_screw_driver_multi_driver_200_mm_quikpik/three_d_model
+source_evidence:
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+additional_manufacturer_references: []
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
+  quantity: 1
+  layout: bench
+- id: oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38
+  quantity: 1
+  layout: with_knife

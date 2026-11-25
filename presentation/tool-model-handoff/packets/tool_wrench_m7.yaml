@@ -1,0 +1,61 @@
+title: M7 spanner
+oomp_id: tool_wrench_m7
+populate_key: tool_wrench_m7
+model_kind: holder_envelope
+model_task: Build an external tool model
+modelling_and_seating_instructions: The Bahco 111M-7 ring is 5.3 mm thick and its
+  open jaw is 17.1 mm wide. Both ends exceed one dimension of the 16 × 4.5 mm single
+  pocket. Start with the FACOM 34.7 slim double-ended reference or the actual workshop
+  specimen and verify both head widths and thicknesses. Compare the four-spanner holder
+  and bench separately.
+existing_model_note: Geometry follows the holder clearance profile. Its dimensions
+  describe the pocket used in the source design. Physical tool dimensions and fit
+  have yet to be measured.
+declared_tool_parameters: {}
+pocket_reference_only_mm:
+- h: 4.5
+  points:
+  - - -8
+    - 0
+  - - -8
+    - 110
+  - - 8
+    - 110
+  - - 8
+    - 0
+  pos:
+  - 0
+  - 0.0
+  - 0
+  rot:
+  - 0
+  - 0
+  - 0
+  shape: polygon
+staged_drawing_from_handoff: resources/tool_wrench_m7.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/tool_wrench_m7/working.yaml
+model_files_from_tools_repo: parts/tool_wrench_m7/three_d_model
+source_evidence:
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+additional_manufacturer_references:
+- title: FACOM 34.7 slim double open-end spanner
+  url: https://www.facom.com/product/347/double-open-end-wrench-34-midget-15deg-and-75deg-inclined-ends-7-mm
+  use: Alternative specimen to investigate for the thin M7 pocket.
+- title: Bahco 111M size table
+  url: https://www.bahco.com/int_en/metric-flat-combination-wrenches-with-chrome-finish-pb_111m_.html
+  use: Compare head widths and thicknesses against the positioned pocket.
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
+  quantity: 1
+  layout: bench
+- id: oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10
+  quantity: 1
+  layout: 4_place
+- id: oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5
+  quantity: 1
+  layout: 1_place

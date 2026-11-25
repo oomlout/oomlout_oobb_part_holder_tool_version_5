@@ -1,0 +1,43 @@
+title: Round black timer, 80 × 30 mm
+oomp_id: tool_timer_80_mm_diameter_30_mm_depth_black
+populate_key: tool_timer_80_mm_diameter_30_mm_depth_black
+model_kind: disc
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Use the existing Ø80 × 30 body. Verify the front
+  face and controls from the actual timer before adding detail. Orient the visible
+  face toward the room, and check the retaining rim.
+existing_model_note: External body envelope from the OOMP timer record. The holder
+  has clearance around both faces and the rim.
+declared_tool_parameters:
+  depth_mm: 30
+  diameter_mm: 80
+pocket_reference_only_mm:
+- h: 32
+  pos:
+  - 0
+  - 0
+  - 0
+  r: 41
+  rot:
+  - 0
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/tool_timer_80_mm_diameter_30_mm_depth_black.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/tool_timer_80_mm_diameter_30_mm_depth_black/working.yaml
+model_files_from_tools_repo: parts/tool_timer_80_mm_diameter_30_mm_depth_black/three_d_model
+source_evidence:
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+- supports: Legacy taxonomy, identity and archived sourcing fields.
+  title: Archived OOMP part
+  url: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/tool_timer_80_mm_diameter_30_mm_depth_black
+additional_manufacturer_references: []
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34
+  quantity: 1
+  layout: 1_place

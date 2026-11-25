@@ -13,11 +13,12 @@
 - [nozzle changer](nozzle_changer/)
 - [pliers](pliers/)
 - [screwdriver](screwdriver/)
+- [screwdriver precision tall](screwdriver_precision_tall/)
 - [side cutters](side_cutters/)
+- [spanner](spanner/)
 - [tape measure](tape_measure/)
 - [timer](timer/)
 - [wire strippers](wire_strippers/)
-- [wrench](wrench/)
 
 [Parent category](../)
 <!-- oobb-presentation:end -->

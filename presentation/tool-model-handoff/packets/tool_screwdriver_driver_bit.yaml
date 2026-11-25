@@ -1,0 +1,54 @@
+title: Driver bit, 60 mm profile
+oomp_id: tool_screwdriver_bit_60_mm_profile
+populate_key: tool_screwdriver_driver_bit
+model_kind: holder_envelope
+model_task: Build an external tool model
+modelling_and_seating_instructions: Identify a representative bit for the 60 mm profile.
+  Measure actual length, shank across flats, tip form and transition. Model a hex
+  section and distinct tip. Check the lowest seating point and exposed pickup length
+  in all four layouts.
+existing_model_note: Geometry follows the holder clearance profile. Its dimensions
+  describe the pocket used in the source design. Physical tool dimensions and fit
+  have yet to be measured.
+declared_tool_parameters: {}
+pocket_reference_only_mm:
+- h: 60
+  pos:
+  - 0
+  - 0
+  - 0
+  r: 4
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/tool_screwdriver_driver_bit.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/tool_screwdriver_bit_60_mm_profile/working.yaml
+model_files_from_tools_repo: parts/tool_screwdriver_bit_60_mm_profile/three_d_model
+source_evidence:
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+additional_manufacturer_references:
+- title: HiKOKI 60 mm double-ended PH/PZ bits
+  url: https://hikoki-powertools.eu/uk/en/machines-accessories/3-bits-1-4-double-ended-phillips-pozidrive-ph1-pz1-ph2-pz2-ph3-pz3-60mm/
+  use: Use the PH2/PZ2 member as a representative example for the generic 60 mm profile.
+    The manufacturer identifies a quarter-inch hex drive, 60 mm overall length and
+    a different tip at each end. Label estimated tip transitions.
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_driver_bit_driver_bit_60mm_1_place_3x3x10
+  quantity: 1
+  layout: 1_place
+- id: oobb_part_holder_tool_driver_bit_driver_bit_60mm_4_place_5x3x10
+  quantity: 4
+  layout: 4_place
+- id: oobb_part_holder_tool_driver_bit_driver_bit_60mm_6_place_7x3x10
+  quantity: 6
+  layout: 6_place
+- id: oobb_part_holder_tool_driver_bit_driver_bit_60mm_8_place_9x3x10
+  quantity: 8
+  layout: 8_place

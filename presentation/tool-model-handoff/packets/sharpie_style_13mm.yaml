@@ -1,0 +1,55 @@
+title: Sharpie-style felt-tip pen, 13 × 137 mm
+oomp_id: stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style
+populate_key: sharpie_style_13mm
+model_kind: marker
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Reuse the 13 × 137 generic capped marker. Seat
+  its narrow end in the vertical project's bores. Confirm the cap clears neighbouring
+  copies in both staggered layers.
+existing_model_note: Nominal capped body from the vertical holder's tool identity.
+  The 14 mm pocket includes clearance. Cap and barrel split are illustrative.
+declared_tool_parameters:
+  diameter_mm: 13
+  length_mm: 137
+pocket_reference_only_mm:
+- h: 137
+  pos:
+  - 0
+  - 0.0
+  - 0
+  r: 7
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/sharpie_style_13mm.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style/working.yaml
+model_files_from_tools_repo: parts/stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style/three_d_model
+source_evidence:
+- supports: Original vertical holder tool selection and pocket dimensions.
+  title: OOBB vertical holder recipe
+  url: https://github.com/oomlout/oomlout_oobb_part_tool_holder_vertical/blob/93a962a09e0c275c3cfa62187182ac3203bde1b2/scad.py
+additional_manufacturer_references: []
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x1x17
+  quantity: 1
+  layout: 1_place
+- id: oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17
+  quantity: 1
+  layout: 1_place
+- id: oobb_part_holder_tool_marker_sharpie_style_13mm_2_place_4x5x17
+  quantity: 2
+  layout: 2_place
+- id: oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17
+  quantity: 3
+  layout: 3_place
+- id: oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17
+  quantity: 4
+  layout: 4_place
+- id: oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17
+  quantity: 5
+  layout: 5_place

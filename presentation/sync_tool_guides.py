@@ -1,4 +1,4 @@
-"""Refresh the four source models or distribute finished guides to sibling catalogues."""
+"""Refresh source models or distribute finished guides to sibling catalogues."""
 import argparse
 import io
 import json
@@ -22,8 +22,9 @@ def import_models(**kwargs):
         tool_id = recipe["tool_id"]
         folder = tools_root / "parts" / tool_id
         source = yaml.safe_load((folder/"working.yaml").read_text(encoding="utf-8"))
-        if source["model_kind"] != "photo_reference" or source["id"] != tool_id:
-            raise ValueError(f"Expected the OOMP photo model for {tool_id}")
+        expected_kind = recipe.get("model_kind", "photo_reference")
+        if source["model_kind"] != expected_kind or expected_kind == "holder_envelope" or source["id"] != tool_id:
+            raise ValueError(f"Expected the OOMP {expected_kind} model for {tool_id}")
         destination = ROOT / "source_file/tool_models" / tool_id
         for name in ("working.glb", "working.stl"):
             write_file(destination/name, (folder/"three_d_model"/name).read_bytes())
@@ -39,7 +40,7 @@ def export_guides(**kwargs):
     project_url = "https://github.com/oomlout/oomlout_oobb_part_holder_tool_version_5"
     index = [
         "# Tool-holder loading guides", "",
-        "Each guide shows a photo-based OOMP tool model lowered into a two-piece wall holder. In the exploded view the front half moves away from the wall to reveal the pocket. The booklets print on landscape A4 paper. Physical fit is unverified.", "",
+        "Each guide shows an OOMP tool model lowered into a two-piece wall holder. In the exploded view the front half moves away from the wall to reveal the pocket. The booklets print on landscape A4 paper. Physical fit is unverified.", "",
         f"[Tool-holder project README and assembly instructions]({project_url}#assembly)", "",
         "| Holder README | Print booklet | Tool model |", "| --- | --- | --- |",
     ]
@@ -60,6 +61,14 @@ def export_guides(**kwargs):
         readme = f"{project_url}/blob/main/parts/{identifier}/README.md#assembly"
         index.append(f"| [{recipe['label']}]({readme}) | [Download PDF]({part['model']}.pdf) | [OOMP record]({url}) |")
     write_file(base_index/"README.md", "\n".join(index)+"\n")
+    subprocess.run([
+        sys.executable, "-c",
+        "import sys; from import_tool_references import collect_holders; "
+        "collect_holders(holder_root=sys.argv[1], include_previews=False)",
+        str(ROOT),
+    ], cwd=tools_root, check=True)
+    for stage in ("working_oomp_populate.py", "working_oomp.py"):
+        subprocess.run([sys.executable, stage], cwd=tools_root, check=True)
     subprocess.run([sys.executable, "working_action.py"], cwd=tools_root, check=True)
     subprocess.run([sys.executable, "presentation/scripts/build_project_thumbnails.py", "--filter", "tool-holders",
                     "--projects-root", str(ROOT.parent)], cwd=base_root, check=True)

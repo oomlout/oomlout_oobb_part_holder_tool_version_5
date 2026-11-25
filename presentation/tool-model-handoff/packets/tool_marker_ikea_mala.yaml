@@ -1,0 +1,54 @@
+title: IKEA MÅLA marker
+oomp_id: stationery_felt_tip_pen_mala_ikea
+populate_key: tool_marker_ikea_mala
+model_kind: holder_envelope
+model_task: Build an external tool model
+modelling_and_seating_instructions: Use the UK MÅLA product images to identify the
+  barrel, coloured cap and end plug. Measure the individual capped pen or calibrate
+  a straight-on photograph. IKEA's package length covers the whole box. Check all
+  adjacent caps.
+existing_model_note: Geometry follows the holder clearance profile. Its dimensions
+  describe the pocket used in the source design. Physical tool dimensions and fit
+  have yet to be measured.
+declared_tool_parameters: {}
+pocket_reference_only_mm:
+- h: 136.5
+  pos:
+  - 0
+  - 0
+  - 0
+  r: 7
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/tool_marker_ikea_mala.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/stationery_felt_tip_pen_mala_ikea/working.yaml
+model_files_from_tools_repo: parts/stationery_felt_tip_pen_mala_ikea/three_d_model
+source_evidence:
+- supports: Product-family reference. The holder record leaves the pack and colour
+    unspecified.
+  title: IKEA MÅLA felt-tip pens
+  url: https://www.ikea.com/gb/en/p/mala-felt-tip-pen-mixed-colours-20184041/
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+additional_manufacturer_references:
+- title: IKEA MÅLA UK article 201.840.41
+  url: https://www.ikea.com/gb/en/p/mala-felt-tip-pen-mixed-colours-20184041/
+  image_url: https://www.ikea.com/gb/en/images/products/mala-felt-tip-pen-mixed-colours__0710244_pe727426_s5.jpg
+  staged_file: resources/ikea_20184041.jpg
+  use: Manufacturer product photograph for cap and barrel identification. Individual
+    pen dimensions still needed.
+  sha256: 9fa58f76097aa77bfba21f69c29d847b2309d6d0a5515a58b4a5a91a45a5376c
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_marker_ikea_mala_1_place_3x5x16
+  quantity: 1
+  layout: 1_place
+- id: oobb_part_holder_tool_marker_ikea_mala_5_place_8x5x16
+  quantity: 5
+  layout: 5_place

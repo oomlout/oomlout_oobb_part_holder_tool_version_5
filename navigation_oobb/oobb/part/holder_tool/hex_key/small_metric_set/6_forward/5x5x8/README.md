@@ -26,17 +26,17 @@ OOMP ID `oobb_part_holder_tool_hex_key_small_metric_set_6_forward_5x5x8`
 <details><summary>Complete part metadata</summary>
 
 ```yaml
-body_style: vertical_v4
+body_style: handed_pair
 construction:
-  mirror_second_print_x: true
-  mode: repeat_half
-  pocket_on_underside: true
+  mirror_second_print_x: false
+  mode: handed_pair
+  pocket_on_underside: false
 depth: 8
 height: 5
 layout: 6_forward
 model: small_metric_set
 oobb_details:
-  body_style: vertical_v4
+  body_style: handed_pair
   corner_radius_mm: 5
   count: 1
   depth: 8
@@ -122,12 +122,12 @@ oobb_details:
   width: 5
 oobb_type: holder_tool
 profile: tool_screwdriver_hex_key_set_small
-show_underside: true
+show_underside: false
 source_id: tool_screwdriver_hex_key_set_small
 svg_details:
   cross_section_y_fraction: 0.82
   near_face_fraction: 0.08
-  show_underside: true
+  show_underside: false
   svg_name: holder_sections
 taxonomy_1: oobb
 taxonomy_10: ''
@@ -162,5 +162,5 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print one half as supplied and mirror the second copy along X in the slicer before printing. Turn one half over and bring the matching pockets and mounting holes together. [Illustrated guides for the four photo-modelled tools](../../../../../../../../README.md#assembly)
+Print the supplied layout once with both pockets facing up. Flip the right-hand piece over the left, face the pockets inward and align the holes. [Illustrated tool-loading guides](../../../../../../../../README.md#assembly)
 <!-- oobb-presentation:end -->

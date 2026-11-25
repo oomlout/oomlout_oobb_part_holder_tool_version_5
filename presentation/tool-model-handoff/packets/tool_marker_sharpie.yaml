@@ -1,0 +1,55 @@
+title: Sharpie standard-tip marker, 13 × 137 mm
+oomp_id: stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie
+populate_key: tool_marker_sharpie
+model_kind: marker
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Reuse the existing capped Sharpie model. Check
+  shoulder seating in the v4 single row and the bench stand separately. Keep its branded
+  identity separate from the generic 13 mm model.
+existing_model_note: The standard-tip OOMP record matches the branded v4 profile in
+  diameter and length. Cap and barrel split are illustrative.
+declared_tool_parameters:
+  diameter_mm: 13
+  length_mm: 137
+pocket_reference_only_mm:
+- h: 137
+  pos:
+  - 0
+  - 0
+  - 0
+  r: 6.5
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/tool_marker_sharpie.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie/working.yaml
+model_files_from_tools_repo: parts/stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie/three_d_model
+source_evidence:
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+- supports: Legacy taxonomy, identity and archived sourcing fields.
+  title: Archived OOMP part
+  url: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie
+additional_manufacturer_references: []
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_marker_sharpie_1_place_3x5x15
+  quantity: 1
+  layout: 1_place
+- id: oobb_part_holder_tool_marker_sharpie_2_place_5x5x15
+  quantity: 2
+  layout: 2_place
+- id: oobb_part_holder_tool_marker_sharpie_5_place_8x5x15
+  quantity: 5
+  layout: 5_place
+- id: oobb_part_holder_tool_marker_sharpie_6_place_9x5x15
+  quantity: 6
+  layout: 6_place
+- id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
+  quantity: 1
+  layout: bench

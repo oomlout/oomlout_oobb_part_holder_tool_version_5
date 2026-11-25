@@ -1,0 +1,79 @@
+title: Blue needle-nose pliers, 130 mm
+oomp_id: tool_pliers_needle_nose_130_mm_length_blue
+populate_key: tool_pliers_needlenose_generic_130_mm_blue
+model_kind: photo_reference
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Use the blue-pliers photo, overlay and verified
+  single-place pose. Keep the closed nose down and check grip spread against the nearest
+  bench tools.
+existing_model_note: Open-pose photo trace with a provisional 130 mm closed-length
+  reference (Rapid PC-022). Jaw and grip depths are estimated.
+declared_tool_parameters:
+  axis_px:
+  - 0.02
+  - 1
+  photo: PXL_20261119_134632442.jpg
+  recipe: pliers
+  reference_length_mm: 130
+  scale_path_px:
+  - - 174
+    - 78
+  - - 147.7
+    - 166.8
+  - - 54.5
+    - 349.5
+  trace_divisor: 8
+pocket_reference_only_mm:
+- h: 10
+  points:
+  - - -17
+    - 0
+  - - -17
+    - 54
+  - - -46
+    - 93
+  - - -50
+    - 125
+  - - 50
+    - 125
+  - - 46
+    - 93
+  - - 17
+    - 54
+  - - 17
+    - 0
+  pos:
+  - 0
+  - 0
+  - 0
+  rot:
+  - 0
+  - 0
+  - 0
+  shape: polygon
+staged_drawing_from_handoff: resources/tool_pliers_needlenose_generic_130_mm_blue.svg
+staged_photo_from_handoff: resources/tool_pliers_needlenose_generic_130_mm_blue.jpg
+local_originals:
+- path_from_tools_repo: parts/tool_pliers_needle_nose_130_mm_length_blue/measurements.md
+  sha256: eeb89361a3818f44739914caf0ff1cbadfb7047892ac3bb32c5159a09879a2ec
+- path_from_tools_repo: parts/tool_pliers_needle_nose_130_mm_length_blue/photo_overlay.svg
+  sha256: 8d0c1bbc0ec29a83f6e8fd443d002650fbc854e721ab0b1f3306930d5971cf78
+- path_from_tools_repo: parts/tool_pliers_needle_nose_130_mm_length_blue/PXL_20261119_134632442.jpg
+  sha256: 45506dc6f5edd9d266ac5db9bcb4a9eb902a0579f54212f51eedf10084b77324
+- path_from_tools_repo: parts/tool_pliers_needle_nose_130_mm_length_blue/research_2026-11-19.md
+  sha256: 192c8378a8414739e82bcb7161f01d1fb07a94f0eda9547bbf3d74046ac94fc0
+source_record_from_tools_repo: parts/tool_pliers_needle_nose_130_mm_length_blue/working.yaml
+model_files_from_tools_repo: parts/tool_pliers_needle_nose_130_mm_length_blue/three_d_model
+source_evidence:
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+additional_manufacturer_references: []
+existing_loaded_guides:
+- id: oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12
+  quantity: 1
+  layout: 1_place
+remaining_holder_views:
+- id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
+  quantity: 1
+  layout: bench

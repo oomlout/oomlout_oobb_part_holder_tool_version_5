@@ -1,0 +1,135 @@
+assembly_details:
+  alignment: Hold the spanner flat against the wall plane with the ring end down.
+    Centre it over the top opening.
+  check: Rest the ring on the pocket floor. The open jaw remains above the holder.
+  label: 13 mm spanner
+  layout: 1_place
+  model_kind: combination_spanner
+  rotation_deg:
+  - 0
+  - 0
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Hold the spanner flat
+      against the wall plane with the ring end down. Centre it over the top opening.
+    add:
+    - tool
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tool through the top opening. Rest the ring on the pocket floor.
+      The open jaw remains above the holder.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_wrench_m13
+  translation_mm:
+  - 0
+  - -26
+  - 4
+body_style: vertical_v4
+construction:
+  mirror_second_print_x: false
+  mode: repeat_half
+  pocket_on_underside: false
+depth: 10
+height: 5
+layout: 1_place
+model: m13
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 1
+  depth: 10
+  edge_reduction_mm: 1
+  height: 5
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 8
+    points:
+    - - -14
+      - 0
+    - - -14
+      - 160
+    - - 14
+      - 160
+    - - 14
+      - 0
+    pos:
+    - 0
+    - -26
+    - 0
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: polygon
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 3
+oobb_type: holder_tool
+profile: tool_spanner_m13
+show_underside: false
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: false
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: spanner
+taxonomy_5: m13
+taxonomy_6: 1_place
+taxonomy_7: 3x5x10
+taxonomy_8: ''
+taxonomy_9: ''
+title: M13 spanner
+tool_type: spanner
+width: 3

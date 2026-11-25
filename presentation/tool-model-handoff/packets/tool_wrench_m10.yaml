@@ -1,0 +1,76 @@
+title: M10 spanner
+oomp_id: tool_wrench_m10
+populate_key: tool_wrench_m10
+model_kind: combination_spanner
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Completed single-place pilot. Use its ring-down
+  transform as a starting point for the 2/3/4-place layouts, the four-size holder
+  and the two M10 seats in the bench stand. Derive each station from its own holder
+  record.
+existing_model_note: Generic 10 mm combination spanner using the Bahco 111M-10 as
+  a dimensional reference. Length and head widths and thicknesses follow the catalogue.
+  The straight shank, jaw outline and six-point ring are simplified. The workshop
+  specimen has not been measured.
+declared_tool_parameters:
+  across_flats_mm: 10
+  jaw_thickness_mm: 5.1
+  jaw_width_mm: 22.9
+  length_mm: 144
+  ring_thickness_mm: 6.5
+  ring_width_mm: 15.7
+pocket_reference_only_mm:
+- h: 7
+  points:
+  - - -11.5
+    - 0
+  - - -11.5
+    - 140
+  - - 11.5
+    - 140
+  - - 11.5
+    - 0
+  pos:
+  - 0
+  - 0.0
+  - 0
+  rot:
+  - 0
+  - 0
+  - 0
+  shape: polygon
+staged_drawing_from_handoff: resources/tool_wrench_m10.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/tool_wrench_m10/working.yaml
+model_files_from_tools_repo: parts/tool_wrench_m10/three_d_model
+source_evidence:
+- supports: 111M-10 across-flats size, length, two head widths and two head thicknesses.
+  title: Bahco 111M metric flat combination spanners
+  url: https://www.bahco.com/int_en/metric-flat-combination-wrenches-with-chrome-finish-pb_111m_.html
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+additional_manufacturer_references:
+- title: Bahco 111M size table
+  url: https://www.bahco.com/int_en/metric-flat-combination-wrenches-with-chrome-finish-pb_111m_.html
+  use: Compare head widths and thicknesses against the positioned pocket.
+existing_loaded_guides:
+- id: oobb_part_holder_tool_spanner_m10_1_place_3x5x9
+  quantity: 1
+  layout: 1_place
+remaining_holder_views:
+- id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
+  quantity: 2
+  layout: bench
+- id: oobb_part_holder_tool_spanner_m10_2_place_5x5x9
+  quantity: 2
+  layout: 2_place
+- id: oobb_part_holder_tool_spanner_m10_3_place_7x5x9
+  quantity: 3
+  layout: 3_place
+- id: oobb_part_holder_tool_spanner_m10_4_place_9x5x9
+  quantity: 4
+  layout: 4_place
+- id: oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10
+  quantity: 1
+  layout: 4_place

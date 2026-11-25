@@ -1,0 +1,58 @@
+title: Stanley 1-30-696 tape measure, 5 m
+oomp_id: tool_measure_tape_measure_5000_mm_length_stanley_1_30_696
+populate_key: tool_measure_tape_measure_5000_mm_length_stanley_1_30_696
+model_kind: holder_envelope
+model_task: Build an external tool model
+modelling_and_seating_instructions: Match article 1-30-696 before collecting case
+  width, height, depth and clip projection. Model the retracted case, lock and hook.
+  The five-metre value is tape capacity. Check seating with the clip in its actual
+  orientation.
+existing_model_note: Geometry follows the holder clearance profile. Its dimensions
+  describe the pocket used in the source design. Physical tool dimensions and fit
+  have yet to be measured.
+declared_tool_parameters: {}
+pocket_reference_only_mm:
+- h: 42
+  points:
+  - - -39
+    - 0
+  - - -39
+    - 74
+  - - 39
+    - 74
+  - - 39
+    - 0
+  pos:
+  - 0
+  - 0
+  - 0
+  rot:
+  - 0
+  - 0
+  - 0
+  shape: polygon
+staged_drawing_from_handoff: resources/tool_measure_tape_measure_5000_mm_length_stanley_1_30_696.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/tool_measure_tape_measure_5000_mm_length_stanley_1_30_696/working.yaml
+model_files_from_tools_repo: parts/tool_measure_tape_measure_5000_mm_length_stanley_1_30_696/three_d_model
+source_evidence:
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+- supports: Legacy taxonomy, identity and archived sourcing fields.
+  title: Archived OOMP part
+  url: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/tool_measure_tape_measure_5000_mm_length_stanley_1_30_696
+additional_manufacturer_references:
+- title: Stanley Tylon 1-30-696
+  url: https://www.stanleytools.co.uk/product/1-30-696/stanley-tylon-16-ft5m-19mm-wide-tape-measure-12-pk
+  image_url: https://assets.stanleytools.co.uk/EMEA/PRODUCT/IMAGES/HIRES/WHITEBG/1-30-696_1_1280.webp
+  staged_file: resources/stanley_1-30-696.jpg
+  use: Exact SKU and manufacturer photograph. The 19 mm blade width and 5 m tape length
+    do not describe the case dimensions.
+  sha256: ce526804c8b8a6380930498989e7f8172f5a145f6cc43738544884784cf94f2b
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44
+  quantity: 1
+  layout: 1_place

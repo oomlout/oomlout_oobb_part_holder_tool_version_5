@@ -450,5 +450,5 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 The stand prints as one piece. Tools enter the pockets from the top.
 
-These tools also have illustrated single-place holder guides. [Black Exacto-style craft knife, 17 mm](../oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/README.md#assembly) · [Blue needle-nose pliers, 130 mm](../oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12/README.md#assembly) · [Red side cutters, 110 mm](../oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/README.md#assembly) · [Red wire strippers, 120 mm](../oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13/README.md#assembly)
+These tools also have illustrated single-place holder guides. [Closed utility knife](../oobb_part_holder_tool_knife_utility_17mm_1_place_3x5x29d5/README.md#assembly) · [Blue needle-nose pliers](../oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12/README.md#assembly) · [Red side cutters](../oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/README.md#assembly) · [Red wire strippers](../oobb_part_holder_tool_wire_strippers_generic_120mm_1_place_5x5x13/README.md#assembly) · [10 mm spanner](../oobb_part_holder_tool_spanner_m10_1_place_3x5x9/README.md#assembly)
 <!-- oobb-presentation:end -->

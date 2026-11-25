@@ -78,7 +78,7 @@ def render_parts(**kwargs):
         dimensions = " x ".join(f"{v:.1f}".removesuffix(".0") for v in trimesh.util.concatenate(layers).extents)
         caption = "Wall-mounted holder" if len(layers) == 2 else "Assembled holder"
         draw.text((26, 615), caption, font=ImageFont.load_default(size=21), fill="#243a3b")
-        legend = "Exploded view - two printed halves" if len(layers) == 2 else "Top view - one-piece bench stand"
+        legend = "Exploded view - two printed halves" if len(layers) == 2 else "Top view - single-piece holder"
         draw.text((665, 615), legend, font=ImageFont.load_default(size=21), fill="#243a3b")
         draw.text((26, 655), f"Assembled dimensions   {dimensions} mm",
                   font=ImageFont.load_default(size=21), fill="#243a3b")

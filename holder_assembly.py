@@ -1,4 +1,4 @@
-"""Build tool-loaded CAD sheets and the four OOBB loading booklets."""
+"""Build tool-loaded CAD sheets and OOBB loading booklets."""
 from collections import Counter
 import csv
 import hashlib
@@ -20,6 +20,13 @@ from presentation import assembly_booklet, assembly_viewer
 
 STUDIO = ROOT / "presentation"
 REFERENCES = ROOT / "source_file" / "tool_models"
+
+
+def print_instruction(**kwargs):
+    part = kwargs["part"]
+    if part["construction"]["mode"] in ("paired_layout", "handed_pair"):
+        return "Print the supplied two-half layout once."
+    return "Print two copies of the holder STL."
 
 
 def digest(path):
@@ -60,7 +67,7 @@ def verify_pose(**kwargs):
         "insertion_positions_checked": 15,
         "printed_halves_checked": len(layers),
         "tool_volume_inside_pocket_mm3": round(occupied, 3),
-        "physical_fit": "Unverified. The OOMP model uses provisional photograph-based dimensions.",
+        "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence.",
     }
 
 
@@ -79,7 +86,7 @@ def make_sheet(**kwargs):
     draw.text((25, 16), title, font=ImageFont.load_default(size=29), fill="#243a3b")
     draw.text((26, 615), "Wall-mounted holder and tool", font=ImageFont.load_default(size=21), fill="#243a3b")
     draw.text((665, 615), "Exploded view - two printed halves", font=ImageFont.load_default(size=21), fill="#243a3b")
-    draw.text((26, 682), "OOMP photo-based tool model · Physical fit unverified · AI-generated CAD illustration.",
+    draw.text((26, 682), "OOMP tool model · Physical fit unverified · AI-generated CAD illustration.",
               font=ImageFont.load_default(size=17), fill="#536361")
     buffer = io.BytesIO()
     sheet.save(buffer, format="PNG")
@@ -129,7 +136,7 @@ def publish_book(**kwargs):
     title = recipe["label"] + " holder"
     details = [
         f"{part['width']} × {part['height']} OOBB grid. Each half is {part['depth']/2:g} mm thick. The assembled holder is {part['depth']:g} mm thick.",
-        "Print the holder STL twice. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+        print_instruction(part=part) + " Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
         recipe["alignment"], recipe["check"], source["model_note"],
         "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
         "AI-generated CAD images and instructions. Physical fit has yet to be tested.",
@@ -183,7 +190,7 @@ AI-generated CAD images and instructions. Errors possible.
 
 ## Assembly and loading
 
-Print two copies of the holder STL. The dark teal half sits against the wall. The light teal half faces the room. The opening and tool handles point up.
+{print_instruction(part=part)} The dark teal half sits against the wall. The light teal half faces the room. The opening and tool handles point up.
 
 {sequence}
 

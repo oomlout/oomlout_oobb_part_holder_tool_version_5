@@ -1,5 +1,5 @@
 <!-- oobb-presentation:start -->
-# Medium Prit glue stick and craft knife
+# Medium Prit glue stick and utility knife
 
 AI-generated CAD images and instructions. Errors possible.
 
@@ -9,7 +9,7 @@ OOBB glue stick holder · with knife.
 
 This is an entirely AI-generated coding project. The generated outputs are included and usually work. The project is published so others can modify and regenerate the designs with their own AI tools.
 
-![CAD views of Medium Prit glue stick and craft knife](3dpr_presentation.png)
+![CAD views of Medium Prit glue stick and utility knife](3dpr_presentation.png)
 
 ## Details
 
@@ -108,7 +108,7 @@ taxonomy_6: with_knife
 taxonomy_7: 5x5x30
 taxonomy_8: ''
 taxonomy_9: ''
-title: Medium Prit glue stick and craft knife
+title: Medium Prit glue stick and utility knife
 tool_type: glue_stick
 width: 5
 id: oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30
@@ -128,5 +128,5 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 Print the supplied two-body layout once. Move the right-hand half onto the left-hand half, keeping the pocket faces together and the openings aligned.
 
-These tools also have illustrated single-place holder guides. [Black Exacto-style craft knife, 17 mm](../oobb_part_holder_tool_knife_exacto_17mm_1_place_3x5x29d5/README.md#assembly)
+These tools also have illustrated single-place holder guides. [Closed utility knife](../oobb_part_holder_tool_knife_utility_17mm_1_place_3x5x29d5/README.md#assembly)
 <!-- oobb-presentation:end -->

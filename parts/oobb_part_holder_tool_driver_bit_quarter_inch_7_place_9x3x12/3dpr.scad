@@ -93,37 +93,37 @@ difference() {
 		translate(v = [60.0, 7.5, -1]) {
 			cylinder(h = 8.0, r = 1.8);
 		}
-		translate(v = [-45.0, 10, 0]) {
+		translate(v = [-45.0, -10.25, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [-30.0, 10, 0]) {
+		translate(v = [-30.0, -10.25, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [-15.0, 10, 0]) {
+		translate(v = [-15.0, -10.25, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [0.0, 10, 0]) {
+		translate(v = [0.0, -10.25, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [15.0, 10, 0]) {
+		translate(v = [15.0, -10.25, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [30.0, 10, 0]) {
+		translate(v = [30.0, -10.25, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [45.0, 10, 0]) {
+		translate(v = [45.0, -10.25, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}

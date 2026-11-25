@@ -105,77 +105,77 @@ difference() {
 		translate(v = [60.0, 15.0, -1]) {
 			cylinder(h = 8.0, r = 1.8);
 		}
-		translate(v = [-52.5, -17.5, 0]) {
+		translate(v = [-52.5, -17.75, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [-37.5, -17.5, 0]) {
+		translate(v = [-37.5, -17.75, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [-22.5, -17.5, 0]) {
+		translate(v = [-22.5, -17.75, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [-7.5, -17.5, 0]) {
+		translate(v = [-7.5, -17.75, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [7.5, -17.5, 0]) {
+		translate(v = [7.5, -17.75, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [22.5, -17.5, 0]) {
+		translate(v = [22.5, -17.75, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [37.5, -17.5, 0]) {
+		translate(v = [37.5, -17.75, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [52.5, -17.5, 0]) {
+		translate(v = [52.5, -17.75, 0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [-45.0, -17.5, 6.0]) {
+		translate(v = [-45.0, -17.75, 6.0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [-30.0, -17.5, 6.0]) {
+		translate(v = [-30.0, -17.75, 6.0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [-15.0, -17.5, 6.0]) {
+		translate(v = [-15.0, -17.75, 6.0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [0.0, -17.5, 6.0]) {
+		translate(v = [0.0, -17.75, 6.0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [15.0, -17.5, 6.0]) {
+		translate(v = [15.0, -17.75, 6.0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [30.0, -17.5, 6.0]) {
+		translate(v = [30.0, -17.75, 6.0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}
 		}
-		translate(v = [45.0, -17.5, 6.0]) {
+		translate(v = [45.0, -17.75, 6.0]) {
 			rotate(a = [-90, 0, 0]) {
 				cylinder(h = 100, r = 4);
 			}

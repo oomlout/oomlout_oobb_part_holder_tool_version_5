@@ -27,6 +27,7 @@ OOMP ID `oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x3x12`
 
 ```yaml
 body_style: vertical_project
+bottom_m6_clearance_mm: 1.5
 construction:
   mirror_second_print_x: false
   mode: repeat_half
@@ -37,12 +38,9 @@ height: 3
 layered: false
 layout: 8_place
 model: quarter_inch
-offset_mm:
-- 0
-- 10
-- 0
 oobb_details:
   body_style: vertical_project
+  bottom_m6_clearance_mm: 1.5
   corner_radius_mm: 5
   count: 8
   depth: 12
@@ -51,7 +49,7 @@ oobb_details:
   layered: false
   offset_mm:
   - 0
-  - 10
+  - 0
   - 0
   oobb_type: holder_tool
   pitch_mm: 15
@@ -114,5 +112,5 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. [Illustrated guides for the four photo-modelled tools](../../../../../../../../README.md#assembly)
+Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. The pocket floors stop 1.5 mm above the rim of the bottom M6 mounting holes. [Illustrated tool-loading guides](../../../../../../../../README.md#assembly)
 <!-- oobb-presentation:end -->

@@ -1,0 +1,76 @@
+body_style: vertical_v4
+construction:
+  mirror_second_print_x: false
+  mode: repeat_half
+  pocket_on_underside: true
+depth: 20
+height: 5
+layout: m2_1_place
+model: hex_60mm
+oobb_details:
+  body_style: vertical_v4
+  corner_radius_mm: 5
+  count: 1
+  depth: 20
+  edge_reduction_mm: 1
+  height: 5
+  layered: false
+  offset_mm:
+  - 0
+  - 0
+  - 0
+  oobb_type: holder_tool
+  pitch_mm: 15
+  profile:
+  - h: 60
+    pos:
+    - 0
+    - -25
+    - -1
+    r: 1.75
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  - h: 98
+    pos:
+    - 0
+    - 35
+    - -1
+    r: 9
+    rot:
+    - -90
+    - 0
+    - 0
+    shape: cylinder
+  run_scad: true
+  run_solidcraft: false
+  spacing_mm: 15
+  width: 3
+oobb_type: holder_tool
+profile: tool_screwdriver_hex_m2_precision_tall_60_mm
+show_underside: true
+svg_details:
+  cross_section_y_fraction: 0.82
+  near_face_fraction: 0.08
+  show_underside: true
+  svg_name: holder_sections
+taxonomy_1: oobb
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ''
+taxonomy_15: ''
+taxonomy_2: part
+taxonomy_3: holder_tool
+taxonomy_4: screwdriver_precision_tall
+taxonomy_5: hex_60mm
+taxonomy_6: m2_1_place
+taxonomy_7: 3x5x20
+taxonomy_8: ''
+taxonomy_9: ''
+title: Tall precision screwdriver, 2 mm hex, 60 mm
+tool_type: screwdriver_precision_tall
+width: 3

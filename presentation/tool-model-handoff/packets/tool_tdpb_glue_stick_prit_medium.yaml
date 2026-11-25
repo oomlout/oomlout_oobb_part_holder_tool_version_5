@@ -1,0 +1,47 @@
+title: Medium Prit glue stick
+oomp_id: stationery_glue_stick_medium_prit_style
+populate_key: tool_tdpb_glue_stick_prit_medium
+model_kind: holder_envelope
+model_task: Build an external tool model
+modelling_and_seating_instructions: Model the closed cap, barrel and twist base. Identify
+  and measure the actual medium stick. Pocket diameter and glue mass alone cannot
+  establish body size. Check both its own holder and the compound holder with the
+  closed knife.
+existing_model_note: Geometry follows the holder clearance profile. Its dimensions
+  describe the pocket used in the source design. Physical tool dimensions and fit
+  have yet to be measured.
+declared_tool_parameters: {}
+pocket_reference_only_mm:
+- h: 96
+  pos:
+  - 0
+  - 0
+  - 0
+  r: 14
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/tool_tdpb_glue_stick_prit_medium.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/stationery_glue_stick_medium_prit_style/working.yaml
+model_files_from_tools_repo: parts/stationery_glue_stick_medium_prit_style/three_d_model
+source_evidence:
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+additional_manufacturer_references:
+- title: Pritt original glue stick
+  url: https://www.prittworld.co.uk/products/central-pdp.html/pritt-glue-stick/SAP_0201BAP20126.html
+  use: The 22 g pack is a candidate for medium. Check the specimen and measure its
+    cap before modelling.
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30
+  quantity: 1
+  layout: 1_place
+- id: oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30
+  quantity: 1
+  layout: with_knife

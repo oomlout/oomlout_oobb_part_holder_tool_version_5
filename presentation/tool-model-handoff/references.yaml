@@ -1,0 +1,33 @@
+tool_screwdriver_driver_bit:
+  - title: HiKOKI 60 mm double-ended PH/PZ bits
+    url: https://hikoki-powertools.eu/uk/en/machines-accessories/3-bits-1-4-double-ended-phillips-pozidrive-ph1-pz1-ph2-pz2-ph3-pz3-60mm/
+    use: Use the PH2/PZ2 member as a representative example for the generic 60 mm profile. The manufacturer identifies a quarter-inch hex drive, 60 mm overall length and a different tip at each end. Label estimated tip transitions.
+quarter_inch:
+  - title: Wera 851/4 Z PH2, 89 mm representative long bit
+    url: https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05059775001.pdf
+    staged_file: resources/quarter_inch_89mm_datasheet.pdf
+    use: Manufacturer drawing and reference length for a full-scale example of the generic drive system. Disclose the chosen example.
+tool_marker_ikea_mala:
+  - title: IKEA MÅLA UK article 201.840.41
+    url: https://www.ikea.com/gb/en/p/mala-felt-tip-pen-mixed-colours-20184041/
+    image_url: https://www.ikea.com/gb/en/images/products/mala-felt-tip-pen-mixed-colours__0710244_pe727426_s5.jpg
+    staged_file: resources/ikea_20184041.jpg
+    use: Manufacturer product photograph for cap and barrel identification. Individual pen dimensions still needed.
+tool_measure_tape_measure_5000_mm_length_stanley_1_30_696:
+  - title: Stanley Tylon 1-30-696
+    url: https://www.stanleytools.co.uk/product/1-30-696/stanley-tylon-16-ft5m-19mm-wide-tape-measure-12-pk
+    image_url: https://assets.stanleytools.co.uk/EMEA/PRODUCT/IMAGES/HIRES/WHITEBG/1-30-696_1_1280.webp
+    staged_file: resources/stanley_1-30-696.jpg
+    use: Exact SKU and manufacturer photograph. The 19 mm blade width and 5 m tape length do not describe the case dimensions.
+tool_tdpb_glue_stick_prit_medium:
+  - title: Pritt original glue stick
+    url: https://www.prittworld.co.uk/products/central-pdp.html/pritt-glue-stick/SAP_0201BAP20126.html
+    use: The 22 g pack is a candidate for medium. Check the specimen and measure its cap before modelling.
+tool_wrench_m7:
+  - title: FACOM 34.7 slim double open-end spanner
+    url: https://www.facom.com/product/347/double-open-end-wrench-34-midget-15deg-and-75deg-inclined-ends-7-mm
+    use: Alternative specimen to investigate for the thin M7 pocket.
+tool_wrench_m8:
+  - title: Stahlwille OPEN BOX 14, 40100808
+    url: https://stahlwille.com/en_gb/products/detail/874570
+    use: A possible open-end-first 8 mm specimen. Inspect the head offset in the manufacturer's technical drawing.

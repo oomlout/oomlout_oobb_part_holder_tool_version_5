@@ -1,0 +1,70 @@
+title: Quarter-inch drive bit
+oomp_id: tool_screwdriver_bit_quarter_inch_drive
+populate_key: quarter_inch
+model_kind: holder_envelope
+model_task: Build an external tool model
+modelling_and_seating_instructions: Use a representative long quarter-inch drive bit,
+  recording its actual length and tip form. Model the 6.35 mm across-flats hexagon
+  and its transitions. Check pickup height in the deepest pockets and both staggered
+  layers. The 3/5/7-row blocks hold 23/38/53 bits.
+existing_model_note: Geometry follows the holder clearance profile. Its dimensions
+  describe the pocket used in the source design. Physical tool dimensions and fit
+  have yet to be measured.
+declared_tool_parameters: {}
+pocket_reference_only_mm:
+- h: 100
+  pos:
+  - 0
+  - 0
+  - 0
+  r: 4
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/quarter_inch.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/tool_screwdriver_bit_quarter_inch_drive/working.yaml
+model_files_from_tools_repo: parts/tool_screwdriver_bit_quarter_inch_drive/three_d_model
+source_evidence:
+- supports: Original vertical holder tool selection and pocket dimensions.
+  title: OOBB vertical holder recipe
+  url: https://github.com/oomlout/oomlout_oobb_part_tool_holder_vertical/blob/93a962a09e0c275c3cfa62187182ac3203bde1b2/scad.py
+additional_manufacturer_references:
+- title: Wera 851/4 Z PH2, 89 mm representative long bit
+  url: https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05059775001.pdf
+  staged_file: resources/quarter_inch_89mm_datasheet.pdf
+  use: Manufacturer drawing and reference length for a full-scale example of the generic
+    drive system. Disclose the chosen example.
+  sha256: 4637d715003d5b1eb26fab33a422e6ac49f0c4184b028384fa9b5bb2c2430024
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x3x12
+  quantity: 7
+  layout: 7_place
+- id: oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x4x12
+  quantity: 7
+  layout: 7_place
+- id: oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x3x12
+  quantity: 8
+  layout: 8_place
+- id: oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12
+  quantity: 8
+  layout: 8_place
+- id: oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12
+  quantity: 15
+  layout: 8_plus_7_layered
+- id: oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12
+  quantity: 15
+  layout: 8_plus_7_layered
+- id: oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24
+  quantity: 23
+  layout: block_3_rows
+- id: oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36
+  quantity: 38
+  layout: block_5_rows
+- id: oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48
+  quantity: 53
+  layout: block_7_rows

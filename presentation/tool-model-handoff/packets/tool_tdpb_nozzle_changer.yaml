@@ -1,0 +1,39 @@
+title: TDPB nozzle changer
+oomp_id: tool_nozzle_changer_tdpb
+populate_key: tool_tdpb_nozzle_changer
+model_kind: holder_envelope
+model_task: Build an external tool model
+modelling_and_seating_instructions: Establish which nozzle-changing tool the TDPB
+  record describes. Measure the socket or nose, shank, grip and length from a specimen
+  or drawing before choosing the sections. The Ø12 × 100 cylinder describes its pocket.
+existing_model_note: Geometry follows the holder clearance profile. Its dimensions
+  describe the pocket used in the source design. Physical tool dimensions and fit
+  have yet to be measured.
+declared_tool_parameters: {}
+pocket_reference_only_mm:
+- h: 100
+  pos:
+  - 0
+  - 0
+  - 0
+  r: 6
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/tool_tdpb_nozzle_changer.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/tool_nozzle_changer_tdpb/working.yaml
+model_files_from_tools_repo: parts/tool_nozzle_changer_tdpb/three_d_model
+source_evidence:
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+additional_manufacturer_references: []
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_nozzle_changer_tdpb_1_place_3x5x14
+  quantity: 1
+  layout: 1_place

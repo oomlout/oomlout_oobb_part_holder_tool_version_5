@@ -1,14 +1,74 @@
-body_style: vertical_v4
+assembly_details:
+  alignment: Keep the knife closed. Turn the housing edge-on and align the nose with
+    the closed end of the slot.
+  check: The housing sits edge-on in the slot. The heel projects above the holder.
+  label: Closed utility knife
+  rotation_deg:
+  - 0
+  - 90
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Keep the knife closed.
+      Turn the housing edge-on and align the nose with the closed end of the slot.
+    add:
+    - tool
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tool through the top opening. The housing sits edge-on in the
+      slot. The heel projects above the holder.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_knife_craft_17_mm_black_exacto_style
+  translation_mm:
+  - -7.5
+  - -15.6
+  - 8.96
+body_style: paired_face_up
 construction:
   mirror_second_print_x: false
-  mode: repeat_half
+  mode: handed_pair
   pocket_on_underside: false
 depth: 29.5
 height: 5
 layout: 1_place
 model: utility_17mm
 oobb_details:
-  body_style: vertical_v4
+  body_style: paired_face_up
   corner_radius_mm: 5
   count: 1
   depth: 29.5

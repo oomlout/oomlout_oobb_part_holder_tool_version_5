@@ -1,0 +1,61 @@
+title: Picquic Teeny Turner precision multi-driver
+oomp_id: tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic
+populate_key: picquic_teeny_turner
+model_kind: stepped_body
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Use the local CDR outline and existing four-section
+  Teeny Turner. Verify the short grip and exposed bit, orient shaft down and check
+  that the grip shoulder bears on the holder.
+existing_model_note: Four coaxial sections follow the archived OOMP drawing, read
+  at its document scale. The handle and exposed bit use simplified round sections.
+declared_tool_parameters:
+  diameters_mm:
+  - 5.4
+  - 7.5
+  - 9
+  - 28
+  lengths_mm:
+  - 17
+  - 4
+  - 7
+  - 41.5
+pocket_reference_only_mm:
+- h: 28
+  pos:
+  - 0
+  - 0
+  - 0
+  r: 4.75
+  rot:
+  - -90
+  - 0
+  - 0
+  shape: cylinder
+staged_drawing_from_handoff: resources/picquic_teeny_turner.svg
+staged_photo_from_handoff: null
+local_originals:
+- path_from_tools_repo: parts/tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic/drawing.cdr
+  sha256: 4800c8d7476fc9fea9c2c05c25fbe5cd02418274c75f84ce96eeef4fe72b2e09
+source_record_from_tools_repo: parts/tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic/working.yaml
+model_files_from_tools_repo: parts/tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic/three_d_model
+source_evidence:
+- supports: Product identification and supplied bits.
+  title: Picquic Teeny Turner
+  url: https://picquic.ca/teeny-turner/
+- supports: Original vertical holder tool selection and pocket dimensions.
+  title: OOBB vertical holder recipe
+  url: https://github.com/oomlout/oomlout_oobb_part_tool_holder_vertical/blob/93a962a09e0c275c3cfa62187182ac3203bde1b2/scad.py
+- supports: Legacy taxonomy, identity and archived sourcing fields.
+  title: Archived OOMP part
+  url: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic
+- file: tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic.cdr
+  part_file: drawing.cdr
+  supports: Original CorelDRAW reference drawing.
+  title: Archived OOMP outline
+  url: https://github.com/oomlout/oomlout_oomp_version_1_messy/blob/main/parts/tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic/drawing.cdr
+additional_manufacturer_references: []
+existing_loaded_guides: []
+remaining_holder_views:
+- id: oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31
+  quantity: 1
+  layout: 1_place

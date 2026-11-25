@@ -7,6 +7,7 @@ from pathlib import Path
 import yaml
 
 from holder_catalogue import ROOT, natural_key, write_file
+from holder_assembly import print_instruction
 
 NAV = ROOT / "navigation_oobb"
 DISCOVERY = NAV / "oobb" / "part" / "holder_tool"
@@ -47,7 +48,7 @@ def assembly_instructions(**kwargs):
     source_file = ROOT / "source_file" / "tool_models" / recipe["tool_id"] / "source.json"
     source = json.loads(source_file.read_text(encoding="utf-8"))
     lines = [
-        "Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.",
+        print_instruction(part=part) + " The dark teal half sits against the wall and the light teal half faces the room.",
         "",
     ]
     for number, step in enumerate(recipe["steps"], start=1):
@@ -83,16 +84,25 @@ def part_page(**kwargs):
     layout = part["layout"].replace("_", " ")
     depth = part["depth"]
     stand = part["body_style"] == "stand"
-    thickness = depth if stand else depth / 2
+    block = part["body_style"] == "bit_block"
+    thickness = depth if stand or block else depth / 2
     metadata = yaml.safe_dump(part, sort_keys=False, allow_unicode=True).strip()
     source = VERSION_4 + "/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_make_sets.py#L626"
     if part["body_style"] == "vertical_project":
         source = VERTICAL + "/tree/93a962a09e0c275c3cfa62187182ac3203bde1b2/parts/" + part["source_id"]
     instruction = "The stand prints as one piece. Tools enter the pockets from the top." if stand else "Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends."
-    if part["construction"]["mirror_second_print_x"]:
-        instruction = "Print one half as supplied and mirror the second copy along X in the slicer before printing. Turn one half over and bring the matching pockets and mounting holes together."
+    if part["construction"]["mode"] == "handed_pair":
+        instruction = "Print the supplied layout once with both pockets facing up. Flip the right-hand piece over the left, face the pockets inward and align the holes."
+    if block:
+        rows = part["row_count"]
+        capacity = part["count"] * rows - rows // 2
+        instruction = f"Print the block once with its pockets opening upward. Its {rows} staggered rows hold {capacity} quarter-inch bits."
     if part["body_style"] == "paired_v4":
         instruction = "Print the supplied two-body layout once. Move the right-hand half onto the left-hand half, keeping the pocket faces together and the openings aligned."
+    if "bottom_m6_clearance_mm" in part:
+        instruction += f" The pocket floors stop {part['bottom_m6_clearance_mm']:g} mm above the rim of the bottom M6 mounting holes."
+    if block or part["profile"] == "four_spanners":
+        source = relative(folder, ROOT / "working_oomp_populate.py")
     guide_index = relative(folder, ROOT / "README.md") + "#assembly"
     if part.get("assembly_details"):
         assembly = canonical / "assembly"
@@ -106,7 +116,7 @@ def part_page(**kwargs):
                       for label, path in guide_holders]
         instruction += "\n\nThese tools also have illustrated single-place holder guides. " + " · ".join(references)
     else:
-        instruction += f" [Illustrated guides for the four photo-modelled tools]({guide_index})"
+        instruction += f" [Illustrated tool-loading guides]({guide_index})"
     return f"""# {title}
 
 {NOTICE}
@@ -159,11 +169,15 @@ def publish_catalogue(**kwargs):
     related = defaultdict(list)
     for source in sorted((root/"source_file/tool_models").glob("*/source.json")):
         tool = json.loads(source.read_text(encoding="utf-8"))
-        single = next(h["id"] for h in tool["holders"] if h["layout"] == "1_place")
+        single = next((h["id"] for h in tool["holders"] if h["layout"] == "1_place"), None)
+        if single is None:
+            continue
         path = root/"parts"/single
         if (path/"assembly/assembly_manifest.json").is_file():
+            single_part = yaml.safe_load((path / "working.yaml").read_text(encoding="utf-8"))
+            label = single_part["assembly_details"]["label"]
             for holder in tool["holders"]:
-                related[holder["id"]].append((tool["title"], path))
+                related[holder["id"]].append((label, path))
     for part_id in manifest.read_text().splitlines():
         canonical = root / "parts" / part_id
         if not (canonical / "3dpr_presentation.png").is_file() or not (canonical / "working.svg").is_file():
@@ -272,17 +286,17 @@ Printable holders for workshop hand tools on the 15 mm OOBB grid. These designs 
 
 **[Browse by tool type]({relative(root, DISCOVERY)})** or see the [hierarchy and tool list](TOOLS.md). The catalogue contains {len(parts)} layouts across {len(groups)} categories. Choose a tool type, model, layout and size.
 
-Run `python working.py` to rebuild. The [build notes](presentation/README.md) cover dependencies, filtered builds and source comparisons.
+Run `python working.py` to rebuild. The [build notes](presentation/README.md) cover dependencies and filtered builds. The [tool modelling queue](presentation/tool-model-handoff/README.md) maps each OOMP tool to its holder layouts and staged references.
 
 ## Parts
 
-Width and height use 15 mm grid units. A 3 × 5 holder has a nominal footprint of 44 × 74 mm. The last size value is the source design depth in millimetres. Vertical holders use two half-depth pieces. Stack them with the pockets facing inward and the holes aligned. Each part page gives its printed thickness, a section drawing and a CAD preview.
+Width and height use 15 mm grid units. A 3 × 5 holder has a nominal footprint of 44 × 74 mm. The last size value is the assembled depth in millimetres. Two-piece wall holders use half-depth pieces. Stack them with the pockets facing inward and the holes aligned. Each part page gives its printed thickness, a section drawing and a CAD preview.
 
 ## Assembly
 
-Four single-place holders have two-piece assembly and loading instructions illustrated with the original OOMP photo-based tool models. Each viewer opens offline. The print booklets use landscape A4 pages. Physical fit remains unverified.
+{len(guides)} holders have illustrated assembly and loading instructions using OOMP tool models. Each viewer opens offline. The print booklets use landscape A4 pages. Physical fit remains unverified.
 
-For future renders, show vertical holders as they sit on the wall, with the opening and tool handles pointing up. Show the halves touching in the assembled view and move the front half outward along the mounting holes for the exploded view. The combined Prit and knife layout supplies both halves in one print. The mixed-tool bench stand prints as one piece.
+For future renders, show vertical holders as they sit on the wall, with the opening and tool handles pointing up. Show the halves touching in the assembled view and move the front half outward along the mounting holes for the exploded view. Print the Quikpik combination, utility knife, Prit combination, metric hex-key sets and four-size spanner layout once to obtain both halves. The quarter-inch bit blocks and mixed-tool bench stand each print as one piece.
 
 {guide_links}
 

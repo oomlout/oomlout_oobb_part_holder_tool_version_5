@@ -1,4 +1,5 @@
 body_style: vertical_project
+bottom_m6_clearance_mm: 1.5
 construction:
   mirror_second_print_x: false
   mode: repeat_half
@@ -9,12 +10,9 @@ height: 3
 layered: false
 layout: 7_place
 model: quarter_inch
-offset_mm:
-- 0
-- 10
-- 0
 oobb_details:
   body_style: vertical_project
+  bottom_m6_clearance_mm: 1.5
   corner_radius_mm: 5
   count: 7
   depth: 12
@@ -23,7 +21,7 @@ oobb_details:
   layered: false
   offset_mm:
   - 0
-  - 10
+  - 0
   - 0
   oobb_type: holder_tool
   pitch_mm: 15

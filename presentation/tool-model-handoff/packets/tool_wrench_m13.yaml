@@ -1,0 +1,63 @@
+title: M13 spanner
+oomp_id: tool_wrench_m13
+populate_key: tool_wrench_m13
+model_kind: combination_spanner
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: Completed single-place pilot. Reuse the independently
+  dimensioned model for the four-size holder once M10, M8 and M7 are available. Check
+  each ring against its own pocket floor.
+existing_model_note: Generic 13 mm combination spanner using the Bahco 111M-13 as
+  a dimensional reference. Length and head widths and thicknesses follow the catalogue.
+  The straight shank, jaw outline and six-point ring are simplified. The workshop
+  specimen has not been measured.
+declared_tool_parameters:
+  across_flats_mm: 13
+  jaw_thickness_mm: 5.8
+  jaw_width_mm: 29.2
+  length_mm: 169
+  ring_thickness_mm: 7.6
+  ring_width_mm: 19.7
+pocket_reference_only_mm:
+- h: 8
+  points:
+  - - -14
+    - 0
+  - - -14
+    - 160
+  - - 14
+    - 160
+  - - 14
+    - 0
+  pos:
+  - 0
+  - 0
+  - 0
+  rot:
+  - 0
+  - 0
+  - 0
+  shape: polygon
+staged_drawing_from_handoff: resources/tool_wrench_m13.svg
+staged_photo_from_handoff: null
+local_originals: []
+source_record_from_tools_repo: parts/tool_wrench_m13/working.yaml
+model_files_from_tools_repo: parts/tool_wrench_m13/three_d_model
+source_evidence:
+- supports: 111M-13 across-flats size, length, two head widths and two head thicknesses.
+  title: Bahco 111M metric flat combination spanners
+  url: https://www.bahco.com/int_en/metric-flat-combination-wrenches-with-chrome-finish-pb_111m_.html
+- supports: Upstream tool naming and clearance geometry used in the holder migration.
+  title: OOBB v4 tool shapes
+  url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
+additional_manufacturer_references:
+- title: Bahco 111M size table
+  url: https://www.bahco.com/int_en/metric-flat-combination-wrenches-with-chrome-finish-pb_111m_.html
+  use: Compare head widths and thicknesses against the positioned pocket.
+existing_loaded_guides:
+- id: oobb_part_holder_tool_spanner_m13_1_place_3x5x10
+  quantity: 1
+  layout: 1_place
+remaining_holder_views:
+- id: oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10
+  quantity: 1
+  layout: 4_place
