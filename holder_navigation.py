@@ -47,8 +47,10 @@ def assembly_instructions(**kwargs):
     assembly = ROOT / "parts" / part["id"] / "assembly"
     source_file = ROOT / "source_file" / "tool_models" / recipe["tool_id"] / "source.json"
     source = json.loads(source_file.read_text(encoding="utf-8"))
+    single_piece = part["construction"]["mode"] in ("block", "stand")
+    placement = " Place the block upright with its openings facing up." if single_piece else " The dark teal half sits against the wall and the light teal half faces the room."
     lines = [
-        print_instruction(part=part) + " The dark teal half sits against the wall and the light teal half faces the room.",
+        print_instruction(part=part) + placement,
         "",
     ]
     for number, step in enumerate(recipe["steps"], start=1):
@@ -68,9 +70,21 @@ def assembly_instructions(**kwargs):
         lines.extend(["", "</details>"])
     lines.extend([
         "",
-        f"{source['model_note']} The digital model was checked against both halves. Physical fit remains unverified. "
+        f"{source['model_note']} The digital model was checked against the printed holder. Physical fit remains unverified. "
         f"[OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/{recipe['tool_id']})",
     ])
+    for extra in recipe.get("additional_tools", []):
+        extra_file = ROOT / "source_file" / "tool_models" / extra["tool_id"] / "source.json"
+        extra_source = json.loads(extra_file.read_text(encoding="utf-8"))
+        lines.extend([
+            "",
+            f"{extra_source['model_note']} [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/{extra['tool_id']})",
+        ])
+    if part.get("layered"):
+        lines.extend([
+            "",
+            "The seven staggered front positions are open-face grooves. Retention of the bits in those grooves has not been physically tested.",
+        ])
     return "\n".join(lines)
 
 
@@ -169,7 +183,8 @@ def publish_catalogue(**kwargs):
     related = defaultdict(list)
     for source in sorted((root/"source_file/tool_models").glob("*/source.json")):
         tool = json.loads(source.read_text(encoding="utf-8"))
-        single = next((h["id"] for h in tool["holders"] if h["layout"] == "1_place"), None)
+        single = next((h["id"] for h in tool["holders"] if h["layout"].endswith("1_place")
+                       and (root/"parts"/h["id"]/"assembly/assembly_manifest.json").is_file()), None)
         if single is None:
             continue
         path = root/"parts"/single

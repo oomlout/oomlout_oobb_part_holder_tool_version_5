@@ -1,0 +1,16 @@
+{
+  "id": "tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30",
+  "title": "Mitutoyo 500-196-30 digital caliper, 150 mm",
+  "model_kind": "caliper",
+  "model_note": "Closed caliper. Overall length, beam width and outside jaw length follow the Mitutoyo dimensional drawing. Slider, jaws and display are simplified for identification.",
+  "md5": "ecf9e71ca0e8afaa9c2ebf698aae59dc",
+  "md5_6_alpha": "98vdz",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30"
+    }
+  ]
+}

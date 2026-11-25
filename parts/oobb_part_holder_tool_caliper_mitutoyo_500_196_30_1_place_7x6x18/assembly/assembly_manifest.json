@@ -1,0 +1,202 @@
+{
+  "configuration_title": "150 mm digital caliper holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "150 mm digital caliper holder",
+    "cover_subtitle": "Assembling the two halves and loading the tool",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30",
+    "details_title": "Tool and holder",
+    "details": [
+      "7 \u00d7 6 OOBB grid. Each half is 9 mm thick. The assembled holder is 18 mm thick.",
+      "Print two copies of the holder STL. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+      "Close the caliper jaws and lower the end of the beam into the opening, with the display facing forward.",
+      "The beam rests at the pocket floor and the closed jaws and display remain visible above the holder.",
+      "Closed caliper. Overall length, beam width and outside jaw length follow the Mitutoyo dimensional drawing. Slider, jaws and display are simplified for identification.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested."
+    ],
+    "summary_title": "Printed halves",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18",
+      "name": "Holder half",
+      "quantity": 2
+    },
+    "tool": {
+      "key": "tool",
+      "id": "tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30",
+      "name": "150 mm digital caliper",
+      "quantity": 1,
+      "md5": "ecf9e71ca0e8afaa9c2ebf698aae59dc",
+      "md5_6_alpha": "98vdz",
+      "short_label": "oom.lt/a/98vdz",
+      "short_url": "https://oom.lt/a/98vdz",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30"
+    }
+  },
+  "steps": [
+    {
+      "action": "Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Face the front half toward the rear pocket. Align the mounting holes and both top openings.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 36,
+      "withdraw_mm": 0,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Bring the halves together until their rims meet. Close the caliper jaws and lower the end of the beam into the opening, with the display facing forward.",
+      "add": [
+        "tool"
+      ],
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {
+        "tool": 1
+      }
+    },
+    {
+      "action": "Lower the tool through the top opening. The beam rests at the pocket floor and the closed jaws and display remain visible above the holder.",
+      "add": [],
+      "key": "step_04",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 3,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      0,
+      0,
+      180
+    ],
+    "translation_mm": [
+      0,
+      201,
+      1
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 2,
+    "tool_volume_inside_pocket_mm3": 3671.526,
+    "tool_count": 1,
+    "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
+  },
+  "source_sha256": {
+    "holder_stl": "4fa12686fef6d1632eca54c67a5c4979297b729dc0ae3a34b9ef80d7344b51e4",
+    "tool_glb": "8bd565895f54f31270a0c581536452ec8ba59b55686df51ea232638905bae765",
+    "tool_stl": "c997dbeacd2d2c55ef098f3da181436dede66154abe860043b2ae1929061e21e",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18",
+        "name": "Holder half",
+        "quantity": 2
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30",
+        "name": "150 mm digital caliper",
+        "quantity": 1,
+        "md5": "ecf9e71ca0e8afaa9c2ebf698aae59dc",
+        "md5_6_alpha": "98vdz",
+        "short_label": "oom.lt/a/98vdz",
+        "short_url": "https://oom.lt/a/98vdz",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "summary",
+      "number": 5
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 2
+}

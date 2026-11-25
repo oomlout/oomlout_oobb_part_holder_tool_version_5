@@ -1,3 +1,64 @@
+assembly_details:
+  alignment: Point the exposed bit down and centre it over the round opening.
+  check: The shoulder of the short handle rests at the top of the holder.
+  label: Picquic Teeny Turner
+  layout: 1_place
+  model_kind: stepped_body
+  rotation_deg:
+  - 0
+  - 0
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Point the exposed bit
+      down and centre it over the round opening.
+    add:
+    - tool
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tool through the top opening. The shoulder of the short handle
+      rests at the top of the holder.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic
+  translation_mm:
+  - 0
+  - -5.98
+  - 0
 body_style: vertical_project
 construction:
   mirror_second_print_x: false

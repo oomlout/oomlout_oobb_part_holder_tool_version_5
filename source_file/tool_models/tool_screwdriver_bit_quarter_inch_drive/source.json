@@ -1,0 +1,64 @@
+{
+  "id": "tool_screwdriver_bit_quarter_inch_drive",
+  "title": "Quarter-inch drive bit",
+  "model_kind": "long_driver_bit",
+  "model_note": "Representative Wera 851/4 Z PH2 bit, 89 mm long with a quarter-inch drive. The tapered tip is simplified and its length and end diameter are estimated.",
+  "md5": "3355be01e5bd24da4fe1b1d70c8d8dc8",
+  "md5_6_alpha": "203we",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x3x12",
+      "layout": "7_place",
+      "quantity": 7,
+      "source_id": "oobb_part_tool_holder_vertical_9_width_3_height_12_mm_depth_tool_screwdriver_bit_quarter_inch_drive_tool_7_multiple_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x4x12",
+      "layout": "7_place",
+      "quantity": 7,
+      "source_id": "oobb_part_tool_holder_vertical_9_width_4_height_12_mm_depth_tool_screwdriver_bit_quarter_inch_drive_tool_7_multiple_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x3x12",
+      "layout": "8_place",
+      "quantity": 8,
+      "source_id": "oobb_part_tool_holder_vertical_9_width_3_height_12_mm_depth_tool_screwdriver_bit_quarter_inch_drive_tool_8_multiple_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12",
+      "layout": "8_place",
+      "quantity": 8,
+      "source_id": "oobb_part_tool_holder_vertical_9_width_4_height_12_mm_depth_tool_screwdriver_bit_quarter_inch_drive_tool_8_multiple_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12",
+      "layout": "8_plus_7_layered",
+      "quantity": 15,
+      "source_id": "oobb_part_tool_holder_vertical_9_width_3_height_12_mm_depth_tool_screwdriver_bit_quarter_inch_drive_tool_8_multiple_layered_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12",
+      "layout": "8_plus_7_layered",
+      "quantity": 15,
+      "source_id": "oobb_part_tool_holder_vertical_9_width_4_height_12_mm_depth_tool_screwdriver_bit_quarter_inch_drive_tool_8_multiple_layered_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24",
+      "layout": "block_3_rows",
+      "quantity": 23,
+      "source_id": "oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24"
+    },
+    {
+      "id": "oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36",
+      "layout": "block_5_rows",
+      "quantity": 38,
+      "source_id": "oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36"
+    },
+    {
+      "id": "oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48",
+      "layout": "block_7_rows",
+      "quantity": 53,
+      "source_id": "oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48"
+    }
+  ]
+}

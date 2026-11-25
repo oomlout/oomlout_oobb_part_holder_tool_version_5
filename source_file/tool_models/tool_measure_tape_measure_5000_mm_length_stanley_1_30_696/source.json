@@ -1,0 +1,16 @@
+{
+  "id": "tool_measure_tape_measure_5000_mm_length_stanley_1_30_696",
+  "title": "Stanley 1-30-696 tape measure, 5 m",
+  "model_kind": "tape_measure",
+  "model_note": "Retracted Stanley Tylon 1-30-696, modelled with a 69 × 72 × 40 mm case from a distributor listing. The outline and coloured face follow the manufacturer photograph. The lock, hook and belt clip are simplified or omitted; dimensions and physical fit require confirmation on the actual tool.",
+  "md5": "4afecc8a8f7a77b0c30b4df61761d39d",
+  "md5_6_alpha": "2xccs",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "tool_measure_tape_measure_5000_mm_length_stanley_1_30_696"
+    }
+  ]
+}

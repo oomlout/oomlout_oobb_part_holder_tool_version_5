@@ -1,0 +1,346 @@
+{
+  "configuration_title": "Metric hex keys, forward holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "Metric hex keys, forward holder",
+    "cover_subtitle": "Assembling the two halves and loading the tool",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_1_5_mm",
+    "details_title": "Tool and holder",
+    "details": [
+      "5 \u00d7 5 OOBB grid. Each half is 4 mm thick. The assembled holder is 8 mm thick.",
+      "Print the supplied two-half layout once. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+      "Turn each key so its short arm points forward, then align the long arm over its sized bore.",
+      "Each key rests at its own bore floor and all six short arms remain accessible.",
+      "The holder specifies the hex size. Arm lengths follow the Wiha 350 short series as a representative example. The holder source leaves the key manufacturer unspecified. The elbow is simplified.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested.",
+      "See the holder README for the dimensions and OOMP references of every tool."
+    ],
+    "summary_title": "Printed halves",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_hex_key_small_metric_set_6_forward_5x5x8",
+      "name": "Holder half",
+      "quantity": 2
+    },
+    "tool": {
+      "key": "tool",
+      "id": "tool_hex_key_1_5_mm",
+      "name": "1.5 mm hex key",
+      "quantity": 1,
+      "md5": "0980291d84b5483e4528bf74c28da353",
+      "md5_6_alpha": "dcfd",
+      "short_label": "oom.lt/a/dcfd",
+      "short_url": "https://oom.lt/a/dcfd",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_1_5_mm"
+    },
+    "key_2": {
+      "key": "key_2",
+      "id": "tool_hex_key_2_mm",
+      "name": "2 mm hex key",
+      "quantity": 1,
+      "md5": "789ebea68c80e2ead2e92c5d3eb31a66",
+      "md5_6_alpha": "4pfi6",
+      "short_label": "oom.lt/a/4pfi6",
+      "short_url": "https://oom.lt/a/4pfi6",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_2_mm"
+    },
+    "key_2_5": {
+      "key": "key_2_5",
+      "id": "tool_hex_key_2_5_mm",
+      "name": "2.5 mm hex key",
+      "quantity": 1,
+      "md5": "077e2e073e72569054cb1e9acc413a29",
+      "md5_6_alpha": "aiwe",
+      "short_label": "oom.lt/a/aiwe",
+      "short_url": "https://oom.lt/a/aiwe",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_2_5_mm"
+    },
+    "key_3": {
+      "key": "key_3",
+      "id": "tool_hex_key_3_mm",
+      "name": "3 mm hex key",
+      "quantity": 1,
+      "md5": "dd043690ed59f28a4d86a32f09e508c3",
+      "md5_6_alpha": "8mgc6",
+      "short_label": "oom.lt/a/8mgc6",
+      "short_url": "https://oom.lt/a/8mgc6",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_3_mm"
+    },
+    "key_4": {
+      "key": "key_4",
+      "id": "tool_hex_key_4_mm",
+      "name": "4 mm hex key",
+      "quantity": 1,
+      "md5": "18db0328756d8633cdfe26a1ae207d79",
+      "md5_6_alpha": "yww3",
+      "short_label": "oom.lt/a/yww3",
+      "short_url": "https://oom.lt/a/yww3",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_4_mm"
+    },
+    "key_5": {
+      "key": "key_5",
+      "id": "tool_hex_key_5_mm",
+      "name": "5 mm hex key",
+      "quantity": 1,
+      "md5": "d7f91397834af81465a15bde29103683",
+      "md5_6_alpha": "8fdar",
+      "short_label": "oom.lt/a/8fdar",
+      "short_url": "https://oom.lt/a/8fdar",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_5_mm"
+    }
+  },
+  "steps": [
+    {
+      "action": "Orient the rear printed half on the wall with the pockets facing out.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Align the front printed half with the rear half and their holes.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 36,
+      "withdraw_mm": 0,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Join the halves and lower the 1.5, 2 and 2.5 mm keys into their pockets.",
+      "add": [
+        "tool",
+        "key_2",
+        "key_2_5"
+      ],
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {
+        "tool": 1,
+        "key_2": 1,
+        "key_2_5": 1
+      }
+    },
+    {
+      "action": "Lower the 3, 4 and 5 mm keys into the remaining pockets.",
+      "add": [
+        "key_3",
+        "key_4",
+        "key_5"
+      ],
+      "key": "step_04",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {
+        "key_3": 1,
+        "key_4": 1,
+        "key_5": 1
+      }
+    },
+    {
+      "action": "Seat every key at its pocket floor with each short arm pointing forward.",
+      "add": [],
+      "key": "step_05",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 5",
+      "number": 5,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 8,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      0,
+      -90,
+      0
+    ],
+    "translation_mm": [
+      22.5,
+      -1,
+      3
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 2,
+    "tool_volume_inside_pocket_mm3": 2965.17,
+    "tool_count": 6,
+    "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
+  },
+  "source_sha256": {
+    "holder_stl": "a4c79061e72b57e74e4bd8f5400633bf673a43cfa1c1a7b2191938912143a0cc",
+    "tool_glb": "c25955abc136e292bfa50c06ae9cfd0f438ffc90e2899a2ac2a91e9db09285d6",
+    "tool_stl": "e840d40cea5457e9e3b8e959f32646343e138503f9f1b8046af93d9746e4bb94",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67",
+    "key_2_glb": "1f9009cb9d323b3e7fc2febe1973eadbc9728581213cbe3bc4fda453ca4bfe9e",
+    "key_2_stl": "6f7678a826430c9a8bb0e1c231bf55885e80b93759a5ed7365fc086234f9f3e3",
+    "key_2_5_glb": "447c7869fc71a25cba82dd457c3157b780a902db2740f2c5b8a779f06087306f",
+    "key_2_5_stl": "f887aecc39b2c5921ff873fa8a4c03c2240e46e24699474fcc53960bb8acba2b",
+    "key_3_glb": "e852f50b5aafa288535d747ea9aaf429ef3812c9eb11aed4dbf8f7257fadf0bb",
+    "key_3_stl": "d0acfff570337479b2266978930d05bb78591f367ac707ccb8dd921425263214",
+    "key_4_glb": "6cdd2e81678cfe5add09071fd6942445bfca2b28f2f624bd00755046899af90d",
+    "key_4_stl": "798ec3348a89de5de7f7673f2e3f21132ae59c3f705e09ceb53eb7a5da996f34",
+    "key_5_glb": "fca940d4c29ef08a9a45b978245db0e837632e3147507eb9475da57de758536b",
+    "key_5_stl": "d74818ef430ae1cc1edbf32af95bafc4a4720d086ba02767cbfb63274900c0f3"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_hex_key_small_metric_set_6_forward_5x5x8",
+        "name": "Holder half",
+        "quantity": 2
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "tool_hex_key_1_5_mm",
+        "name": "1.5 mm hex key",
+        "quantity": 1,
+        "md5": "0980291d84b5483e4528bf74c28da353",
+        "md5_6_alpha": "dcfd",
+        "short_label": "oom.lt/a/dcfd",
+        "short_url": "https://oom.lt/a/dcfd",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_1_5_mm"
+      },
+      {
+        "key": "key_2",
+        "id": "tool_hex_key_2_mm",
+        "name": "2 mm hex key",
+        "quantity": 1,
+        "md5": "789ebea68c80e2ead2e92c5d3eb31a66",
+        "md5_6_alpha": "4pfi6",
+        "short_label": "oom.lt/a/4pfi6",
+        "short_url": "https://oom.lt/a/4pfi6",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_2_mm"
+      },
+      {
+        "key": "key_2_5",
+        "id": "tool_hex_key_2_5_mm",
+        "name": "2.5 mm hex key",
+        "quantity": 1,
+        "md5": "077e2e073e72569054cb1e9acc413a29",
+        "md5_6_alpha": "aiwe",
+        "short_label": "oom.lt/a/aiwe",
+        "short_url": "https://oom.lt/a/aiwe",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_2_5_mm"
+      },
+      {
+        "key": "key_3",
+        "id": "tool_hex_key_3_mm",
+        "name": "3 mm hex key",
+        "quantity": 1,
+        "md5": "dd043690ed59f28a4d86a32f09e508c3",
+        "md5_6_alpha": "8mgc6",
+        "short_label": "oom.lt/a/8mgc6",
+        "short_url": "https://oom.lt/a/8mgc6",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_3_mm"
+      },
+      {
+        "key": "key_4",
+        "id": "tool_hex_key_4_mm",
+        "name": "4 mm hex key",
+        "quantity": 1,
+        "md5": "18db0328756d8633cdfe26a1ae207d79",
+        "md5_6_alpha": "yww3",
+        "short_label": "oom.lt/a/yww3",
+        "short_url": "https://oom.lt/a/yww3",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_4_mm"
+      },
+      {
+        "key": "key_5",
+        "id": "tool_hex_key_5_mm",
+        "name": "5 mm hex key",
+        "quantity": 1,
+        "md5": "d7f91397834af81465a15bde29103683",
+        "md5_6_alpha": "8fdar",
+        "short_label": "oom.lt/a/8fdar",
+        "short_url": "https://oom.lt/a/8fdar",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_5_mm"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "instructions",
+      "group": 1
+    },
+    {
+      "kind": "summary",
+      "number": 6
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 2
+}

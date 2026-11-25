@@ -172,5 +172,5 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 Print the supplied layout once with both pockets facing up. Flip the right-hand piece over the left, face the pockets inward and align the holes.
 
-These tools also have illustrated single-place holder guides. [10 mm spanner](../oobb_part_holder_tool_spanner_m10_1_place_3x5x9/README.md#assembly) · [13 mm spanner](../oobb_part_holder_tool_spanner_m13_1_place_3x5x10/README.md#assembly)
+These tools also have illustrated single-place holder guides. [10 mm spanner](../oobb_part_holder_tool_spanner_m10_1_place_3x5x9/README.md#assembly) · [13 mm spanner](../oobb_part_holder_tool_spanner_m13_1_place_3x5x10/README.md#assembly) · [7 mm open spanner](../oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/README.md#assembly) · [8 mm spanner](../oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/README.md#assembly)
 <!-- oobb-presentation:end -->

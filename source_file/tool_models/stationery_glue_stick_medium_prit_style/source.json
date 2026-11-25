@@ -1,0 +1,22 @@
+{
+  "id": "stationery_glue_stick_medium_prit_style",
+  "title": "Medium Prit glue stick",
+  "model_kind": "pritt_stick",
+  "model_note": "Representative PLUS Pritt medium NS-702, approximately 20 g and 26 × 95 mm. The red closed body and dark twist base are simplified, with estimated cap and base lengths. The workshop specimen has not been measured.",
+  "md5": "7e0a052138d2b49f4914f31e2dc5235f",
+  "md5_6_alpha": "4x1j9",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "tool_tdpb_glue_stick_prit_medium"
+    },
+    {
+      "id": "oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30",
+      "layout": "with_knife",
+      "quantity": 1,
+      "source_id": "tool_tdpb_glue_stick_prit_medium_knife"
+    }
+  ]
+}

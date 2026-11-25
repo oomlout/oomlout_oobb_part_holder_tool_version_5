@@ -26,6 +26,84 @@ OOMP ID `oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30`
 <details><summary>Complete part metadata</summary>
 
 ```yaml
+assembly_details:
+  additional_tools:
+  - key: knife
+    label: Closed utility knife
+    model_kind: photo_reference
+    rotation_deg:
+    - 0
+    - 90
+    - 0
+    tool_id: tool_knife_craft_17_mm_black_exacto_style
+    translation_mm:
+    - -22.5
+    - -23.1
+    - 8.96
+  alignment: Hold the glue stick closed over the round pocket and the closed utility
+    knife edge-on over its slot.
+  check: The twist base and closed knife sit in their separate pockets, with their
+    upper ends accessible.
+  label: Glue stick and knife
+  layout: with_knife
+  model_kind: pritt_stick
+  primary_label: Medium Pritt glue stick
+  rotation_deg:
+  - 0
+  - 0
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Hold the glue stick closed
+      over the round pocket and the closed utility knife edge-on over its slot.
+    add:
+    - tool
+    - knife
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tools through the top openings. The twist base and closed knife
+      sit in their separate pockets, with their upper ends accessible.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: stationery_glue_stick_medium_prit_style
+  translation_mm:
+  - 11
+  - -25
+  - 14
 body_style: paired_v4
 construction:
   mirror_second_print_x: false
@@ -126,7 +204,22 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print the supplied two-body layout once. Move the right-hand half onto the left-hand half, keeping the pocket faces together and the openings aligned.
+Print the supplied two-half layout once. The dark teal half sits against the wall and the light teal half faces the room.
 
-These tools also have illustrated single-place holder guides. [Closed utility knife](../oobb_part_holder_tool_knife_utility_17mm_1_place_3x5x29d5/README.md#assembly)
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Hold the glue stick closed over the round pocket and the closed utility knife edge-on over its slot. [View step 3](assembly/render/raw/step_03.png)
+4. Lower the tools through the top openings. The twist base and closed knife sit in their separate pockets, with their upper ends accessible. [View step 4](assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the glue stick and knife holder](assembly/pages/page_03.png)
+
+</details>
+
+Representative PLUS Pritt medium NS-702, approximately 20 g and 26 × 95 mm. The red closed body and dark twist base are simplified, with estimated cap and base lengths. The workshop specimen has not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_glue_stick_medium_prit_style)
+
+Closed exterior based on the photo and a provisional 165 mm STANLEY 0-10-151 reference. The 17 mm OOMP label is retained. Size variant awaits measurement. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_craft_17_mm_black_exacto_style)
+
+[Offline HTML viewer](assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

@@ -1,0 +1,28 @@
+{
+  "id": "tool_wrench_m7",
+  "title": "M7 spanner",
+  "model_kind": "open_spanner",
+  "model_note": "Generic 7 mm open-end spanner using the FACOM 34.7 as a dimensional reference. Length, maximum head width and thickness follow the catalogue. The square-on jaws and shank are simplified, and the workshop specimen has not been measured.",
+  "md5": "3ceb3137d85ea40f1fde9913048099f3",
+  "md5_6_alpha": "2dkj5",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66",
+      "layout": "bench",
+      "quantity": 1,
+      "source_id": "tool_holder_basic"
+    },
+    {
+      "id": "oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10",
+      "layout": "4_place",
+      "quantity": 1,
+      "source_id": "oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10"
+    },
+    {
+      "id": "oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5"
+    }
+  ]
+}

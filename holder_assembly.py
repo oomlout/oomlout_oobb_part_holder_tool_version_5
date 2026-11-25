@@ -24,6 +24,8 @@ REFERENCES = ROOT / "source_file" / "tool_models"
 
 def print_instruction(**kwargs):
     part = kwargs["part"]
+    if part["construction"]["mode"] in ("block", "stand"):
+        return "Print the holder once."
     if part["construction"]["mode"] in ("paired_layout", "handed_pair"):
         return "Print the supplied two-half layout once."
     return "Print two copies of the holder STL."
@@ -35,38 +37,68 @@ def digest(path):
 
 def verify_pose(**kwargs):
     layers = kwargs["layers"]
-    lower, upper = layers
+    lower = layers[0]
     tool = trimesh.load_mesh(kwargs["tool"])
     recipe = kwargs["recipe"]
     rotation = trimesh.transformations.euler_matrix(*np.radians(recipe["rotation_deg"]))
     tool.apply_transform(rotation)
     tool.apply_translation(recipe["translation_mm"])
-    if not all(mesh.is_volume for mesh in [lower, upper, tool]):
+    if not all(mesh.is_volume for mesh in [*layers, tool]):
         raise ValueError("The pose check requires closed production solids")
+    offsets = recipe.get("instance_offsets_mm")
+    if offsets is None:
+        offsets = [[x, 0, 0] for x in recipe.get("instance_x_mm", [0])]
+    instances = []
+    for offset in offsets:
+        instance = tool.copy()
+        instance.apply_translation(offset)
+        instances.append(instance)
+    for extra in recipe.get("additional_tools", []):
+        instance = trimesh.load_mesh(REFERENCES / extra["tool_id"] / "working.stl")
+        rotation = trimesh.transformations.euler_matrix(*np.radians(extra["rotation_deg"]))
+        instance.apply_transform(rotation)
+        instance.apply_translation(extra["translation_mm"])
+        if not instance.is_volume:
+            raise ValueError(f"{extra['label']} requires a closed production solid")
+        instances.append(instance)
+    for index, first in enumerate(instances):
+        for second in instances[index + 1:]:
+            if np.any(first.bounds[1] <= second.bounds[0]) or np.any(second.bounds[1] <= first.bounds[0]):
+                continue
+            overlap = trimesh.boolean.intersection([first, second], engine="manifold")
+            if len(overlap.faces) and abs(float(overlap.volume)) > 0.0001:
+                raise ValueError(f"{recipe['label']} has overlapping tools")
     travel = max(step["withdraw_mm"] for step in recipe["steps"])
     greatest_overlap = 0.0
     for distance in np.linspace(0, travel, 15):
-        moving = tool.copy()
-        moving.apply_translation([0, distance, 0])
-        for layer in layers:
-            overlap = trimesh.boolean.intersection([layer, moving], engine="manifold")
-            if len(overlap.faces) and np.all(overlap.extents > 0.00001):
-                greatest_overlap = max(greatest_overlap, abs(float(overlap.volume)))
+        for instance in instances:
+            moving = instance.copy()
+            moving.apply_translation(np.asarray(recipe.get("insertion_axis", [0, 1, 0])) * distance)
+            for obstacle in [*layers, *(other for other in instances if other is not instance)]:
+                if np.any(moving.bounds[1] <= obstacle.bounds[0]) or np.any(obstacle.bounds[1] <= moving.bounds[0]):
+                    continue
+                overlap = trimesh.boolean.intersection([obstacle, moving], engine="manifold")
+                if len(overlap.faces) and np.all(overlap.extents > 0.00001):
+                    greatest_overlap = max(greatest_overlap, abs(float(overlap.volume)))
     if greatest_overlap > 0.0001:
         raise ValueError(f"{recipe['label']} intersects a holder half by {greatest_overlap:g} mm3")
-    low = lower.bounds[0]
-    high = upper.bounds[1]
+    low = np.min([layer.bounds[0] for layer in layers], axis=0)
+    high = np.max([layer.bounds[1] for layer in layers], axis=0)
     probe = trimesh.creation.box(high - low)
     probe.apply_translation((low + high) / 2)
-    seated = trimesh.boolean.intersection([probe, tool], engine="manifold")
-    occupied = float(seated.volume) if len(seated.faces) else 0.0
-    if occupied < 1:
-        raise ValueError(f"{recipe['label']} misses the pocket")
+    occupancies = []
+    for instance in instances:
+        seated = trimesh.boolean.intersection([probe, instance], engine="manifold")
+        occupied = float(seated.volume) if len(seated.faces) else 0.0
+        if occupied < 1:
+            raise ValueError(f"{recipe['label']} misses the pocket")
+        occupancies.append(occupied)
     return {
         "holder_intersection_mm3": greatest_overlap,
         "insertion_positions_checked": 15,
         "printed_halves_checked": len(layers),
-        "tool_volume_inside_pocket_mm3": round(occupied, 3),
+        "tool_volume_inside_pocket_mm3": round(sum(occupancies), 3),
+        "tool_count": len(instances),
         "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence.",
     }
 
@@ -74,6 +106,7 @@ def verify_pose(**kwargs):
 def make_sheet(**kwargs):
     raw = kwargs["raw"]
     title = kwargs["title"]
+    single_piece = kwargs.get("single_piece", False)
     sheet = Image.new("RGB", (1280, 724), "#f6f4ef")
     for index, name in enumerate(("book_cover", "exploded")):
         with Image.open(raw / (name + ".png")) as source:
@@ -84,8 +117,10 @@ def make_sheet(**kwargs):
             sheet.paste(image, (320 + 640*index - image.width//2, 332-image.height//2), image)
     draw = ImageDraw.Draw(sheet)
     draw.text((25, 16), title, font=ImageFont.load_default(size=29), fill="#243a3b")
-    draw.text((26, 615), "Wall-mounted holder and tool", font=ImageFont.load_default(size=21), fill="#243a3b")
-    draw.text((665, 615), "Exploded view - two printed halves", font=ImageFont.load_default(size=21), fill="#243a3b")
+    first_label = "Holder and tools" if single_piece else "Wall-mounted holder and tool"
+    second_label = "Tool positions viewed from above" if single_piece else "Exploded view - two printed halves"
+    draw.text((26, 615), first_label, font=ImageFont.load_default(size=21), fill="#243a3b")
+    draw.text((665, 615), second_label, font=ImageFont.load_default(size=21), fill="#243a3b")
     draw.text((26, 682), "OOMP tool model · Physical fit unverified · AI-generated CAD illustration.",
               font=ImageFont.load_default(size=17), fill="#536361")
     buffer = io.BytesIO()
@@ -102,18 +137,21 @@ def publish_book(**kwargs):
     source = json.loads((reference / "source.json").read_text(encoding="utf-8"))
     source_url = "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/" + source["id"]
     fit = kwargs["fit"]
+    quantity = len(recipe.get("instance_offsets_mm", recipe.get("instance_x_mm", [0])))
+    single_piece = part["construction"]["mode"] in ("block", "stand")
+    holder_quantity = 1 if single_piece else 2
     parts = {
         "holder": {
             "key": "holder",
             "id": part["id"],
-            "name": "Holder half",
-            "quantity": 2,
+            "name": "Holder" if single_piece else "Holder half",
+            "quantity": holder_quantity,
         },
         "tool": {
             "key": "tool",
             "id": source["id"],
-            "name": recipe["label"],
-            "quantity": 1,
+            "name": recipe.get("primary_label", recipe["label"]),
+            "quantity": quantity,
             "md5": source["md5"],
             "md5_6_alpha": source["md5_6_alpha"],
             "short_label": "oom.lt/a/" + source["md5_6_alpha"],
@@ -121,6 +159,20 @@ def publish_book(**kwargs):
             "identity_source": source_url,
         },
     }
+    for extra in recipe.get("additional_tools", []):
+        extra_source = json.loads((REFERENCES / extra["tool_id"] / "source.json").read_text(encoding="utf-8"))
+        extra_url = "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/" + extra_source["id"]
+        parts[extra["key"]] = {
+            "key": extra["key"],
+            "id": extra_source["id"],
+            "name": extra["label"],
+            "quantity": 1,
+            "md5": extra_source["md5"],
+            "md5_6_alpha": extra_source["md5_6_alpha"],
+            "short_label": "oom.lt/a/" + extra_source["md5_6_alpha"],
+            "short_url": "https://oom.lt/a/" + extra_source["md5_6_alpha"],
+            "identity_source": extra_url,
+        }
     steps = []
     added = []
     for number, step in enumerate(recipe["steps"], start=1):
@@ -129,29 +181,39 @@ def publish_book(**kwargs):
             **step,
             "title": f"Loading operation {number}",
             "number": number,
-            "loose_parts": dict.fromkeys(step["add"], 1),
+            "loose_parts": dict(Counter(step["add"])),
         })
     if Counter(added) != {key: item["quantity"] for key, item in parts.items()}:
         raise ValueError("Each physical item must enter the assembly once")
     title = recipe["label"] + " holder"
+    dimensions = f"{part['width']} × {part['height']} OOBB grid. The holder prints as one block." if single_piece else f"{part['width']} × {part['height']} OOBB grid. Each half is {part['depth']/2:g} mm thick. The assembled holder is {part['depth']:g} mm thick."
+    placement = "Place the block upright and lower the bits into its pockets." if single_piece else "Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder."
     details = [
-        f"{part['width']} × {part['height']} OOBB grid. Each half is {part['depth']/2:g} mm thick. The assembled holder is {part['depth']:g} mm thick.",
-        print_instruction(part=part) + " Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+        dimensions,
+        print_instruction(part=part) + " " + placement,
         recipe["alignment"], recipe["check"], source["model_note"],
         "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
         "AI-generated CAD images and instructions. Physical fit has yet to be tested.",
     ]
+    if len(recipe.get("additional_tools", [])) > 2:
+        details.append("See the holder README for the dimensions and OOMP references of every tool.")
+    else:
+        for extra in recipe.get("additional_tools", []):
+            extra_source = json.loads((REFERENCES / extra["tool_id"] / "source.json").read_text(encoding="utf-8"))
+            details.append(extra_source["model_note"])
+    if part.get("layered"):
+        details.append("The seven staggered front positions are open-face grooves. Bit retention has not been physically tested.")
     data = {
         "configuration_title": title,
         "style": recipe["style"],
         "book": {
             "cover_title": title,
-            "cover_subtitle": "Assembling the two halves and loading the tool",
+            "cover_subtitle": "Loading the tool holder" if single_piece else "Assembling the two halves and loading the tool",
             "project_name": ROOT.name + " / OOMP tool reference",
             "project_url": source_url,
             "details_title": "Tool and holder",
             "details": details,
-            "summary_title": "Printed halves",
+            "summary_title": "Printed holder" if single_piece else "Printed halves",
             "hardware_title": "Workshop tool",
             "summary_view": "loaded_top",
             "signature_pages": 4,
@@ -162,7 +224,7 @@ def publish_book(**kwargs):
         },
         "parts": parts,
         "steps": steps,
-        "physical_item_count": 3,
+        "physical_item_count": holder_quantity + quantity + len(recipe.get("additional_tools", [])),
         "printed_keys": ["holder"],
         "pose": {
             "rotation_deg": recipe["rotation_deg"],
@@ -174,12 +236,23 @@ def publish_book(**kwargs):
             "tool_glb": digest(reference / "working.glb"),
             "tool_stl": digest(reference / "working.stl"),
             "logo": digest(REFERENCES / "oomlout-LOGO-unshaded-vector.svg"),
+            **{
+                extra["key"] + "_" + ext: digest(REFERENCES / extra["tool_id"] / ("working." + ext))
+                for extra in recipe.get("additional_tools", [])
+                for ext in ("glb", "stl")
+            },
         },
     }
     assembly_booklet.publish(output=output, data=data)
     assembly_booklet.review_outputs(output=output, data=data)
     assembly_viewer.publish(output=output, data=data)
     sequence = "\n".join(f"{s['number']}. {s['action']}" for s in steps)
+    extra_notes = "\n\n".join(
+        json.loads((REFERENCES / extra["tool_id"] / "source.json").read_text(encoding="utf-8"))["model_note"]
+        + " [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/"
+        + extra["tool_id"] + ")"
+        for extra in recipe.get("additional_tools", [])
+    )
     notes = f"""# {title}
 
 AI-generated CAD images and instructions. Errors possible.
@@ -190,13 +263,17 @@ AI-generated CAD images and instructions. Errors possible.
 
 ## Assembly and loading
 
-{print_instruction(part=part)} The dark teal half sits against the wall. The light teal half faces the room. The opening and tool handles point up.
+{print_instruction(part=part)} {("Place the block upright with the openings facing up." if single_piece else "The dark teal half sits against the wall. The light teal half faces the room. The opening and tool handles point up.")}
 
 {sequence}
 
 ## Model and fit
 
 {source['model_note']} The illustrated pose was checked against the production STL at the original model scale. Physical fit remains unverified. [OOMP tool record]({source_url})
+
+{extra_notes}
+
+{("The seven staggered front positions are open-face grooves. Bit retention has not been physically tested." if part.get("layered") else "")}
 
 The PDF uses eight landscape A4 pages in reader order. Choose booklet printing for folded copies.
 """
@@ -207,7 +284,7 @@ The PDF uses eight landscape A4 pages in reader order. Choose booklet printing f
     for item in parts.values():
         writer.writerow([item["name"], item["id"], item["quantity"], item.get("identity_source", ""), item.get("short_url", "")])
     write_file(output / "parts.csv", inventory.getvalue())
-    return make_sheet(raw=output/"render/raw", title=title)
+    return make_sheet(raw=output/"render/raw", title=title, single_piece=single_piece)
 
 
 def build_assemblies(**kwargs):
@@ -224,6 +301,9 @@ def build_assemblies(**kwargs):
         reference = REFERENCES / recipe["tool_id"]
         assets = [folder/"3dpr.stl", reference/"working.glb", reference/"working.stl", reference/"source.json",
                   REFERENCES/"oomlout-LOGO-unshaded-vector.svg"]
+        for extra in recipe.get("additional_tools", []):
+            directory = REFERENCES / extra["tool_id"]
+            assets.extend([directory/"working.glb", directory/"working.stl", directory/"source.json"])
         key = hashlib.sha256(json.dumps([inputs, [digest(p) for p in assets], part], sort_keys=True).encode()).hexdigest()
         cache = ROOT / "build" / "assembly" / folder.name
         cache.mkdir(parents=True, exist_ok=True)
@@ -238,7 +318,7 @@ def build_assemblies(**kwargs):
             if not installed:
                 raise FileNotFoundError("Set BLENDER_EXE to render the tool in its holder")
             blender = str(installed[-1])
-        with tempfile.TemporaryDirectory(dir=cache) as scratch:
+        with tempfile.TemporaryDirectory() as scratch:
             work = Path(scratch)
             output = work / "assembly"
             layers = holder_layers.assembled_layers(mesh=trimesh.load_mesh(folder/"3dpr.stl"), construction=part["construction"])
@@ -253,6 +333,10 @@ def build_assemblies(**kwargs):
                 "tool": str(reference/"working.glb"),
                 "output": str(output/"render/raw"),
                 "recipe": recipe,
+                "additional_tools": {
+                    extra["key"]: str(REFERENCES / extra["tool_id"] / "working.glb")
+                    for extra in recipe.get("additional_tools", [])
+                },
             }
             batch = work/"job.json"
             batch.write_text(json.dumps([job]))

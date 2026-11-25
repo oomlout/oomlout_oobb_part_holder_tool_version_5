@@ -1,3 +1,81 @@
+assembly_details:
+  additional_tools:
+  - key: knife
+    label: Closed utility knife
+    model_kind: photo_reference
+    rotation_deg:
+    - 0
+    - 90
+    - 0
+    tool_id: tool_knife_craft_17_mm_black_exacto_style
+    translation_mm:
+    - -22.5
+    - -23.1
+    - 8.96
+  alignment: Hold the glue stick closed over the round pocket and the closed utility
+    knife edge-on over its slot.
+  check: The twist base and closed knife sit in their separate pockets, with their
+    upper ends accessible.
+  label: Glue stick and knife
+  layout: with_knife
+  model_kind: pritt_stick
+  primary_label: Medium Pritt glue stick
+  rotation_deg:
+  - 0
+  - 0
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Hold the glue stick closed
+      over the round pocket and the closed utility knife edge-on over its slot.
+    add:
+    - tool
+    - knife
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tools through the top openings. The twist base and closed knife
+      sit in their separate pockets, with their upper ends accessible.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: stationery_glue_stick_medium_prit_style
+  translation_mm:
+  - 11
+  - -25
+  - 14
 body_style: paired_v4
 construction:
   mirror_second_print_x: false

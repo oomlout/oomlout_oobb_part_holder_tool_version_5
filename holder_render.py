@@ -20,7 +20,7 @@ def render_parts(**kwargs):
     force = kwargs.get("force", False)
     executable = kwargs.get("blender") or os.environ.get("BLENDER_EXE") or shutil.which("blender")
     worker = ROOT / "presentation" / "render_holder.py"
-    cache = ROOT / "build" / "renders"
+    cache = ROOT / "build" / "holder_renders"
     jobs = []
     sheets = []
     cache.mkdir(parents=True, exist_ok=True)

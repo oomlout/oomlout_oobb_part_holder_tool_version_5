@@ -60,8 +60,8 @@ source_evidence:
   title: Archived OOMP outline
   url: https://github.com/oomlout/oomlout_oomp_version_1_messy/blob/main/parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30/drawing.cdr
 additional_manufacturer_references: []
-existing_loaded_guides: []
-remaining_holder_views:
+existing_loaded_guides:
 - id: oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18
   quantity: 1
   layout: 1_place
+remaining_holder_views: []

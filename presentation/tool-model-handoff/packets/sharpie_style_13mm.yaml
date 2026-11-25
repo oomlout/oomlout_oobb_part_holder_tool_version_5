@@ -33,8 +33,7 @@ source_evidence:
   title: OOBB vertical holder recipe
   url: https://github.com/oomlout/oomlout_oobb_part_tool_holder_vertical/blob/93a962a09e0c275c3cfa62187182ac3203bde1b2/scad.py
 additional_manufacturer_references: []
-existing_loaded_guides: []
-remaining_holder_views:
+existing_loaded_guides:
 - id: oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x1x17
   quantity: 1
   layout: 1_place
@@ -53,3 +52,4 @@ remaining_holder_views:
 - id: oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17
   quantity: 5
   layout: 5_place
+remaining_holder_views: []

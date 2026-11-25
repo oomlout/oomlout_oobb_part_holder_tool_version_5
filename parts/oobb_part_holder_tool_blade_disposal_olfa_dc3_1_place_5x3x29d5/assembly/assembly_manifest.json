@@ -1,0 +1,202 @@
+{
+  "configuration_title": "OLFA DC-3 disposal can holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "OLFA DC-3 disposal can holder",
+    "cover_subtitle": "Assembling the two halves and loading the tool",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_utility_blade_disposal_can_olfa_dc_3",
+    "details_title": "Tool and holder",
+    "details": [
+      "5 \u00d7 3 OOBB grid. Each half is 14.75 mm thick. The assembled holder is 29.5 mm thick.",
+      "Print two copies of the holder STL. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+      "Keep the disposal can closed and lower its round body into the pocket.",
+      "The can rests against the bottom of the curved pocket with the red face towards the room.",
+      "Round yellow body and red face approximation using OLFA's overall length and thickness and product photograph. The sliding door, lettering and rim details are omitted.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested."
+    ],
+    "summary_title": "Printed halves",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5",
+      "name": "Holder half",
+      "quantity": 2
+    },
+    "tool": {
+      "key": "tool",
+      "id": "tool_knife_utility_blade_disposal_can_olfa_dc_3",
+      "name": "OLFA DC-3 disposal can",
+      "quantity": 1,
+      "md5": "9f1af56706b97aca3745404231d33c7e",
+      "md5_6_alpha": "67hmd",
+      "short_label": "oom.lt/a/67hmd",
+      "short_url": "https://oom.lt/a/67hmd",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_utility_blade_disposal_can_olfa_dc_3"
+    }
+  },
+  "steps": [
+    {
+      "action": "Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Face the front half toward the rear pocket. Align the mounting holes and both top openings.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 36,
+      "withdraw_mm": 0,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Bring the halves together until their rims meet. Keep the disposal can closed and lower its round body into the pocket.",
+      "add": [
+        "tool"
+      ],
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {
+        "tool": 1
+      }
+    },
+    {
+      "action": "Lower the tool through the top opening. The can rests against the bottom of the curved pocket with the red face towards the room.",
+      "add": [],
+      "key": "step_04",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 3,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      27.5,
+      1.75
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 2,
+    "tool_volume_inside_pocket_mm3": 33372.635,
+    "tool_count": 1,
+    "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
+  },
+  "source_sha256": {
+    "holder_stl": "19fe37aa1aa0962dfcaa8a892901f9f9476715095165ea35dd01bb07e140d1b6",
+    "tool_glb": "675368f9519af109a8236b57da606f82006804f3926efd1a1b68c3a6149e74b1",
+    "tool_stl": "ecf4c0a1e27a93912bcc7c24c85dd543e9502d075a89cea8202c10687d83223e",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5",
+        "name": "Holder half",
+        "quantity": 2
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "tool_knife_utility_blade_disposal_can_olfa_dc_3",
+        "name": "OLFA DC-3 disposal can",
+        "quantity": 1,
+        "md5": "9f1af56706b97aca3745404231d33c7e",
+        "md5_6_alpha": "67hmd",
+        "short_label": "oom.lt/a/67hmd",
+        "short_url": "https://oom.lt/a/67hmd",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_utility_blade_disposal_can_olfa_dc_3"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "summary",
+      "number": 5
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 2
+}

@@ -1,17 +1,21 @@
 title: M7 spanner
 oomp_id: tool_wrench_m7
 populate_key: tool_wrench_m7
-model_kind: holder_envelope
-model_task: Build an external tool model
-modelling_and_seating_instructions: The Bahco 111M-7 ring is 5.3 mm thick and its
-  open jaw is 17.1 mm wide. Both ends exceed one dimension of the 16 × 4.5 mm single
-  pocket. Start with the FACOM 34.7 slim double-ended reference or the actual workshop
-  specimen and verify both head widths and thicknesses. Compare the four-spanner holder
-  and bench separately.
-existing_model_note: Geometry follows the holder clearance profile. Its dimensions
-  describe the pocket used in the source design. Physical tool dimensions and fit
-  have yet to be measured.
-declared_tool_parameters: {}
+model_kind: open_spanner
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: The FACOM 34.7 representative has a 15 × 2.7 mm
+  head and 80 mm length. Its simplified independent model fits the 16 × 4.5 mm single
+  pocket. Check the four-spanner holder and bench separately, and confirm the actual
+  workshop specimen.
+existing_model_note: Generic 7 mm open-end spanner using the FACOM 34.7 as a dimensional
+  reference. Length, maximum head width and thickness follow the catalogue. The square-on
+  jaws and shank are simplified, and the workshop specimen has not been measured.
+declared_tool_parameters:
+  across_flats_mm: 7
+  head_width_mm: 15
+  length_mm: 80
+  shank_width_mm: 6
+  thickness_mm: 2.7
 pocket_reference_only_mm:
 - h: 4.5
   points:
@@ -38,6 +42,9 @@ local_originals: []
 source_record_from_tools_repo: parts/tool_wrench_m7/working.yaml
 model_files_from_tools_repo: parts/tool_wrench_m7/three_d_model
 source_evidence:
+- supports: 34.7 nominal jaw size, overall length, head width and thickness.
+  title: FACOM 34 metric open-end spanners
+  url: https://facom.eu/products/34-midget-double-open-end-wrenches-metric
 - supports: Upstream tool naming and clearance geometry used in the holder migration.
   title: OOBB v4 tool shapes
   url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
@@ -48,7 +55,10 @@ additional_manufacturer_references:
 - title: Bahco 111M size table
   url: https://www.bahco.com/int_en/metric-flat-combination-wrenches-with-chrome-finish-pb_111m_.html
   use: Compare head widths and thicknesses against the positioned pocket.
-existing_loaded_guides: []
+existing_loaded_guides:
+- id: oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5
+  quantity: 1
+  layout: 1_place
 remaining_holder_views:
 - id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
   quantity: 1
@@ -56,6 +66,3 @@ remaining_holder_views:
 - id: oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10
   quantity: 1
   layout: 4_place
-- id: oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5
-  quantity: 1
-  layout: 1_place

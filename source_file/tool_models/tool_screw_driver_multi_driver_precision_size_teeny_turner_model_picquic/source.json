@@ -1,0 +1,16 @@
+{
+  "id": "tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic",
+  "title": "Picquic Teeny Turner precision multi-driver",
+  "model_kind": "stepped_body",
+  "model_note": "Four coaxial sections follow the archived OOMP drawing, read at its document scale. The handle and exposed bit use simplified round sections.",
+  "md5": "ad408286f641b8fe3b296cfcec1c70ec",
+  "md5_6_alpha": "6rczm",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "oobb_part_tool_holder_vertical_3_width_3_height_31_mm_depth_tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic_tool_extra"
+    }
+  ]
+}

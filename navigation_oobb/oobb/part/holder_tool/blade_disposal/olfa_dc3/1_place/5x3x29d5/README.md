@@ -26,6 +26,68 @@ OOMP ID `oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5`
 <details><summary>Complete part metadata</summary>
 
 ```yaml
+assembly_details:
+  alignment: Keep the disposal can closed and lower its round body into the pocket.
+  check: The can rests against the bottom of the curved pocket with the red face towards
+    the room.
+  label: OLFA DC-3 disposal can
+  layout: 1_place
+  model_kind: olfa_can
+  rotation_deg:
+  - 0
+  - 0
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Keep the disposal can
+      closed and lower its round body into the pocket.
+    add:
+    - tool
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tool through the top opening. The can rests against the bottom
+      of the curved pocket with the red face towards the room.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_knife_utility_blade_disposal_can_olfa_dc_3
+  translation_mm:
+  - 0
+  - 27.5
+  - 1.75
 body_style: vertical_v4
 construction:
   mirror_second_print_x: false
@@ -107,5 +169,20 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. [Illustrated tool-loading guides](../../../../../../../../README.md#assembly)
+Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](../../../../../../../../parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](../../../../../../../../parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Keep the disposal can closed and lower its round body into the pocket. [View step 3](../../../../../../../../parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/render/raw/step_03.png)
+4. Lower the tool through the top opening. The can rests against the bottom of the curved pocket with the red face towards the room. [View step 4](../../../../../../../../parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the olfa dc-3 disposal can holder](../../../../../../../../parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/pages/page_03.png)
+
+</details>
+
+Round yellow body and red face approximation using OLFA's overall length and thickness and product photograph. The sliding door, lettering and rim details are omitted. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_utility_blade_disposal_can_olfa_dc_3)
+
+[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

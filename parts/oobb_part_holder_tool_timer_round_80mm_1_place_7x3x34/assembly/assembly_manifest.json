@@ -1,0 +1,202 @@
+{
+  "configuration_title": "80 mm round timer holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "80 mm round timer holder",
+    "cover_subtitle": "Assembling the two halves and loading the tool",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_timer_80_mm_diameter_30_mm_depth_black",
+    "details_title": "Tool and holder",
+    "details": [
+      "7 \u00d7 3 OOBB grid. Each half is 17 mm thick. The assembled holder is 34 mm thick.",
+      "Print two copies of the holder STL. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+      "Hold the round timer with its face towards the room and align it above the curved pocket.",
+      "Lower the timer until its rim rests on the curved pocket floor.",
+      "External body envelope from the OOMP timer record. The holder has clearance around both faces and the rim.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested."
+    ],
+    "summary_title": "Printed halves",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34",
+      "name": "Holder half",
+      "quantity": 2
+    },
+    "tool": {
+      "key": "tool",
+      "id": "tool_timer_80_mm_diameter_30_mm_depth_black",
+      "name": "80 mm round timer",
+      "quantity": 1,
+      "md5": "3613853f6b4f2dc754e5905a82a48350",
+      "md5_6_alpha": "23yit",
+      "short_label": "oom.lt/a/23yit",
+      "short_url": "https://oom.lt/a/23yit",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_timer_80_mm_diameter_30_mm_depth_black"
+    }
+  },
+  "steps": [
+    {
+      "action": "Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Face the front half toward the rear pocket. Align the mounting holes and both top openings.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 36,
+      "withdraw_mm": 0,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Bring the halves together until their rims meet. Hold the round timer with its face towards the room and align it above the curved pocket.",
+      "add": [
+        "tool"
+      ],
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {
+        "tool": 1
+      }
+    },
+    {
+      "action": "Lower the tool through the top opening. Lower the timer until its rim rests on the curved pocket floor.",
+      "add": [],
+      "key": "step_04",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 3,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      33,
+      1
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 2,
+    "tool_volume_inside_pocket_mm3": 49213.215,
+    "tool_count": 1,
+    "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
+  },
+  "source_sha256": {
+    "holder_stl": "9f7063266d463b847b860768d8ac0d504fdf9747d1f4b799a4c1b9196dc048de",
+    "tool_glb": "04a118d2d8b4717fa4fabe65c14544cfcf380182c6b1c6db3e3455edf3888d6a",
+    "tool_stl": "04b142dcb85deead7e2b6fe78ced01013bf6c9ad0771789acb7f0140c74e9331",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34",
+        "name": "Holder half",
+        "quantity": 2
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "tool_timer_80_mm_diameter_30_mm_depth_black",
+        "name": "80 mm round timer",
+        "quantity": 1,
+        "md5": "3613853f6b4f2dc754e5905a82a48350",
+        "md5_6_alpha": "23yit",
+        "short_label": "oom.lt/a/23yit",
+        "short_url": "https://oom.lt/a/23yit",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_timer_80_mm_diameter_30_mm_depth_black"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "summary",
+      "number": 5
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 2
+}

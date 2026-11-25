@@ -1,0 +1,202 @@
+{
+  "configuration_title": "Stanley 5 m tape measure holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "Stanley 5 m tape measure holder",
+    "cover_subtitle": "Assembling the two halves and loading the tool",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_measure_tape_measure_5000_mm_length_stanley_1_30_696",
+    "details_title": "Tool and holder",
+    "details": [
+      "7 \u00d7 3 OOBB grid. Each half is 22 mm thick. The assembled holder is 44 mm thick.",
+      "Print two copies of the holder STL. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+      "Retract the tape and lower the case into the wide opening with the dark face forward.",
+      "The lower case rests on the pocket floor and the upper case remains accessible.",
+      "Retracted Stanley Tylon 1-30-696, modelled with a 69 \u00d7 72 \u00d7 40 mm case from a distributor listing. The outline and coloured face follow the manufacturer photograph. The lock, hook and belt clip are simplified or omitted; dimensions and physical fit require confirmation on the actual tool.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested."
+    ],
+    "summary_title": "Printed halves",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44",
+      "name": "Holder half",
+      "quantity": 2
+    },
+    "tool": {
+      "key": "tool",
+      "id": "tool_measure_tape_measure_5000_mm_length_stanley_1_30_696",
+      "name": "Stanley 5 m tape measure",
+      "quantity": 1,
+      "md5": "4afecc8a8f7a77b0c30b4df61761d39d",
+      "md5_6_alpha": "2xccs",
+      "short_label": "oom.lt/a/2xccs",
+      "short_url": "https://oom.lt/a/2xccs",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_measure_tape_measure_5000_mm_length_stanley_1_30_696"
+    }
+  },
+  "steps": [
+    {
+      "action": "Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Face the front half toward the rear pocket. Align the mounting holes and both top openings.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 36,
+      "withdraw_mm": 0,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Bring the halves together until their rims meet. Retract the tape and lower the case into the wide opening with the dark face forward.",
+      "add": [
+        "tool"
+      ],
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {
+        "tool": 1
+      }
+    },
+    {
+      "action": "Lower the tool through the top opening. The lower case rests on the pocket floor and the upper case remains accessible.",
+      "add": [],
+      "key": "step_04",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 3,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      -9,
+      1
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 2,
+    "tool_volume_inside_pocket_mm3": 79302.428,
+    "tool_count": 1,
+    "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
+  },
+  "source_sha256": {
+    "holder_stl": "3f0639d9e2368b7eb9b1ddcf4d99257ed4e2e51ed84d3b5d9820ecf32c3d6221",
+    "tool_glb": "bc1e95d86ca4a0144a9f5adc059ed331dbfd9554933dff05bbaaa8883399454d",
+    "tool_stl": "b7804d335d73f5a3a5fbb87b77ee0ab5a459962326106063d66972b0f8efe3a5",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44",
+        "name": "Holder half",
+        "quantity": 2
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "tool_measure_tape_measure_5000_mm_length_stanley_1_30_696",
+        "name": "Stanley 5 m tape measure",
+        "quantity": 1,
+        "md5": "4afecc8a8f7a77b0c30b4df61761d39d",
+        "md5_6_alpha": "2xccs",
+        "short_label": "oom.lt/a/2xccs",
+        "short_url": "https://oom.lt/a/2xccs",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_measure_tape_measure_5000_mm_length_stanley_1_30_696"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "summary",
+      "number": 5
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 2
+}

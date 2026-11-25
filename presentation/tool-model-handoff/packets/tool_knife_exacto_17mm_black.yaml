@@ -61,13 +61,13 @@ source_evidence:
   url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
 additional_manufacturer_references: []
 existing_loaded_guides:
+- id: oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30
+  quantity: 1
+  layout: with_knife
 - id: oobb_part_holder_tool_knife_utility_17mm_1_place_3x5x29d5
   quantity: 1
   layout: 1_place
 remaining_holder_views:
-- id: oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30
-  quantity: 1
-  layout: with_knife
 - id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
   quantity: 1
   layout: bench

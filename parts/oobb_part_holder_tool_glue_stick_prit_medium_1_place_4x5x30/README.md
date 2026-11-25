@@ -26,6 +26,67 @@ OOMP ID `oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30`
 <details><summary>Complete part metadata</summary>
 
 ```yaml
+assembly_details:
+  alignment: Hold the glue stick closed and lower the twist base into the round opening.
+  check: The twist base rests at the pocket floor and the closed cap remains accessible.
+  label: Medium Pritt glue stick
+  layout: 1_place
+  model_kind: pritt_stick
+  rotation_deg:
+  - 0
+  - 0
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Hold the glue stick closed
+      and lower the twist base into the round opening.
+    add:
+    - tool
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tool through the top opening. The twist base rests at the pocket
+      floor and the closed cap remains accessible.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: stationery_glue_stick_medium_prit_style
+  translation_mm:
+  - 0
+  - -25
+  - 14
 body_style: vertical_v4
 construction:
   mirror_second_print_x: false
@@ -107,5 +168,20 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. [Illustrated tool-loading guides](../../README.md#assembly)
+Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Hold the glue stick closed and lower the twist base into the round opening. [View step 3](assembly/render/raw/step_03.png)
+4. Lower the tool through the top opening. The twist base rests at the pocket floor and the closed cap remains accessible. [View step 4](assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the medium pritt glue stick holder](assembly/pages/page_03.png)
+
+</details>
+
+Representative PLUS Pritt medium NS-702, approximately 20 g and 26 × 95 mm. The red closed body and dark twist base are simplified, with estimated cap and base lengths. The workshop specimen has not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_glue_stick_medium_prit_style)
+
+[Offline HTML viewer](assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

@@ -37,7 +37,7 @@ Check each command's exit status before advancing. Export once per finished batc
 
 ## Repeated and mixed layouts
 
-The current guide worker accepts one tool and two printed halves. The renderer, insertion checker, booklet inventory and exporter all need to understand multiple instances before publishing a repeated or mixed guide. Implement this once using the two- and three-place M10 layouts as fixtures. Preserve the current single-place input as a one-instance default.
+The guide worker accepts one tool type in one or more positions and additional individual tool types. The two- and three-place M10 guides exercise repeated instances in two-piece holders. The quarter-inch bit blocks exercise one-piece holders and staggered rows. The Pritt and closed-knife guide exercises two distinct tool types. Preserve the current single-place input as a one-instance default. Extend the instance representation for repeated quantities of additional tool types before using it for the bench stand.
 
 - Derive stations from the positioned pockets, pitch, offsets and row settings in the holder's canonical geometry. Store each tool's ID and transform with its seat. Load each source GLB once and instance it at full scale. Check each tool against printed solids and against previously seated tools along its insertion path.
 - Use `holder_layers.assembled_layers` for printed bodies. Show two contacting halves on wall holders, separate the front half along the mounting axis in the exploded view, and keep the opening up. Blocks and the bench stand use one solid and their own upright frame.

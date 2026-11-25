@@ -1,7 +1,7 @@
 title: Round black timer, 80 × 30 mm
 oomp_id: tool_timer_80_mm_diameter_30_mm_depth_black
 populate_key: tool_timer_80_mm_diameter_30_mm_depth_black
-model_kind: disc
+model_kind: timer_disc
 model_task: Reuse the existing external model
 modelling_and_seating_instructions: Use the existing Ø80 × 30 body. Verify the front
   face and controls from the actual timer before adding detail. Orient the visible
@@ -36,8 +36,8 @@ source_evidence:
   title: Archived OOMP part
   url: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/tool_timer_80_mm_diameter_30_mm_depth_black
 additional_manufacturer_references: []
-existing_loaded_guides: []
-remaining_holder_views:
+existing_loaded_guides:
 - id: oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34
   quantity: 1
   layout: 1_place
+remaining_holder_views: []

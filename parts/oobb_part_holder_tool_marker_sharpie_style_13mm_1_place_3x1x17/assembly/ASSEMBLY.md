@@ -1,0 +1,24 @@
+# 13 mm marker, short holder holder
+
+AI-generated CAD images and instructions. Errors possible.
+
+[Offline step viewer](assembly_instructions.html) · [Print booklet](assembly_instructions.pdf) · [Holder files](../)
+
+![Tool seated in the printed holder](../3dpr_presentation.png)
+
+## Assembly and loading
+
+Print two copies of the holder STL. The dark teal half sits against the wall. The light teal half faces the room. The opening and tool handles point up.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings.
+3. Bring the halves together until their rims meet. Hold the capped marker vertically and slide it into the opening.
+4. Lower the tool through the top opening. The marker projects below the holder because the pocket opens at both ends. Retention has not been physically tested.
+
+## Model and fit
+
+Nominal capped body from the vertical holder's tool identity. The 14 mm pocket includes clearance. Cap and barrel split are illustrative. The illustrated pose was checked against the production STL at the original model scale. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style)
+
+
+
+The PDF uses eight landscape A4 pages in reader order. Choose booklet printing for folded copies.

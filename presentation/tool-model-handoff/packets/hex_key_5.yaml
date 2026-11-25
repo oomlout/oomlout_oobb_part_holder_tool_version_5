@@ -39,11 +39,11 @@ source_evidence:
   title: OOBB v4 tool shapes
   url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
 additional_manufacturer_references: []
-existing_loaded_guides: []
-remaining_holder_views:
+existing_loaded_guides:
 - id: oobb_part_holder_tool_hex_key_small_metric_set_6_forward_5x5x8
   quantity: 1
   layout: 6_forward
 - id: oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8
   quantity: 1
   layout: 6_reverse
+remaining_holder_views: []

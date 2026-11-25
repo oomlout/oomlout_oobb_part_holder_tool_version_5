@@ -26,6 +26,68 @@ OOMP ID `oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5`
 <details><summary>Complete part metadata</summary>
 
 ```yaml
+assembly_details:
+  alignment: Point the open jaws down and centre them over the pocket.
+  check: The open head rests at the pocket floor and the ring end remains accessible
+    above the holder.
+  label: 8 mm spanner
+  layout: 1_place
+  model_kind: combination_spanner
+  rotation_deg:
+  - 0
+  - 0
+  - 180
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Point the open jaws down
+      and centre them over the pocket.
+    add:
+    - tool
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tool through the top opening. The open head rests at the pocket
+      floor and the ring end remains accessible above the holder.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_wrench_m8
+  translation_mm:
+  - 0
+  - 117.75
+  - 2.75
 body_style: vertical_v4
 construction:
   mirror_second_print_x: false
@@ -114,5 +176,20 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. [Illustrated tool-loading guides](../../../../../../../../README.md#assembly)
+Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](../../../../../../../../parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](../../../../../../../../parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Point the open jaws down and centre them over the pocket. [View step 3](../../../../../../../../parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/assembly/render/raw/step_03.png)
+4. Lower the tool through the top opening. The open head rests at the pocket floor and the ring end remains accessible above the holder. [View step 4](../../../../../../../../parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the 8 mm spanner holder](../../../../../../../../parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/assembly/pages/page_03.png)
+
+</details>
+
+Generic 8 mm combination spanner using Stahlwille OPEN BOX 14 article 40100808 as a dimensional reference. Length and both head widths and thicknesses follow the catalogue. The straight body, head outlines and ring offset are simplified. The workshop specimen has not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m8)
+
+[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

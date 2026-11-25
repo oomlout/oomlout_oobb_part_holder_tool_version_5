@@ -26,6 +26,68 @@ OOMP ID `oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44`
 <details><summary>Complete part metadata</summary>
 
 ```yaml
+assembly_details:
+  alignment: Retract the tape and lower the case into the wide opening with the dark
+    face forward.
+  check: The lower case rests on the pocket floor and the upper case remains accessible.
+  label: Stanley 5 m tape measure
+  layout: 1_place
+  model_kind: tape_measure
+  rotation_deg:
+  - 0
+  - 0
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Retract the tape and
+      lower the case into the wide opening with the dark face forward.
+    add:
+    - tool
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tool through the top opening. The lower case rests on the pocket
+      floor and the upper case remains accessible.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_measure_tape_measure_5000_mm_length_stanley_1_30_696
+  translation_mm:
+  - 0
+  - -9
+  - 1
 body_style: vertical_v4
 construction:
   mirror_second_print_x: false
@@ -115,5 +177,20 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. [Illustrated tool-loading guides](../../../../../../../../README.md#assembly)
+Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](../../../../../../../../parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](../../../../../../../../parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Retract the tape and lower the case into the wide opening with the dark face forward. [View step 3](../../../../../../../../parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/render/raw/step_03.png)
+4. Lower the tool through the top opening. The lower case rests on the pocket floor and the upper case remains accessible. [View step 4](../../../../../../../../parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the stanley 5 m tape measure holder](../../../../../../../../parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/pages/page_03.png)
+
+</details>
+
+Retracted Stanley Tylon 1-30-696, modelled with a 69 × 72 × 40 mm case from a distributor listing. The outline and coloured face follow the manufacturer photograph. The lock, hook and belt clip are simplified or omitted; dimensions and physical fit require confirmation on the actual tool. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_measure_tape_measure_5000_mm_length_stanley_1_30_696)
+
+[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

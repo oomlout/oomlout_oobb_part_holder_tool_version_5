@@ -26,6 +26,83 @@ OOMP ID `oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x3x12`
 <details><summary>Complete part metadata</summary>
 
 ```yaml
+assembly_details:
+  alignment: Hold the bits vertically above their round pockets.
+  check: Each shank rests at the pocket floor with the tip accessible above the holder.
+  instance_x_mm:
+  - -52.5
+  - -37.5
+  - -22.5
+  - -7.5
+  - 7.5
+  - 22.5
+  - 37.5
+  - 52.5
+  label: 8 quarter-inch driver bits
+  layout: 8_place
+  model_kind: long_driver_bit
+  rotation_deg:
+  - 0
+  - 0
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Hold the bits vertically
+      above their round pockets.
+    add:
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tools through the top openings. Each shank rests at the pocket
+      floor with the tip accessible above the holder.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_screwdriver_bit_quarter_inch_drive
+  translation_mm:
+  - 0
+  - -10.25
+  - 0
 body_style: vertical_project
 bottom_m6_clearance_mm: 1.5
 construction:
@@ -112,5 +189,20 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print two copies of the holder half. Turn one over, face the pockets inward and line up the mounting holes and open ends. The pocket floors stop 1.5 mm above the rim of the bottom M6 mounting holes. [Illustrated tool-loading guides](../../README.md#assembly)
+Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Hold the bits vertically above their round pockets. [View step 3](assembly/render/raw/step_03.png)
+4. Lower the tools through the top openings. Each shank rests at the pocket floor with the tip accessible above the holder. [View step 4](assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the 8 quarter-inch driver bits holder](assembly/pages/page_03.png)
+
+</details>
+
+Representative Wera 851/4 Z PH2 bit, 89 mm long with a quarter-inch drive. The tapered tip is simplified and its length and end diameter are estimated. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screwdriver_bit_quarter_inch_drive)
+
+[Offline HTML viewer](assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

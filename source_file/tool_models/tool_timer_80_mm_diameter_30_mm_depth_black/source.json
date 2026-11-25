@@ -1,0 +1,16 @@
+{
+  "id": "tool_timer_80_mm_diameter_30_mm_depth_black",
+  "title": "Round black timer, 80 × 30 mm",
+  "model_kind": "timer_disc",
+  "model_note": "External body envelope from the OOMP timer record. The holder has clearance around both faces and the rim.",
+  "md5": "3613853f6b4f2dc754e5905a82a48350",
+  "md5_6_alpha": "23yit",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "tool_timer_80_mm_diameter_30_mm_depth_black"
+    }
+  ]
+}

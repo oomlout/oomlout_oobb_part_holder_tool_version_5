@@ -1,0 +1,46 @@
+{
+  "id": "stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style",
+  "title": "Sharpie-style felt-tip pen, 13 × 137 mm",
+  "model_kind": "marker",
+  "model_note": "Nominal capped body from the vertical holder's tool identity. The 14 mm pocket includes clearance. Cap and barrel split are illustrative.",
+  "md5": "425d1a14bdb46fb2708d122a26621601",
+  "md5_6_alpha": "2l7ve",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x1x17",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "oobb_part_tool_holder_vertical_3_width_1_height_17_mm_depth_stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style_tool_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "oobb_part_tool_holder_vertical_3_width_5_height_17_mm_depth_stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style_tool_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_marker_sharpie_style_13mm_2_place_4x5x17",
+      "layout": "2_place",
+      "quantity": 2,
+      "source_id": "oobb_part_tool_holder_vertical_4_width_5_height_17_mm_depth_stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style_tool_2_multiple_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17",
+      "layout": "3_place",
+      "quantity": 3,
+      "source_id": "oobb_part_tool_holder_vertical_5_width_5_height_17_mm_depth_stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style_tool_3_multiple_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17",
+      "layout": "4_place",
+      "quantity": 4,
+      "source_id": "oobb_part_tool_holder_vertical_7_width_5_height_17_mm_depth_stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style_tool_4_multiple_extra"
+    },
+    {
+      "id": "oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17",
+      "layout": "5_place",
+      "quantity": 5,
+      "source_id": "oobb_part_tool_holder_vertical_8_width_5_height_17_mm_depth_stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style_tool_5_multiple_extra"
+    }
+  ]
+}

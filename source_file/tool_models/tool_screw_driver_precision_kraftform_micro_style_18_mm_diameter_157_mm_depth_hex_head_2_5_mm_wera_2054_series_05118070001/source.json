@@ -1,0 +1,40 @@
+{
+  "id": "tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001",
+  "title": "Tall precision hex screwdriver, 2.5 × 60 mm",
+  "model_kind": "wera",
+  "model_note": "Wera specifies the shaft diameter, shaft length and handle length. The archived OOMP record supplies the 18 mm handle envelope. Grip taper, cap and tip transition are illustrative.",
+  "md5": "d5402727708f7aff96ec7193176071bd",
+  "md5_6_alpha": "8bjmv",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66",
+      "layout": "bench",
+      "quantity": 1,
+      "source_id": "tool_holder_basic"
+    },
+    {
+      "id": "oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_1_place_3x5x20",
+      "layout": "m2d5_1_place",
+      "quantity": 1,
+      "source_id": "oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_1_place_3x5x20"
+    },
+    {
+      "id": "oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20",
+      "layout": "m2d5_2_place",
+      "quantity": 2,
+      "source_id": "oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20"
+    },
+    {
+      "id": "oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20",
+      "layout": "m2d5_4_place",
+      "quantity": 4,
+      "source_id": "oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20"
+    },
+    {
+      "id": "oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20",
+      "layout": "m2d5_5_place",
+      "quantity": 5,
+      "source_id": "oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20"
+    }
+  ]
+}

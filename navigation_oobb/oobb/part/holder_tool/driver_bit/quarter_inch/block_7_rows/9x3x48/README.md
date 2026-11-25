@@ -26,6 +26,275 @@ OOMP ID `oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48`
 <details><summary>Complete part metadata</summary>
 
 ```yaml
+assembly_details:
+  alignment: Align the bits vertically above the staggered rows of openings.
+  check: Each shank rests on its pocket floor, with its tip above the block.
+  insertion_axis:
+  - 0
+  - 0
+  - 1
+  instance_offsets_mm:
+  - - -52.5
+    - 18
+    - 0
+  - - -37.5
+    - 18
+    - 0
+  - - -22.5
+    - 18
+    - 0
+  - - -7.5
+    - 18
+    - 0
+  - - 7.5
+    - 18
+    - 0
+  - - 22.5
+    - 18
+    - 0
+  - - 37.5
+    - 18
+    - 0
+  - - 52.5
+    - 18
+    - 0
+  - - -45
+    - 12
+    - 0
+  - - -30
+    - 12
+    - 0
+  - - -15
+    - 12
+    - 0
+  - - 0
+    - 12
+    - 0
+  - - 15
+    - 12
+    - 0
+  - - 30
+    - 12
+    - 0
+  - - 45
+    - 12
+    - 0
+  - - -52.5
+    - 6
+    - 0
+  - - -37.5
+    - 6
+    - 0
+  - - -22.5
+    - 6
+    - 0
+  - - -7.5
+    - 6
+    - 0
+  - - 7.5
+    - 6
+    - 0
+  - - 22.5
+    - 6
+    - 0
+  - - 37.5
+    - 6
+    - 0
+  - - 52.5
+    - 6
+    - 0
+  - - -45
+    - 0
+    - 0
+  - - -30
+    - 0
+    - 0
+  - - -15
+    - 0
+    - 0
+  - - 0
+    - 0
+    - 0
+  - - 15
+    - 0
+    - 0
+  - - 30
+    - 0
+    - 0
+  - - 45
+    - 0
+    - 0
+  - - -52.5
+    - -6
+    - 0
+  - - -37.5
+    - -6
+    - 0
+  - - -22.5
+    - -6
+    - 0
+  - - -7.5
+    - -6
+    - 0
+  - - 7.5
+    - -6
+    - 0
+  - - 22.5
+    - -6
+    - 0
+  - - 37.5
+    - -6
+    - 0
+  - - 52.5
+    - -6
+    - 0
+  - - -45
+    - -12
+    - 0
+  - - -30
+    - -12
+    - 0
+  - - -15
+    - -12
+    - 0
+  - - 0
+    - -12
+    - 0
+  - - 15
+    - -12
+    - 0
+  - - 30
+    - -12
+    - 0
+  - - 45
+    - -12
+    - 0
+  - - -52.5
+    - -18
+    - 0
+  - - -37.5
+    - -18
+    - 0
+  - - -22.5
+    - -18
+    - 0
+  - - -7.5
+    - -18
+    - 0
+  - - 7.5
+    - -18
+    - 0
+  - - 22.5
+    - -18
+    - 0
+  - - 37.5
+    - -18
+    - 0
+  - - 52.5
+    - -18
+    - 0
+  label: 53 quarter-inch bits in 7 rows
+  layout: block_7_rows
+  model_kind: long_driver_bit
+  rotation_deg:
+  - 90
+  - 0
+  - 0
+  single_piece: true
+  steps:
+  - action: Place the printed block upright with all pocket openings facing up.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Align the bits vertically above the staggered rows of openings.
+    add:
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    key: step_02
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the bits into the pockets. Each shank rests on its pocket floor,
+      with its tip above the block.
+    add: []
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_screwdriver_bit_quarter_inch_drive
+  translation_mm:
+  - 0
+  - 0
+  - 11.75
 body_style: bit_block
 bottom_m6_clearance_mm: 1.5
 construction:
@@ -114,5 +383,19 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print the block once with its pockets opening upward. Its 7 staggered rows hold 53 quarter-inch bits. The pocket floors stop 1.5 mm above the rim of the bottom M6 mounting holes. [Illustrated tool-loading guides](../../../../../../../../README.md#assembly)
+Print the holder once. Place the block upright with its openings facing up.
+
+1. Place the printed block upright with all pocket openings facing up. [View step 1](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/assembly/render/raw/step_01.png)
+2. Align the bits vertically above the staggered rows of openings. [View step 2](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/assembly/render/raw/step_02.png)
+3. Lower the bits into the pockets. Each shank rests on its pocket floor, with its tip above the block. [View step 3](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/assembly/render/raw/step_03.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the 53 quarter-inch bits in 7 rows holder](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/assembly/pages/page_03.png)
+
+</details>
+
+Representative Wera 851/4 Z PH2 bit, 89 mm long with a quarter-inch drive. The tapered tip is simplified and its length and end diameter are estimated. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screwdriver_bit_quarter_inch_drive)
+
+[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

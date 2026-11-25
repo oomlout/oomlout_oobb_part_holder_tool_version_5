@@ -1,0 +1,16 @@
+{
+  "id": "tool_knife_utility_blade_disposal_can_olfa_dc_3",
+  "title": "OLFA DC-3 blade disposal can",
+  "model_kind": "olfa_can",
+  "model_note": "Round yellow body and red face approximation using OLFA's overall length and thickness and product photograph. The sliding door, lettering and rim details are omitted.",
+  "md5": "9f1af56706b97aca3745404231d33c7e",
+  "md5_6_alpha": "67hmd",
+  "holders": [
+    {
+      "id": "oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5",
+      "layout": "1_place",
+      "quantity": 1,
+      "source_id": "tool_knife_utility_blade_disposal_can_olfa_dc_3"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "configuration_title": "15 quarter-inch driver bits holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "15 quarter-inch driver bits holder",
+    "cover_subtitle": "Assembling the two halves and loading the tool",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screwdriver_bit_quarter_inch_drive",
+    "details_title": "Tool and holder",
+    "details": [
+      "9 \u00d7 4 OOBB grid. Each half is 6 mm thick. The assembled holder is 12 mm thick.",
+      "Print two copies of the holder STL. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+      "Place eight bits in the centre row and seven in the staggered front row.",
+      "Seat the shanks at the pocket floors. The staggered row lies in the front-face grooves.",
+      "Representative Wera 851/4 Z PH2 bit, 89 mm long with a quarter-inch drive. The tapered tip is simplified and its length and end diameter are estimated.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested.",
+      "The seven staggered front positions are open-face grooves. Bit retention has not been physically tested."
+    ],
+    "summary_title": "Printed halves",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12",
+      "name": "Holder half",
+      "quantity": 2
+    },
+    "tool": {
+      "key": "tool",
+      "id": "tool_screwdriver_bit_quarter_inch_drive",
+      "name": "15 quarter-inch driver bits",
+      "quantity": 15,
+      "md5": "3355be01e5bd24da4fe1b1d70c8d8dc8",
+      "md5_6_alpha": "203we",
+      "short_label": "oom.lt/a/203we",
+      "short_url": "https://oom.lt/a/203we",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screwdriver_bit_quarter_inch_drive"
+    }
+  },
+  "steps": [
+    {
+      "action": "Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Face the front half toward the rear pocket. Align the mounting holes and both top openings.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 36,
+      "withdraw_mm": 0,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Bring the halves together until their rims meet. Place eight bits in the centre row and seven in the staggered front row.",
+      "add": [
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool"
+      ],
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {
+        "tool": 15
+      }
+    },
+    {
+      "action": "Lower the tools through the top openings. Seat the shanks at the pocket floors. The staggered row lies in the front-face grooves.",
+      "add": [],
+      "key": "step_04",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 17,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      -17.75,
+      0
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 2,
+    "tool_volume_inside_pocket_mm3": 18970.865,
+    "tool_count": 15,
+    "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
+  },
+  "source_sha256": {
+    "holder_stl": "ef7d29e50a31b368a1ffc01aa35cba925e0fc22db4f65fb1fb8806fb363b8de5",
+    "tool_glb": "e75e18588f0dda9020a50c6240ea4e73469b48921b7b78eb0e2cc0329a6c51a2",
+    "tool_stl": "77da969e0f0c76ed8eae8fb5b20bd0c9bc4cbe47272b2c9683e604eb5ddc881b",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12",
+        "name": "Holder half",
+        "quantity": 2
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "tool_screwdriver_bit_quarter_inch_drive",
+        "name": "15 quarter-inch driver bits",
+        "quantity": 15,
+        "md5": "3355be01e5bd24da4fe1b1d70c8d8dc8",
+        "md5_6_alpha": "203we",
+        "short_label": "oom.lt/a/203we",
+        "short_url": "https://oom.lt/a/203we",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screwdriver_bit_quarter_inch_drive"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "summary",
+      "number": 5
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 2
+}

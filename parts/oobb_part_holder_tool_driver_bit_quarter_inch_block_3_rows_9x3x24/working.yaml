@@ -1,3 +1,152 @@
+assembly_details:
+  alignment: Align the bits vertically above the staggered rows of openings.
+  check: Each shank rests on its pocket floor, with its tip above the block.
+  insertion_axis:
+  - 0
+  - 0
+  - 1
+  instance_offsets_mm:
+  - - -52.5
+    - 6
+    - 0
+  - - -37.5
+    - 6
+    - 0
+  - - -22.5
+    - 6
+    - 0
+  - - -7.5
+    - 6
+    - 0
+  - - 7.5
+    - 6
+    - 0
+  - - 22.5
+    - 6
+    - 0
+  - - 37.5
+    - 6
+    - 0
+  - - 52.5
+    - 6
+    - 0
+  - - -45
+    - 0
+    - 0
+  - - -30
+    - 0
+    - 0
+  - - -15
+    - 0
+    - 0
+  - - 0
+    - 0
+    - 0
+  - - 15
+    - 0
+    - 0
+  - - 30
+    - 0
+    - 0
+  - - 45
+    - 0
+    - 0
+  - - -52.5
+    - -6
+    - 0
+  - - -37.5
+    - -6
+    - 0
+  - - -22.5
+    - -6
+    - 0
+  - - -7.5
+    - -6
+    - 0
+  - - 7.5
+    - -6
+    - 0
+  - - 22.5
+    - -6
+    - 0
+  - - 37.5
+    - -6
+    - 0
+  - - 52.5
+    - -6
+    - 0
+  label: 23 quarter-inch bits in 3 rows
+  layout: block_3_rows
+  model_kind: long_driver_bit
+  rotation_deg:
+  - 90
+  - 0
+  - 0
+  single_piece: true
+  steps:
+  - action: Place the printed block upright with all pocket openings facing up.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Align the bits vertically above the staggered rows of openings.
+    add:
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    - tool
+    key: step_02
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the bits into the pockets. Each shank rests on its pocket floor,
+      with its tip above the block.
+    add: []
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_screwdriver_bit_quarter_inch_drive
+  translation_mm:
+  - 0
+  - 0
+  - 11.75
 body_style: bit_block
 bottom_m6_clearance_mm: 1.5
 construction:

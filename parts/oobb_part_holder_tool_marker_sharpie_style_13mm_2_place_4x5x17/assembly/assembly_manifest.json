@@ -1,0 +1,203 @@
+{
+  "configuration_title": "13 mm marker, 2-place holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "13 mm marker, 2-place holder",
+    "cover_subtitle": "Assembling the two halves and loading the tool",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style",
+    "details_title": "Tool and holder",
+    "details": [
+      "4 \u00d7 5 OOBB grid. Each half is 8.5 mm thick. The assembled holder is 17 mm thick.",
+      "Print two copies of the holder STL. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+      "Hold the capped markers vertically above their openings.",
+      "Each marker rests at its pocket floor with the cap accessible.",
+      "Nominal capped body from the vertical holder's tool identity. The 14 mm pocket includes clearance. Cap and barrel split are illustrative.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested."
+    ],
+    "summary_title": "Printed halves",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_marker_sharpie_style_13mm_2_place_4x5x17",
+      "name": "Holder half",
+      "quantity": 2
+    },
+    "tool": {
+      "key": "tool",
+      "id": "stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style",
+      "name": "13 mm marker, 2-place",
+      "quantity": 2,
+      "md5": "425d1a14bdb46fb2708d122a26621601",
+      "md5_6_alpha": "2l7ve",
+      "short_label": "oom.lt/a/2l7ve",
+      "short_url": "https://oom.lt/a/2l7ve",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style"
+    }
+  },
+  "steps": [
+    {
+      "action": "Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Face the front half toward the rear pocket. Align the mounting holes and both top openings.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 36,
+      "withdraw_mm": 0,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Bring the halves together until their rims meet. Hold the capped markers vertically above their openings.",
+      "add": [
+        "tool",
+        "tool"
+      ],
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {
+        "tool": 2
+      }
+    },
+    {
+      "action": "Lower the tools through the top openings. Each marker rests at its pocket floor with the cap accessible.",
+      "add": [],
+      "key": "step_04",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 4,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      -23,
+      0
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 2,
+    "tool_volume_inside_pocket_mm3": 11662.581,
+    "tool_count": 2,
+    "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
+  },
+  "source_sha256": {
+    "holder_stl": "53422008dde16f7f2b072c8bda13023f799b8e417e8d6f5b7939ca68e4c14c7b",
+    "tool_glb": "a5a7a844276519475ba20d6ae3897438f4938d44535e387bcef6896576849bfe",
+    "tool_stl": "6b37fa05dd44e91985959265f1695f6e6073d0bc4f312133c768a61dc2d11d97",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_marker_sharpie_style_13mm_2_place_4x5x17",
+        "name": "Holder half",
+        "quantity": 2
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style",
+        "name": "13 mm marker, 2-place",
+        "quantity": 2,
+        "md5": "425d1a14bdb46fb2708d122a26621601",
+        "md5_6_alpha": "2l7ve",
+        "short_label": "oom.lt/a/2l7ve",
+        "short_url": "https://oom.lt/a/2l7ve",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "summary",
+      "number": 5
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 2
+}

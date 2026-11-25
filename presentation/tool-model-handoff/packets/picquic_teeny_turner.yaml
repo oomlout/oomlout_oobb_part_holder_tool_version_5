@@ -54,8 +54,8 @@ source_evidence:
   title: Archived OOMP outline
   url: https://github.com/oomlout/oomlout_oomp_version_1_messy/blob/main/parts/tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic/drawing.cdr
 additional_manufacturer_references: []
-existing_loaded_guides: []
-remaining_holder_views:
+existing_loaded_guides:
 - id: oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31
   quantity: 1
   layout: 1_place
+remaining_holder_views: []

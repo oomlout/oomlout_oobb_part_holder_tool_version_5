@@ -18,7 +18,9 @@ from working_oomp_populate import get_tool_assemblies
 def import_models(**kwargs):
     tools_root = kwargs["tools_root"]
     fields = ["id", "title", "model_kind", "model_note", "md5", "md5_6_alpha", "holders"]
-    for recipe in get_tool_assemblies().values():
+    recipes = list(get_tool_assemblies().values())
+    recipes.extend(extra for recipe in list(recipes) for extra in recipe.get("additional_tools", []))
+    for recipe in recipes:
         tool_id = recipe["tool_id"]
         folder = tools_root / "parts" / tool_id
         source = yaml.safe_load((folder/"working.yaml").read_text(encoding="utf-8"))
@@ -40,7 +42,7 @@ def export_guides(**kwargs):
     project_url = "https://github.com/oomlout/oomlout_oobb_part_holder_tool_version_5"
     index = [
         "# Tool-holder loading guides", "",
-        "Each guide shows an OOMP tool model lowered into a two-piece wall holder. In the exploded view the front half moves away from the wall to reveal the pocket. The booklets print on landscape A4 paper. Physical fit is unverified.", "",
+        "Each guide shows OOMP tool models in their printed holder. Two-piece wall holders include an exploded view, and bit blocks include a top view. The booklets print on landscape A4 paper. Physical fit is unverified.", "",
         f"[Tool-holder project README and assembly instructions]({project_url}#assembly)", "",
         "| Holder README | Print booklet | Tool model |", "| --- | --- | --- |",
     ]
@@ -54,12 +56,16 @@ def export_guides(**kwargs):
         if not recipe:
             continue
         guide = (folder/"assembly/assembly_instructions.pdf").read_bytes()
-        write_file(base_index/(part["model"]+".pdf"), guide)
+        write_file(base_index/(identifier+".pdf"), guide)
         write_file(tools_refs/(identifier+".pdf"), guide)
         tool = recipe["tool_id"]
-        url = "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/" + tool
+        tool_ids = [tool, *(extra["tool_id"] for extra in recipe.get("additional_tools", []))]
+        tool_links = " · ".join(
+            f"[OOMP record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/{tool_id})"
+            for tool_id in tool_ids
+        )
         readme = f"{project_url}/blob/main/parts/{identifier}/README.md#assembly"
-        index.append(f"| [{recipe['label']}]({readme}) | [Download PDF]({part['model']}.pdf) | [OOMP record]({url}) |")
+        index.append(f"| [{recipe['label']}]({readme}) | [Download PDF]({identifier}.pdf) | {tool_links} |")
     write_file(base_index/"README.md", "\n".join(index)+"\n")
     subprocess.run([
         sys.executable, "-c",

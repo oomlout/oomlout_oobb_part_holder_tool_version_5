@@ -5,7 +5,8 @@ oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5:
     pocket_on_underside: false
   members_and_quantities:
     tool_knife_utility_blade_disposal_can_olfa_dc_3: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_knife_utility_blade_disposal_can_olfa_dc_3
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/working.yaml
   production_stl: parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/3dpr.stl
@@ -46,7 +47,8 @@ oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18:
     pocket_on_underside: false
   members_and_quantities:
     tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/working.yaml
   production_stl: parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/3dpr.stl
@@ -177,7 +179,8 @@ oobb_part_holder_tool_driver_bit_driver_bit_60mm_1_place_3x3x10:
     pocket_on_underside: false
   members_and_quantities:
     tool_screwdriver_bit_60_mm_profile: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_60_mm_profile
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_1_place_3x3x10/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_1_place_3x3x10/3dpr.stl
@@ -218,7 +221,8 @@ oobb_part_holder_tool_driver_bit_driver_bit_60mm_4_place_5x3x10:
     pocket_on_underside: false
   members_and_quantities:
     tool_screwdriver_bit_60_mm_profile: 4
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_60_mm_profile
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_4_place_5x3x10/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_4_place_5x3x10/3dpr.stl
@@ -259,7 +263,8 @@ oobb_part_holder_tool_driver_bit_driver_bit_60mm_6_place_7x3x10:
     pocket_on_underside: false
   members_and_quantities:
     tool_screwdriver_bit_60_mm_profile: 6
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_60_mm_profile
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_6_place_7x3x10/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_6_place_7x3x10/3dpr.stl
@@ -300,7 +305,8 @@ oobb_part_holder_tool_driver_bit_driver_bit_60mm_8_place_9x3x10:
     pocket_on_underside: false
   members_and_quantities:
     tool_screwdriver_bit_60_mm_profile: 8
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_60_mm_profile
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_8_place_9x3x10/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_driver_bit_60mm_8_place_9x3x10/3dpr.stl
@@ -341,7 +347,8 @@ oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x3x12:
     pocket_on_underside: true
   members_and_quantities:
     tool_screwdriver_bit_quarter_inch_drive: 7
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_quarter_inch_drive
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x3x12/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x3x12/3dpr.stl
@@ -383,7 +390,8 @@ oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x4x12:
     pocket_on_underside: true
   members_and_quantities:
     tool_screwdriver_bit_quarter_inch_drive: 7
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_quarter_inch_drive
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x4x12/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_7_place_9x4x12/3dpr.stl
@@ -425,7 +433,8 @@ oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x3x12:
     pocket_on_underside: true
   members_and_quantities:
     tool_screwdriver_bit_quarter_inch_drive: 8
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_quarter_inch_drive
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x3x12/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x3x12/3dpr.stl
@@ -467,7 +476,8 @@ oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12:
     pocket_on_underside: true
   members_and_quantities:
     tool_screwdriver_bit_quarter_inch_drive: 8
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_quarter_inch_drive
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12/3dpr.stl
@@ -509,7 +519,8 @@ oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12:
     pocket_on_underside: true
   members_and_quantities:
     tool_screwdriver_bit_quarter_inch_drive: 15
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_quarter_inch_drive
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x3x12/3dpr.stl
@@ -551,7 +562,8 @@ oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12:
     pocket_on_underside: true
   members_and_quantities:
     tool_screwdriver_bit_quarter_inch_drive: 15
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_quarter_inch_drive
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12/3dpr.stl
@@ -593,7 +605,8 @@ oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24:
     pocket_on_underside: false
   members_and_quantities:
     tool_screwdriver_bit_quarter_inch_drive: 23
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_quarter_inch_drive
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24/3dpr.stl
@@ -637,7 +650,8 @@ oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36:
     pocket_on_underside: false
   members_and_quantities:
     tool_screwdriver_bit_quarter_inch_drive: 38
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_quarter_inch_drive
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36/3dpr.stl
@@ -681,7 +695,8 @@ oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48:
     pocket_on_underside: false
   members_and_quantities:
     tool_screwdriver_bit_quarter_inch_drive: 53
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screwdriver_bit_quarter_inch_drive
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/working.yaml
   production_stl: parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/3dpr.stl
@@ -725,7 +740,8 @@ oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30:
     pocket_on_underside: false
   members_and_quantities:
     stationery_glue_stick_medium_prit_style: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_glue_stick_medium_prit_style
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30/working.yaml
   production_stl: parts/oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30/3dpr.stl
@@ -767,7 +783,9 @@ oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30:
   members_and_quantities:
     stationery_glue_stick_medium_prit_style: 1
     tool_knife_craft_17_mm_black_exacto_style: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_glue_stick_medium_prit_style
+  - tool_knife_craft_17_mm_black_exacto_style
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30/working.yaml
   production_stl: parts/oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30/3dpr.stl
@@ -832,7 +850,13 @@ oobb_part_holder_tool_hex_key_small_metric_set_6_forward_5x5x8:
     tool_hex_key_3_mm: 1
     tool_hex_key_4_mm: 1
     tool_hex_key_5_mm: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_hex_key_1_5_mm
+  - tool_hex_key_2_mm
+  - tool_hex_key_2_5_mm
+  - tool_hex_key_3_mm
+  - tool_hex_key_4_mm
+  - tool_hex_key_5_mm
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_hex_key_small_metric_set_6_forward_5x5x8/working.yaml
   production_stl: parts/oobb_part_holder_tool_hex_key_small_metric_set_6_forward_5x5x8/3dpr.stl
@@ -933,7 +957,13 @@ oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8:
     tool_hex_key_3_mm: 1
     tool_hex_key_4_mm: 1
     tool_hex_key_5_mm: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_hex_key_1_5_mm
+  - tool_hex_key_2_mm
+  - tool_hex_key_2_5_mm
+  - tool_hex_key_3_mm
+  - tool_hex_key_4_mm
+  - tool_hex_key_5_mm
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8/working.yaml
   production_stl: parts/oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8/3dpr.stl
@@ -1430,7 +1460,8 @@ oobb_part_holder_tool_marker_sharpie_1_place_3x5x15:
     pocket_on_underside: true
   members_and_quantities:
     stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_marker_sharpie_1_place_3x5x15/working.yaml
   production_stl: parts/oobb_part_holder_tool_marker_sharpie_1_place_3x5x15/3dpr.stl
@@ -1471,7 +1502,8 @@ oobb_part_holder_tool_marker_sharpie_2_place_5x5x15:
     pocket_on_underside: true
   members_and_quantities:
     stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie: 2
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_marker_sharpie_2_place_5x5x15/working.yaml
   production_stl: parts/oobb_part_holder_tool_marker_sharpie_2_place_5x5x15/3dpr.stl
@@ -1512,7 +1544,8 @@ oobb_part_holder_tool_marker_sharpie_5_place_8x5x15:
     pocket_on_underside: true
   members_and_quantities:
     stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie: 5
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_marker_sharpie_5_place_8x5x15/working.yaml
   production_stl: parts/oobb_part_holder_tool_marker_sharpie_5_place_8x5x15/3dpr.stl
@@ -1553,7 +1586,8 @@ oobb_part_holder_tool_marker_sharpie_6_place_9x5x15:
     pocket_on_underside: true
   members_and_quantities:
     stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie: 6
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_marker_sharpie_6_place_9x5x15/working.yaml
   production_stl: parts/oobb_part_holder_tool_marker_sharpie_6_place_9x5x15/3dpr.stl
@@ -1594,7 +1628,8 @@ oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x1x17:
     pocket_on_underside: true
   members_and_quantities:
     stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x1x17/working.yaml
   production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x1x17/3dpr.stl
@@ -1635,7 +1670,8 @@ oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17:
     pocket_on_underside: true
   members_and_quantities:
     stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17/working.yaml
   production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17/3dpr.stl
@@ -1676,7 +1712,8 @@ oobb_part_holder_tool_marker_sharpie_style_13mm_2_place_4x5x17:
     pocket_on_underside: true
   members_and_quantities:
     stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 2
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_2_place_4x5x17/working.yaml
   production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_2_place_4x5x17/3dpr.stl
@@ -1717,7 +1754,8 @@ oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17:
     pocket_on_underside: true
   members_and_quantities:
     stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 3
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17/working.yaml
   production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17/3dpr.stl
@@ -1758,7 +1796,8 @@ oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17:
     pocket_on_underside: true
   members_and_quantities:
     stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 4
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17/working.yaml
   production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17/3dpr.stl
@@ -1799,7 +1838,8 @@ oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17:
     pocket_on_underside: true
   members_and_quantities:
     stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style: 5
-  published_guide_tools: []
+  published_guide_tools:
+  - stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17/working.yaml
   production_stl: parts/oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17/3dpr.stl
@@ -2337,7 +2377,8 @@ oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31:
     pocket_on_underside: true
   members_and_quantities:
     tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/working.yaml
   production_stl: parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/3dpr.stl
@@ -2378,7 +2419,8 @@ oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20:
     pocket_on_underside: true
   members_and_quantities:
     tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20/working.yaml
   production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20/3dpr.stl
@@ -2430,7 +2472,8 @@ oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2_1_place_3x5x20:
     pocket_on_underside: true
   members_and_quantities:
     tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_mm_wera_2054_series_05118068001: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_mm_wera_2054_series_05118068001
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2_1_place_3x5x20/working.yaml
   production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2_1_place_3x5x20/3dpr.stl
@@ -2482,7 +2525,8 @@ oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_1_place_3x5x20:
     pocket_on_underside: true
   members_and_quantities:
     tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_1_place_3x5x20/working.yaml
   production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_1_place_3x5x20/3dpr.stl
@@ -2534,7 +2578,8 @@ oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20:
     pocket_on_underside: true
   members_and_quantities:
     tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001: 2
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20/working.yaml
   production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20/3dpr.stl
@@ -2586,7 +2631,8 @@ oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20:
     pocket_on_underside: true
   members_and_quantities:
     tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001: 4
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20/working.yaml
   production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20/3dpr.stl
@@ -2638,7 +2684,8 @@ oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20:
     pocket_on_underside: true
   members_and_quantities:
     tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001: 5
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20/working.yaml
   production_stl: parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20/3dpr.stl
@@ -2892,7 +2939,8 @@ oobb_part_holder_tool_spanner_m10_2_place_5x5x9:
     pocket_on_underside: false
   members_and_quantities:
     tool_wrench_m10: 2
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_wrench_m10
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_spanner_m10_2_place_5x5x9/working.yaml
   production_stl: parts/oobb_part_holder_tool_spanner_m10_2_place_5x5x9/3dpr.stl
@@ -2941,7 +2989,8 @@ oobb_part_holder_tool_spanner_m10_3_place_7x5x9:
     pocket_on_underside: false
   members_and_quantities:
     tool_wrench_m10: 3
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_wrench_m10
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_spanner_m10_3_place_7x5x9/working.yaml
   production_stl: parts/oobb_part_holder_tool_spanner_m10_3_place_7x5x9/3dpr.stl
@@ -2990,7 +3039,8 @@ oobb_part_holder_tool_spanner_m10_4_place_9x5x9:
     pocket_on_underside: false
   members_and_quantities:
     tool_wrench_m10: 4
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_wrench_m10
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_spanner_m10_4_place_9x5x9/working.yaml
   production_stl: parts/oobb_part_holder_tool_spanner_m10_4_place_9x5x9/3dpr.stl
@@ -3247,7 +3297,8 @@ oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5:
     pocket_on_underside: false
   members_and_quantities:
     tool_wrench_m7: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_wrench_m7
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/working.yaml
   production_stl: parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/3dpr.stl
@@ -3296,7 +3347,8 @@ oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5:
     pocket_on_underside: false
   members_and_quantities:
     tool_wrench_m8: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_wrench_m8
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/working.yaml
   production_stl: parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/3dpr.stl
@@ -3345,7 +3397,8 @@ oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44:
     pocket_on_underside: false
   members_and_quantities:
     tool_measure_tape_measure_5000_mm_length_stanley_1_30_696: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_measure_tape_measure_5000_mm_length_stanley_1_30_696
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/working.yaml
   production_stl: parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/3dpr.stl
@@ -3394,7 +3447,8 @@ oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34:
     pocket_on_underside: false
   members_and_quantities:
     tool_timer_80_mm_diameter_30_mm_depth_black: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_timer_80_mm_diameter_30_mm_depth_black
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34/working.yaml
   production_stl: parts/oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34/3dpr.stl
