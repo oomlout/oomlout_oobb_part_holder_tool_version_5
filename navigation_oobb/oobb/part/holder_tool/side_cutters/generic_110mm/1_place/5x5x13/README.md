@@ -199,5 +199,5 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Open-pose photo trace with a provisional 110 mm closed-length reference (Rapid SA-706 RED). Grip thickness is estimated. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_side_cutters_110_mm_length_red)
 
-[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

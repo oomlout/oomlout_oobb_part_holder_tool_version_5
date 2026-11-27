@@ -184,5 +184,5 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 External body envelope from the OOMP timer record. The holder has clearance around both faces and the rim. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_timer_80_mm_diameter_30_mm_depth_black)
 
-[Offline HTML viewer](assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_timer_round_80mm_1_place_7x3x34/assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

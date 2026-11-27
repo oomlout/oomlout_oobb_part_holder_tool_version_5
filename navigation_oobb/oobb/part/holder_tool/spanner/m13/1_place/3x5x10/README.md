@@ -191,5 +191,5 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Generic 13 mm combination spanner using the Bahco 111M-13 as a dimensional reference. Length and head widths and thicknesses follow the catalogue. The straight shank, jaw outline and six-point ring are simplified. The workshop specimen has not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m13)
 
-[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_spanner_m13_1_place_3x5x10/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_spanner_m13_1_place_3x5x10/assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_spanner_m13_1_place_3x5x10/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_spanner_m13_1_place_3x5x10/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

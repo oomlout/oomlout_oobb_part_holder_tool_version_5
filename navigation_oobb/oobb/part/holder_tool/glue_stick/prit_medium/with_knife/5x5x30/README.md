@@ -221,5 +221,5 @@ Representative PLUS Pritt medium NS-702, approximately 20 g and 26 × 95 mm. The
 
 Closed exterior based on the photo and a provisional 165 mm STANLEY 0-10-151 reference. The 17 mm OOMP label is retained. Size variant awaits measurement. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_craft_17_mm_black_exacto_style)
 
-[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30/assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_glue_stick_prit_medium_with_knife_5x5x30/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

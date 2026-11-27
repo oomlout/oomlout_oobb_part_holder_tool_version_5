@@ -184,5 +184,5 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Round yellow body and red face approximation using OLFA's overall length and thickness and product photograph. The sliding door, lettering and rim details are omitted. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_utility_blade_disposal_can_olfa_dc_3)
 
-[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_blade_disposal_olfa_dc3_1_place_5x3x29d5/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

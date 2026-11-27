@@ -183,5 +183,5 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Representative PLUS Pritt medium NS-702, approximately 20 g and 26 × 95 mm. The red closed body and dark twist base are simplified, with estimated cap and base lengths. The workshop specimen has not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_glue_stick_medium_prit_style)
 
-[Offline HTML viewer](assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_glue_stick_prit_medium_1_place_4x5x30/assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

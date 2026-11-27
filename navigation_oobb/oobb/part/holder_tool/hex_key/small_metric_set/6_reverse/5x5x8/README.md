@@ -353,5 +353,5 @@ The holder specifies the hex size. Arm lengths follow the Wiha 350 short series 
 
 The holder specifies the hex size. Arm lengths follow the Wiha 350 short series as a representative example. The holder source leaves the key manufacturer unspecified. The elbow is simplified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_5_mm)
 
-[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8/assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_hex_key_small_metric_set_6_reverse_5x5x8/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

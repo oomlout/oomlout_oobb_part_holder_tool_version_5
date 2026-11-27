@@ -192,5 +192,5 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Nominal capped body from the vertical holder's tool identity. The 14 mm pocket includes clearance. Cap and barrel split are illustrative. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style)
 
-[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17/assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_marker_sharpie_style_13mm_1_place_3x5x17/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

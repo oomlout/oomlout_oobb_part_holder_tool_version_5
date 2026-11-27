@@ -190,5 +190,5 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Generic 7 mm open-end spanner using the FACOM 34.7 as a dimensional reference. Length, maximum head width and thickness follow the catalogue. The square-on jaws and shank are simplified, and the workshop specimen has not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m7)
 
-[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

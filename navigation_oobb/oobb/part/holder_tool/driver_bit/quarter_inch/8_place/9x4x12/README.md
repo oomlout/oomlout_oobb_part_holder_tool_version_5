@@ -204,5 +204,5 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Representative Wera 851/4 Z PH2 bit, 89 mm long with a quarter-inch drive. The tapered tip is simplified and its length and end diameter are estimated. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screwdriver_bit_quarter_inch_drive)
 
-[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12/assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_place_9x4x12/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

@@ -192,5 +192,5 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Retracted Stanley Tylon 1-30-696, modelled with a 69 × 72 × 40 mm case from a distributor listing. The outline and coloured face follow the manufacturer photograph. The lock, hook and belt clip are simplified or omitted; dimensions and physical fit require confirmation on the actual tool. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_measure_tape_measure_5000_mm_length_stanley_1_30_696)
 
-[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

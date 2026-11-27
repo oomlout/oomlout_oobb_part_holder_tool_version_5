@@ -251,5 +251,5 @@ Representative Wera 851/4 Z PH2 bit, 89 mm long with a quarter-inch drive. The t
 
 The seven staggered front positions are open-face grooves. Retention of the bits in those grooves has not been physically tested.
 
-[Offline HTML viewer](assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_driver_bit_quarter_inch_8_plus_7_layered_9x4x12/assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

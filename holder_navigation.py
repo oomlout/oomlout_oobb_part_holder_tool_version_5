@@ -21,6 +21,12 @@ PROJECT_ORIGIN = (
 )
 VERTICAL = "https://github.com/oomlout/oomlout_oobb_part_tool_holder_vertical"
 VERSION_4 = "https://github.com/oomlout/oomlout_oobb_version_4"
+VIEWER_ROOT = "https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts"
+EXAMPLE_PART = "oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12"
+
+
+def viewer_url(part_id):
+    return f"{VIEWER_ROOT}/{part_id}/assembly/assembly_instructions.html"
 
 
 def relative(folder, target):
@@ -121,11 +127,11 @@ def part_page(**kwargs):
         assembly = canonical / "assembly"
         instruction = assembly_instructions(part=part, folder=folder)
         instruction += (
-            f"\n\n[Offline HTML viewer]({relative(folder, assembly/'assembly_instructions.html')}) · "
+            f"\n\n[Open assembly viewer]({viewer_url(part['id'])}) · "
             f"[Print booklet (PDF)]({relative(folder, assembly/'assembly_instructions.pdf')})"
         )
     elif guide_holders:
-        references = [f"[{label}]({relative(folder, path/'README.md')}#assembly)"
+        references = [f"[{label}]({relative(folder, path)})"
                       for label, path in guide_holders]
         instruction += "\n\nThese tools also have illustrated single-place holder guides. " + " · ".join(references)
     else:
@@ -266,18 +272,16 @@ def publish_catalogue(**kwargs):
     write_block(root / "TOOLS.md", "\n".join(inventory))
     guides = [p for p in parts.values() if p.get("assembly_details")]
     guide_table = [
-        "| Holder README | Offline viewer | Print booklet |",
+        "| Holder folder | Assembly viewer | Print booklet |",
         "| --- | --- | --- |",
     ]
-    sequences = []
     for guide in guides:
         part_path = f"parts/{guide['id']}"
         path = f"{part_path}/assembly"
         label = guide["assembly_details"]["label"]
-        guide_table.append(f"| [{label}]({part_path}/README.md#assembly) | [Offline HTML]({path}/assembly_instructions.html) | [Download PDF]({path}/assembly_instructions.pdf) |")
-        sequences.extend([f"### {label}", assembly_instructions(part=guide, folder=root)])
+        guide_table.append(f"| [{label} · {guide['width']} × {guide['height']} grid]({part_path}/) | [Open viewer]({viewer_url(guide['id'])}) | [PDF]({path}/assembly_instructions.pdf) |")
     guide_links = "\n".join(guide_table) if guides else ""
-    guide_steps = "\n\n".join(sequences)
+    example_folder = f"parts/{EXAMPLE_PART}/"
     landing = f"""# OOBB tool holders
 
 [![Yellow and turquoise tool holders mounted on a black captive nut plate, with round covers on the mounting bolts](source_file/image_main/working_1024.jpg)](source_file/image_main/working.jpg)
@@ -296,6 +300,10 @@ Printable holders for workshop hand tools on the 15 mm OOBB grid. These designs 
 
 **[Browse by tool type]({relative(root, DISCOVERY)})** or see the [hierarchy and tool list](TOOLS.md). The catalogue contains {len(parts)} layouts across {len(groups)} categories. Choose a tool type, model, layout and size.
 
+The tool models used in the holder guides are available in the [OOMP tool repository](https://github.com/oomlout/oomp_tool_version_5).
+
+[![CAD render of the blue needle-nose pliers and their holder]({example_folder}3dpr_presentation.png)]({example_folder})
+
 Run `python working.py` to rebuild. The [build notes](presentation/README.md) cover dependencies and filtered builds. The [tool modelling queue](presentation/tool-model-handoff/README.md) maps each OOMP tool to its holder layouts and staged references.
 
 ## Parts
@@ -304,13 +312,9 @@ Width and height use 15 mm grid units. A 3 × 5 holder has a nominal footprint o
 
 ## Assembly
 
-{len(guides)} holders have illustrated assembly and loading instructions using OOMP tool models. Each viewer opens offline. The print booklets use landscape A4 pages. Physical fit remains unverified.
-
-For future renders, show vertical holders as they sit on the wall, with the opening and tool handles pointing up. Show the halves touching in the assembled view and move the front half outward along the mounting holes for the exploded view. Print the Quikpik combination, utility knife, Prit combination, metric hex-key sets and four-size spanner layout once to obtain both halves. The quarter-inch bit blocks and mixed-tool bench stand each print as one piece.
+Choose a holder to view or print its assembly guide.
 
 {guide_links}
-
-{guide_steps}
 """
     write_block(root / "README.md", landing)
 

@@ -190,5 +190,5 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Four coaxial sections follow the archived OOMP drawing, read at its document scale. The handle and exposed bit use simplified round sections. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_multi_driver_precision_size_teeny_turner_model_picquic)
 
-[Offline HTML viewer](../../../../../../../../parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/assembly/assembly_instructions.pdf)
+[Open assembly viewer](https://raw.githack.com/oomlout/oomlout_oobb_part_holder_tool_version_5/main/parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/assembly/assembly_instructions.html) · [Print booklet (PDF)](../../../../../../../../parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->
