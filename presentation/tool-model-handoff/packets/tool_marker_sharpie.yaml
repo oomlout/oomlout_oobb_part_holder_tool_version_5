@@ -49,7 +49,7 @@ existing_loaded_guides:
 - id: oobb_part_holder_tool_marker_sharpie_6_place_9x5x15
   quantity: 6
   layout: 6_place
-remaining_holder_views:
 - id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
   quantity: 1
   layout: bench
+remaining_holder_views: []

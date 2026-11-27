@@ -29,8 +29,8 @@
     "details": [
       "7 \u00d7 6 OOBB grid. Each half is 9 mm thick. The assembled holder is 18 mm thick.",
       "Print two copies of the holder STL. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
-      "Close the caliper jaws and lower the end of the beam into the opening, with the display facing forward.",
-      "The beam rests at the pocket floor and the closed jaws and display remain visible above the holder.",
+      "Close the caliper jaws and lower the wide jaw end into the opening, with the display facing forward.",
+      "The wide jaw end rests at the pocket floor and the beam projects above the holder.",
       "Closed caliper. Overall length, beam width and outside jaw length follow the Mitutoyo dimensional drawing. Slider, jaws and display are simplified for identification.",
       "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
       "AI-generated CAD images and instructions. Physical fit has yet to be tested."
@@ -93,7 +93,7 @@
       }
     },
     {
-      "action": "Bring the halves together until their rims meet. Close the caliper jaws and lower the end of the beam into the opening, with the display facing forward.",
+      "action": "Bring the halves together until their rims meet. Close the caliper jaws and lower the wide jaw end into the opening, with the display facing forward.",
       "add": [
         "tool"
       ],
@@ -107,7 +107,7 @@
       }
     },
     {
-      "action": "Lower the tool through the top opening. The beam rests at the pocket floor and the closed jaws and display remain visible above the holder.",
+      "action": "Lower the tool through the top opening. The wide jaw end rests at the pocket floor and the beam projects above the holder.",
       "add": [],
       "key": "step_04",
       "upper_lift_mm": 0,
@@ -125,11 +125,11 @@
     "rotation_deg": [
       0,
       0,
-      180
+      0
     ],
     "translation_mm": [
-      0,
-      201,
+      9.5,
+      -32,
       1
     ]
   },
@@ -137,7 +137,7 @@
     "holder_intersection_mm3": 0.0,
     "insertion_positions_checked": 15,
     "printed_halves_checked": 2,
-    "tool_volume_inside_pocket_mm3": 3671.526,
+    "tool_volume_inside_pocket_mm3": 25422.569,
     "tool_count": 1,
     "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
   },

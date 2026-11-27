@@ -383,7 +383,7 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print the holder once. Place the block upright with its openings facing up.
+Print the holder once. Place the holder upright with its openings facing up.
 
 1. Place the printed block upright with all pocket openings facing up. [View step 1](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/assembly/render/raw/step_01.png)
 2. Align the bits vertically above the staggered rows of openings. [View step 2](../../../../../../../../parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/assembly/render/raw/step_02.png)

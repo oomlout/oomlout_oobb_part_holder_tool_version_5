@@ -186,8 +186,8 @@ def publish_book(**kwargs):
     if Counter(added) != {key: item["quantity"] for key, item in parts.items()}:
         raise ValueError("Each physical item must enter the assembly once")
     title = recipe["label"] + " holder"
-    dimensions = f"{part['width']} × {part['height']} OOBB grid. The holder prints as one block." if single_piece else f"{part['width']} × {part['height']} OOBB grid. Each half is {part['depth']/2:g} mm thick. The assembled holder is {part['depth']:g} mm thick."
-    placement = "Place the block upright and lower the bits into its pockets." if single_piece else "Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder."
+    dimensions = f"{part['width']} × {part['height']} OOBB grid. The holder prints as one piece." if single_piece else f"{part['width']} × {part['height']} OOBB grid. Each half is {part['depth']/2:g} mm thick. The assembled holder is {part['depth']:g} mm thick."
+    placement = "Place the holder upright and lower the tools into their pockets." if single_piece else "Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder."
     details = [
         dimensions,
         print_instruction(part=part) + " " + placement,
@@ -263,7 +263,7 @@ AI-generated CAD images and instructions. Errors possible.
 
 ## Assembly and loading
 
-{print_instruction(part=part)} {("Place the block upright with the openings facing up." if single_piece else "The dark teal half sits against the wall. The light teal half faces the room. The opening and tool handles point up.")}
+{print_instruction(part=part)} {("Place the holder upright with the openings facing up." if single_piece else "The dark teal half sits against the wall. The light teal half faces the room. The opening and tool handles point up.")}
 
 {sequence}
 

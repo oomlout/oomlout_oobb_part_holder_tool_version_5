@@ -1,0 +1,6 @@
+item,id,quantity,source,short_url
+Holder half,oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10,2,,
+13 mm spanner,tool_wrench_m13,1,https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m13,https://oom.lt/a/84wyz
+10 mm spanner,tool_wrench_m10,1,https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m10,https://oom.lt/a/677ez
+8 mm spanner,tool_wrench_m8,1,https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m8,https://oom.lt/a/54t0b
+7 mm spanner,tool_wrench_m7,1,https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m7,https://oom.lt/a/2dkj5

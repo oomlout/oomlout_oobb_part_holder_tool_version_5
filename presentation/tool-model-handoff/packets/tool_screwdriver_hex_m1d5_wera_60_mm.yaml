@@ -64,10 +64,10 @@ source_evidence:
   url: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001
 additional_manufacturer_references: []
 existing_loaded_guides:
-- id: oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20
-  quantity: 1
-  layout: m1d5_1_place
-remaining_holder_views:
 - id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
   quantity: 1
   layout: bench
+- id: oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20
+  quantity: 1
+  layout: m1d5_1_place
+remaining_holder_views: []

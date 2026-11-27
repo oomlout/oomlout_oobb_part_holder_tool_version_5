@@ -244,7 +244,7 @@ def publish(**kwargs):
                 text(title, box_x+6*mm, page_h-margin-5*mm, card_w-12*mm, 10*mm, 15, medium)
                 columns = 3
                 cell_w = (card_w-8*mm)/columns
-                row_h = 35*mm
+                row_h = (29 if len(groups[group]) > 15 else 35)*mm
                 for index, part in enumerate(groups[group]):
                     x = box_x+4*mm+(index%columns)*cell_w
                     top = page_h-margin-22*mm-(index//columns)*row_h

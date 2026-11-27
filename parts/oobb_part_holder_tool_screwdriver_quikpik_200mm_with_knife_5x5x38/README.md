@@ -26,6 +26,85 @@ OOMP ID `oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38`
 <details><summary>Complete part metadata</summary>
 
 ```yaml
+assembly_details:
+  additional_tools:
+  - key: knife
+    label: Closed utility knife
+    model_kind: photo_reference
+    rotation_deg:
+    - 0
+    - 90
+    - 0
+    tool_id: tool_knife_craft_17_mm_black_exacto_style
+    translation_mm:
+    - -22.5
+    - -23.1
+    - 8.96
+  alignment: Keep the utility knife closed and align it edge-on with its slot. Point
+    the multi-driver bit down into the round pocket.
+  check: The closed knife and multi-driver sit in their separate pockets with their
+    handles accessible.
+  label: Multi-driver and knife
+  layout: with_knife
+  model_kind: picquic_sixpac
+  primary_label: Picquic multi-driver
+  rotation_deg:
+  - 0
+  - 0
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Keep the utility knife
+      closed and align it edge-on with its slot. Point the multi-driver bit down into
+      the round pocket.
+    add:
+    - tool
+    - knife
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tools through the top openings. The closed knife and multi-driver
+      sit in their separate pockets with their handles accessible.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_screw_driver_multi_driver_200_mm_quikpik
+  translation_mm:
+  - 15
+  - -25
+  - 18
 body_style: paired_face_up
 construction:
   mirror_second_print_x: false
@@ -159,7 +238,22 @@ Use the print mesh in the part folder. Tool and mounting hardware are supplied s
 
 ## Assembly
 
-Print the supplied layout once with both pockets facing up. Flip the right-hand piece over the left, face the pockets inward and align the holes.
+Print the supplied two-half layout once. The dark teal half sits against the wall and the light teal half faces the room.
 
-These tools also have illustrated single-place holder guides. [Closed utility knife](../oobb_part_holder_tool_knife_utility_17mm_1_place_3x5x29d5/README.md#assembly)
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Keep the utility knife closed and align it edge-on with its slot. Point the multi-driver bit down into the round pocket. [View step 3](assembly/render/raw/step_03.png)
+4. Lower the tools through the top openings. The closed knife and multi-driver sit in their separate pockets with their handles accessible. [View step 4](assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the multi-driver and knife holder](assembly/pages/page_03.png)
+
+</details>
+
+Representative Picquic SIXPAC Plus, 200 mm overall and 32 mm handle diameter from a distributor listing. Picquic specifies 3-inch quarter-inch bits and a 7/16-inch hex bolster. Exposed bit, shank and bolster lengths are estimates for the stored-bit pose. The handle contour, stored bits and workshop specimen have not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_multi_driver_200_mm_quikpik)
+
+Closed exterior based on the photo and a provisional 165 mm STANLEY 0-10-151 reference. The 17 mm OOMP label is retained. Size variant awaits measurement. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_craft_17_mm_black_exacto_style)
+
+[Offline HTML viewer](assembly/assembly_instructions.html) · [Print booklet (PDF)](assembly/assembly_instructions.pdf)
 <!-- oobb-presentation:end -->

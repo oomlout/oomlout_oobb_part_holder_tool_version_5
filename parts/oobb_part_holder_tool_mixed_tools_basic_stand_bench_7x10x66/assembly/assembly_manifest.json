@@ -1,0 +1,669 @@
+{
+  "configuration_title": "Mixed tool bench stand holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "Mixed tool bench stand holder",
+    "cover_subtitle": "Loading the tool holder",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_side_cutters_110_mm_length_red",
+    "details_title": "Tool and holder",
+    "details": [
+      "7 \u00d7 10 OOBB grid. The holder prints as one piece.",
+      "Print the holder once. Place the holder upright and lower the tools into their pockets.",
+      "Place each closed tool above its matching pocket.",
+      "Seat the tools with handles above the stand and the short arms of the hex keys pointing outward.",
+      "Open-pose photo trace with a provisional 110 mm closed-length reference (Rapid SA-706 RED). Grip thickness is estimated.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested.",
+      "See the holder README for the dimensions and OOMP references of every tool."
+    ],
+    "summary_title": "Printed holder",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66",
+      "name": "Holder",
+      "quantity": 1
+    },
+    "tool": {
+      "key": "tool",
+      "id": "tool_side_cutters_110_mm_length_red",
+      "name": "Side cutters",
+      "quantity": 1,
+      "md5": "16295839864d3ce774745dd47910fb7d",
+      "md5_6_alpha": "v4ns",
+      "short_label": "oom.lt/a/v4ns",
+      "short_url": "https://oom.lt/a/v4ns",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_side_cutters_110_mm_length_red"
+    },
+    "pliers": {
+      "key": "pliers",
+      "id": "tool_pliers_needle_nose_130_mm_length_blue",
+      "name": "Needle-nose pliers",
+      "quantity": 1,
+      "md5": "016a0573694b72728a8303d1ea901d95",
+      "md5_6_alpha": "1zid",
+      "short_label": "oom.lt/a/1zid",
+      "short_url": "https://oom.lt/a/1zid",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_pliers_needle_nose_130_mm_length_blue"
+    },
+    "wire": {
+      "key": "wire",
+      "id": "tool_wire_strippers_120_mm_length_red",
+      "name": "Wire strippers",
+      "quantity": 1,
+      "md5": "4684bcf9faf844762ccb39887b7e83e3",
+      "md5_6_alpha": "2r1z0",
+      "short_label": "oom.lt/a/2r1z0",
+      "short_url": "https://oom.lt/a/2r1z0",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wire_strippers_120_mm_length_red"
+    },
+    "driver15": {
+      "key": "driver15",
+      "id": "tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001",
+      "name": "1.5 mm driver",
+      "quantity": 1,
+      "md5": "5c307131c6a73704ce8cbf2b915cbe19",
+      "md5_6_alpha": "3lhtd",
+      "short_label": "oom.lt/a/3lhtd",
+      "short_url": "https://oom.lt/a/3lhtd",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001"
+    },
+    "driver2": {
+      "key": "driver2",
+      "id": "tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_mm_wera_2054_series_05118068001",
+      "name": "2 mm driver",
+      "quantity": 1,
+      "md5": "5ed450aef10bbc20ecd1d3c07e1b2bab",
+      "md5_6_alpha": "3p7bk",
+      "short_label": "oom.lt/a/3p7bk",
+      "short_url": "https://oom.lt/a/3p7bk",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_mm_wera_2054_series_05118068001"
+    },
+    "driver25": {
+      "key": "driver25",
+      "id": "tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001",
+      "name": "2.5 mm driver",
+      "quantity": 1,
+      "md5": "d5402727708f7aff96ec7193176071bd",
+      "md5_6_alpha": "8bjmv",
+      "short_label": "oom.lt/a/8bjmv",
+      "short_url": "https://oom.lt/a/8bjmv",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001"
+    },
+    "picquic": {
+      "key": "picquic",
+      "id": "tool_screw_driver_multi_driver_200_mm_quikpik",
+      "name": "Multi-driver",
+      "quantity": 1,
+      "md5": "074a81eef6f00d4a55f3e5a358fa0958",
+      "md5_6_alpha": "a8ox",
+      "short_label": "oom.lt/a/a8ox",
+      "short_url": "https://oom.lt/a/a8ox",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_multi_driver_200_mm_quikpik"
+    },
+    "m7": {
+      "key": "m7",
+      "id": "tool_wrench_m7",
+      "name": "7 mm spanner",
+      "quantity": 1,
+      "md5": "3ceb3137d85ea40f1fde9913048099f3",
+      "md5_6_alpha": "2dkj5",
+      "short_label": "oom.lt/a/2dkj5",
+      "short_url": "https://oom.lt/a/2dkj5",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m7"
+    },
+    "m8": {
+      "key": "m8",
+      "id": "tool_wrench_m8",
+      "name": "8 mm spanner",
+      "quantity": 1,
+      "md5": "8390db59a836079e962d6e75782afb2d",
+      "md5_6_alpha": "54t0b",
+      "short_label": "oom.lt/a/54t0b",
+      "short_url": "https://oom.lt/a/54t0b",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m8"
+    },
+    "m10a": {
+      "key": "m10a",
+      "id": "tool_wrench_m10",
+      "name": "10 mm spanner",
+      "quantity": 1,
+      "md5": "9ee74bb7ba9c07d38f6191ba309cbd0c",
+      "md5_6_alpha": "677ez",
+      "short_label": "oom.lt/a/677ez",
+      "short_url": "https://oom.lt/a/677ez",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m10"
+    },
+    "m10b": {
+      "key": "m10b",
+      "id": "tool_wrench_m10",
+      "name": "10 mm spanner",
+      "quantity": 1,
+      "md5": "9ee74bb7ba9c07d38f6191ba309cbd0c",
+      "md5_6_alpha": "677ez",
+      "short_label": "oom.lt/a/677ez",
+      "short_url": "https://oom.lt/a/677ez",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m10"
+    },
+    "knife": {
+      "key": "knife",
+      "id": "tool_knife_craft_17_mm_black_exacto_style",
+      "name": "Closed utility knife",
+      "quantity": 1,
+      "md5": "3ed7d22b2fe767aa640e0ad35fbcb6b1",
+      "md5_6_alpha": "2g9ua",
+      "short_label": "oom.lt/a/2g9ua",
+      "short_url": "https://oom.lt/a/2g9ua",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_craft_17_mm_black_exacto_style"
+    },
+    "hex15": {
+      "key": "hex15",
+      "id": "tool_hex_key_1_5_mm",
+      "name": "1.5 mm hex key",
+      "quantity": 1,
+      "md5": "0980291d84b5483e4528bf74c28da353",
+      "md5_6_alpha": "dcfd",
+      "short_label": "oom.lt/a/dcfd",
+      "short_url": "https://oom.lt/a/dcfd",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_1_5_mm"
+    },
+    "hex2": {
+      "key": "hex2",
+      "id": "tool_hex_key_2_mm",
+      "name": "2 mm hex key",
+      "quantity": 1,
+      "md5": "789ebea68c80e2ead2e92c5d3eb31a66",
+      "md5_6_alpha": "4pfi6",
+      "short_label": "oom.lt/a/4pfi6",
+      "short_url": "https://oom.lt/a/4pfi6",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_2_mm"
+    },
+    "hex25": {
+      "key": "hex25",
+      "id": "tool_hex_key_2_5_mm",
+      "name": "2.5 mm hex key",
+      "quantity": 1,
+      "md5": "077e2e073e72569054cb1e9acc413a29",
+      "md5_6_alpha": "aiwe",
+      "short_label": "oom.lt/a/aiwe",
+      "short_url": "https://oom.lt/a/aiwe",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_2_5_mm"
+    },
+    "hex3": {
+      "key": "hex3",
+      "id": "tool_hex_key_3_mm",
+      "name": "3 mm hex key",
+      "quantity": 1,
+      "md5": "dd043690ed59f28a4d86a32f09e508c3",
+      "md5_6_alpha": "8mgc6",
+      "short_label": "oom.lt/a/8mgc6",
+      "short_url": "https://oom.lt/a/8mgc6",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_3_mm"
+    },
+    "hex4": {
+      "key": "hex4",
+      "id": "tool_hex_key_4_mm",
+      "name": "4 mm hex key",
+      "quantity": 1,
+      "md5": "18db0328756d8633cdfe26a1ae207d79",
+      "md5_6_alpha": "yww3",
+      "short_label": "oom.lt/a/yww3",
+      "short_url": "https://oom.lt/a/yww3",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_4_mm"
+    },
+    "marker": {
+      "key": "marker",
+      "id": "stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie",
+      "name": "Sharpie marker",
+      "quantity": 1,
+      "md5": "5cc8db7cf4b282572ce4ce9812b2a064",
+      "md5_6_alpha": "3mbx7",
+      "short_label": "oom.lt/a/3mbx7",
+      "short_url": "https://oom.lt/a/3mbx7",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie"
+    }
+  },
+  "steps": [
+    {
+      "action": "Place the printed stand upright on its flat base.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Lower the closed cutters, pliers and wire strippers into the wide front pockets.",
+      "add": [
+        "tool",
+        "pliers",
+        "wire"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "tool": 1,
+        "pliers": 1,
+        "wire": 1
+      }
+    },
+    {
+      "action": "Place the three precision drivers and the multi-driver in their round pockets.",
+      "add": [
+        "driver15",
+        "driver2",
+        "driver25",
+        "picquic"
+      ],
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {
+        "driver15": 1,
+        "driver2": 1,
+        "driver25": 1,
+        "picquic": 1
+      }
+    },
+    {
+      "action": "Place the 7 mm and 8 mm spanners open-end down and the two 10 mm spanners ring-end down.",
+      "add": [
+        "m7",
+        "m8",
+        "m10a",
+        "m10b"
+      ],
+      "key": "step_04",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {
+        "m7": 1,
+        "m8": 1,
+        "m10a": 1,
+        "m10b": 1
+      }
+    },
+    {
+      "action": "Keep the utility knife closed and place it in its slot. Add the 1.5, 2 and 2.5 mm hex keys.",
+      "add": [
+        "knife",
+        "hex15",
+        "hex2",
+        "hex25"
+      ],
+      "key": "step_05",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 5",
+      "number": 5,
+      "loose_parts": {
+        "knife": 1,
+        "hex15": 1,
+        "hex2": 1,
+        "hex25": 1
+      }
+    },
+    {
+      "action": "Add the 3 and 4 mm hex keys and the capped marker.",
+      "add": [
+        "hex3",
+        "hex4",
+        "marker"
+      ],
+      "key": "step_06",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 6",
+      "number": 6,
+      "loose_parts": {
+        "hex3": 1,
+        "hex4": 1,
+        "marker": 1
+      }
+    },
+    {
+      "action": "Seat every tool and keep all handles and short key arms accessible.",
+      "add": [],
+      "key": "step_07",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 7",
+      "number": 7,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 19,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      90,
+      -0.24,
+      0
+    ],
+    "translation_mm": [
+      -1.84,
+      -47,
+      -22
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 1,
+    "tool_volume_inside_pocket_mm3": 51150.391,
+    "tool_count": 18,
+    "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
+  },
+  "source_sha256": {
+    "holder_stl": "f35b2cbfbcf9f4b5790bee7d8df2d3e37df1128a65f4ab6020364548ad6158cf",
+    "tool_glb": "a62a192f0260709c85c93956441624e5320ecb14b0ff85108d5f8dc23cf1be62",
+    "tool_stl": "d78ff3b2dc25908f2e42eb7670619645b00f8a92ff17020b0351adea6b596b72",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67",
+    "pliers_glb": "ae56c1509180c8ff6a3c579dd69b8e0ed0ad0c7d6f82969c97bd9901d8bea73c",
+    "pliers_stl": "3643177e59bde9ed3599db58d7c6d9d1282febfe75f4b74d504bab62f757bcf9",
+    "wire_glb": "65c22f30772548dc33731bfae19e99379163ddc5920395bae5cf6a62162740e2",
+    "wire_stl": "fc2a246a0a8276a2507a049ab91c977f2368a6d741d258a747c8ab10801e03e0",
+    "driver15_glb": "6938d7945388d9c13718dfc410ba7b39e1c3584fbbabc44a316de58b29174f19",
+    "driver15_stl": "84627ba757c21a8b002cef407ccb8f2169536e68edc024865f3587d6ec1df298",
+    "driver2_glb": "b46ff027bdf90b85305002b6caf3914e6c8f82e5f1d2506ed18d0ac728b70ff8",
+    "driver2_stl": "6e5d4cce9d7b149668471cd0cd14b43c6b648c91684174d789e21b11c03bb20c",
+    "driver25_glb": "52b45fd5dbc1d29c1279eb104f2b7758b96c98b6026806314eaeb6cd1cc6af88",
+    "driver25_stl": "34a6326df112be436cd6031e23813cd7bf30b34d8af382c208a3781a03d63110",
+    "picquic_glb": "a697d008473f5e968a7a4e1dee4a72016b5530b584fd827c71f9fb3aec61c362",
+    "picquic_stl": "a537a84bb94054f9dac3e4591c53882046617dc5af0576c6eb96d1de2d0140a4",
+    "m7_glb": "cab89e87aa7cf212be528f14de6fdca74eeeffa17908ba4630527a99d8276485",
+    "m7_stl": "cdf909a8b811589d783c651cf161ddcf35121242815f339732ee8f9bee07db85",
+    "m8_glb": "8a54efb41e84ccae839c9687c4cdfb1b2b7965e77adc1042d8339c53a404c526",
+    "m8_stl": "b715fd019158d499e641e4e8d51b6485821952a2163531679c0a28691d26ab85",
+    "m10a_glb": "066b1380673bb51a277657de927f351b589e15e78c42c3ecf8aaeffe51121f22",
+    "m10a_stl": "9aa1fc12ec55918fbcb0899f81a21fbd32ac9e04c6f05f83c42b7f2ebd2adb65",
+    "m10b_glb": "066b1380673bb51a277657de927f351b589e15e78c42c3ecf8aaeffe51121f22",
+    "m10b_stl": "9aa1fc12ec55918fbcb0899f81a21fbd32ac9e04c6f05f83c42b7f2ebd2adb65",
+    "knife_glb": "006eb1f4674e4d709210abf1698029679c14ea6c6af4fc6362fab7b98bdec52a",
+    "knife_stl": "b89dce0ce0f7a40e97498d3c9d9400cc952b6ecab68c4d838b4c87f9690f5b02",
+    "hex15_glb": "c25955abc136e292bfa50c06ae9cfd0f438ffc90e2899a2ac2a91e9db09285d6",
+    "hex15_stl": "e840d40cea5457e9e3b8e959f32646343e138503f9f1b8046af93d9746e4bb94",
+    "hex2_glb": "1f9009cb9d323b3e7fc2febe1973eadbc9728581213cbe3bc4fda453ca4bfe9e",
+    "hex2_stl": "6f7678a826430c9a8bb0e1c231bf55885e80b93759a5ed7365fc086234f9f3e3",
+    "hex25_glb": "447c7869fc71a25cba82dd457c3157b780a902db2740f2c5b8a779f06087306f",
+    "hex25_stl": "f887aecc39b2c5921ff873fa8a4c03c2240e46e24699474fcc53960bb8acba2b",
+    "hex3_glb": "e852f50b5aafa288535d747ea9aaf429ef3812c9eb11aed4dbf8f7257fadf0bb",
+    "hex3_stl": "d0acfff570337479b2266978930d05bb78591f367ac707ccb8dd921425263214",
+    "hex4_glb": "6cdd2e81678cfe5add09071fd6942445bfca2b28f2f624bd00755046899af90d",
+    "hex4_stl": "798ec3348a89de5de7f7673f2e3f21132ae59c3f705e09ceb53eb7a5da996f34",
+    "marker_glb": "a5a7a844276519475ba20d6ae3897438f4938d44535e387bcef6896576849bfe",
+    "marker_stl": "6b37fa05dd44e91985959265f1695f6e6073d0bc4f312133c768a61dc2d11d97"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66",
+        "name": "Holder",
+        "quantity": 1
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "tool_side_cutters_110_mm_length_red",
+        "name": "Side cutters",
+        "quantity": 1,
+        "md5": "16295839864d3ce774745dd47910fb7d",
+        "md5_6_alpha": "v4ns",
+        "short_label": "oom.lt/a/v4ns",
+        "short_url": "https://oom.lt/a/v4ns",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_side_cutters_110_mm_length_red"
+      },
+      {
+        "key": "pliers",
+        "id": "tool_pliers_needle_nose_130_mm_length_blue",
+        "name": "Needle-nose pliers",
+        "quantity": 1,
+        "md5": "016a0573694b72728a8303d1ea901d95",
+        "md5_6_alpha": "1zid",
+        "short_label": "oom.lt/a/1zid",
+        "short_url": "https://oom.lt/a/1zid",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_pliers_needle_nose_130_mm_length_blue"
+      },
+      {
+        "key": "wire",
+        "id": "tool_wire_strippers_120_mm_length_red",
+        "name": "Wire strippers",
+        "quantity": 1,
+        "md5": "4684bcf9faf844762ccb39887b7e83e3",
+        "md5_6_alpha": "2r1z0",
+        "short_label": "oom.lt/a/2r1z0",
+        "short_url": "https://oom.lt/a/2r1z0",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wire_strippers_120_mm_length_red"
+      },
+      {
+        "key": "driver15",
+        "id": "tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001",
+        "name": "1.5 mm driver",
+        "quantity": 1,
+        "md5": "5c307131c6a73704ce8cbf2b915cbe19",
+        "md5_6_alpha": "3lhtd",
+        "short_label": "oom.lt/a/3lhtd",
+        "short_url": "https://oom.lt/a/3lhtd",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001"
+      },
+      {
+        "key": "driver2",
+        "id": "tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_mm_wera_2054_series_05118068001",
+        "name": "2 mm driver",
+        "quantity": 1,
+        "md5": "5ed450aef10bbc20ecd1d3c07e1b2bab",
+        "md5_6_alpha": "3p7bk",
+        "short_label": "oom.lt/a/3p7bk",
+        "short_url": "https://oom.lt/a/3p7bk",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_mm_wera_2054_series_05118068001"
+      },
+      {
+        "key": "driver25",
+        "id": "tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001",
+        "name": "2.5 mm driver",
+        "quantity": 1,
+        "md5": "d5402727708f7aff96ec7193176071bd",
+        "md5_6_alpha": "8bjmv",
+        "short_label": "oom.lt/a/8bjmv",
+        "short_url": "https://oom.lt/a/8bjmv",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001"
+      },
+      {
+        "key": "picquic",
+        "id": "tool_screw_driver_multi_driver_200_mm_quikpik",
+        "name": "Multi-driver",
+        "quantity": 1,
+        "md5": "074a81eef6f00d4a55f3e5a358fa0958",
+        "md5_6_alpha": "a8ox",
+        "short_label": "oom.lt/a/a8ox",
+        "short_url": "https://oom.lt/a/a8ox",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_multi_driver_200_mm_quikpik"
+      },
+      {
+        "key": "m7",
+        "id": "tool_wrench_m7",
+        "name": "7 mm spanner",
+        "quantity": 1,
+        "md5": "3ceb3137d85ea40f1fde9913048099f3",
+        "md5_6_alpha": "2dkj5",
+        "short_label": "oom.lt/a/2dkj5",
+        "short_url": "https://oom.lt/a/2dkj5",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m7"
+      },
+      {
+        "key": "m8",
+        "id": "tool_wrench_m8",
+        "name": "8 mm spanner",
+        "quantity": 1,
+        "md5": "8390db59a836079e962d6e75782afb2d",
+        "md5_6_alpha": "54t0b",
+        "short_label": "oom.lt/a/54t0b",
+        "short_url": "https://oom.lt/a/54t0b",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m8"
+      },
+      {
+        "key": "m10a",
+        "id": "tool_wrench_m10",
+        "name": "10 mm spanner",
+        "quantity": 2,
+        "md5": "9ee74bb7ba9c07d38f6191ba309cbd0c",
+        "md5_6_alpha": "677ez",
+        "short_label": "oom.lt/a/677ez",
+        "short_url": "https://oom.lt/a/677ez",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m10"
+      },
+      {
+        "key": "knife",
+        "id": "tool_knife_craft_17_mm_black_exacto_style",
+        "name": "Closed utility knife",
+        "quantity": 1,
+        "md5": "3ed7d22b2fe767aa640e0ad35fbcb6b1",
+        "md5_6_alpha": "2g9ua",
+        "short_label": "oom.lt/a/2g9ua",
+        "short_url": "https://oom.lt/a/2g9ua",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_craft_17_mm_black_exacto_style"
+      },
+      {
+        "key": "hex15",
+        "id": "tool_hex_key_1_5_mm",
+        "name": "1.5 mm hex key",
+        "quantity": 1,
+        "md5": "0980291d84b5483e4528bf74c28da353",
+        "md5_6_alpha": "dcfd",
+        "short_label": "oom.lt/a/dcfd",
+        "short_url": "https://oom.lt/a/dcfd",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_1_5_mm"
+      },
+      {
+        "key": "hex2",
+        "id": "tool_hex_key_2_mm",
+        "name": "2 mm hex key",
+        "quantity": 1,
+        "md5": "789ebea68c80e2ead2e92c5d3eb31a66",
+        "md5_6_alpha": "4pfi6",
+        "short_label": "oom.lt/a/4pfi6",
+        "short_url": "https://oom.lt/a/4pfi6",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_2_mm"
+      },
+      {
+        "key": "hex25",
+        "id": "tool_hex_key_2_5_mm",
+        "name": "2.5 mm hex key",
+        "quantity": 1,
+        "md5": "077e2e073e72569054cb1e9acc413a29",
+        "md5_6_alpha": "aiwe",
+        "short_label": "oom.lt/a/aiwe",
+        "short_url": "https://oom.lt/a/aiwe",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_2_5_mm"
+      },
+      {
+        "key": "hex3",
+        "id": "tool_hex_key_3_mm",
+        "name": "3 mm hex key",
+        "quantity": 1,
+        "md5": "dd043690ed59f28a4d86a32f09e508c3",
+        "md5_6_alpha": "8mgc6",
+        "short_label": "oom.lt/a/8mgc6",
+        "short_url": "https://oom.lt/a/8mgc6",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_3_mm"
+      },
+      {
+        "key": "hex4",
+        "id": "tool_hex_key_4_mm",
+        "name": "4 mm hex key",
+        "quantity": 1,
+        "md5": "18db0328756d8633cdfe26a1ae207d79",
+        "md5_6_alpha": "yww3",
+        "short_label": "oom.lt/a/yww3",
+        "short_url": "https://oom.lt/a/yww3",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_4_mm"
+      },
+      {
+        "key": "marker",
+        "id": "stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie",
+        "name": "Sharpie marker",
+        "quantity": 1,
+        "md5": "5cc8db7cf4b282572ce4ce9812b2a064",
+        "md5_6_alpha": "3mbx7",
+        "short_label": "oom.lt/a/3mbx7",
+        "short_url": "https://oom.lt/a/3mbx7",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "instructions",
+      "group": 1
+    },
+    {
+      "kind": "summary",
+      "number": 8
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 1
+}

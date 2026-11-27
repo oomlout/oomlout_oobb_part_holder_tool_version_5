@@ -27,17 +27,17 @@ OOMP ID `oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18`
 
 ```yaml
 assembly_details:
-  alignment: Close the caliper jaws and lower the end of the beam into the opening,
-    with the display facing forward.
-  check: The beam rests at the pocket floor and the closed jaws and display remain
-    visible above the holder.
+  alignment: Close the caliper jaws and lower the wide jaw end into the opening, with
+    the display facing forward.
+  check: The wide jaw end rests at the pocket floor and the beam projects above the
+    holder.
   label: 150 mm digital caliper
   layout: 1_place
   model_kind: caliper
   rotation_deg:
   - 0
   - 0
-  - 180
+  - 0
   steps:
   - action: Orient the rear half as it sits on the wall, with the pocket facing you
       and the opening at the top.
@@ -54,14 +54,14 @@ assembly_details:
     upper_lift_mm: 36
     withdraw_mm: 0
   - action: Bring the halves together until their rims meet. Close the caliper jaws
-      and lower the end of the beam into the opening, with the display facing forward.
+      and lower the wide jaw end into the opening, with the display facing forward.
     add:
     - tool
     key: step_03
     upper_lift_mm: 0
     withdraw_mm: 70
-  - action: Lower the tool through the top opening. The beam rests at the pocket floor
-      and the closed jaws and display remain visible above the holder.
+  - action: Lower the tool through the top opening. The wide jaw end rests at the
+      pocket floor and the beam projects above the holder.
     add: []
     key: step_04
     upper_lift_mm: 0
@@ -86,8 +86,8 @@ assembly_details:
     thumbnail_height_mm: 8.5
   tool_id: tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30
   translation_mm:
-  - 0
-  - 201
+  - 9.5
+  - -32
   - 1
 body_style: vertical_v4
 construction:
@@ -182,8 +182,8 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](../../../../../../../../parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_01.png)
 2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](../../../../../../../../parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_02.png)
-3. Bring the halves together until their rims meet. Close the caliper jaws and lower the end of the beam into the opening, with the display facing forward. [View step 3](../../../../../../../../parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_03.png)
-4. Lower the tool through the top opening. The beam rests at the pocket floor and the closed jaws and display remain visible above the holder. [View step 4](../../../../../../../../parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_04.png)
+3. Bring the halves together until their rims meet. Close the caliper jaws and lower the wide jaw end into the opening, with the display facing forward. [View step 3](../../../../../../../../parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_03.png)
+4. Lower the tool through the top opening. The wide jaw end rests at the pocket floor and the beam projects above the holder. [View step 4](../../../../../../../../parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_04.png)
 
 <details><summary>Illustrated assembly steps</summary>
 

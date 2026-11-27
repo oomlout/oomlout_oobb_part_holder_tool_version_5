@@ -1,3 +1,108 @@
+assembly_details:
+  additional_tools:
+  - key: spanner_m10
+    label: 10 mm spanner
+    model_kind: combination_spanner
+    rotation_deg:
+    - 0
+    - 0
+    - 0
+    tool_id: tool_wrench_m10
+    translation_mm:
+    - -11
+    - -25
+    - 4
+  - key: spanner_m8
+    label: 8 mm spanner
+    model_kind: combination_spanner
+    rotation_deg:
+    - 0
+    - 0
+    - 180
+    tool_id: tool_wrench_m8
+    translation_mm:
+    - 15
+    - 120
+    - 4
+  - key: spanner_m7
+    label: 7 mm spanner
+    model_kind: open_spanner
+    rotation_deg:
+    - 0
+    - 0
+    - 0
+    tool_id: tool_wrench_m7
+    translation_mm:
+    - 39
+    - -25
+    - 4
+  alignment: Align the four spanners with their matching pockets. The 13 and 10 mm
+    ring ends point down; the 8 and 7 mm open ends point down.
+  check: Each spanner rests at its pocket floor. From left to right the sizes are
+    13, 10, 8 and 7 mm.
+  label: Four metric spanners
+  layout: 4_place
+  model_kind: combination_spanner
+  primary_label: 13 mm spanner
+  rotation_deg:
+  - 0
+  - 0
+  - 0
+  steps:
+  - action: Orient the rear half as it sits on the wall, with the pocket facing you
+      and the opening at the top.
+    add:
+    - holder
+    key: step_01
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  - action: Face the front half toward the rear pocket. Align the mounting holes and
+      both top openings.
+    add:
+    - holder
+    key: step_02
+    upper_lift_mm: 36
+    withdraw_mm: 0
+  - action: Bring the halves together until their rims meet. Align the four spanners
+      with their matching pockets. The 13 and 10 mm ring ends point down; the 8 and
+      7 mm open ends point down.
+    add:
+    - tool
+    - spanner_m10
+    - spanner_m8
+    - spanner_m7
+    key: step_03
+    upper_lift_mm: 0
+    withdraw_mm: 70
+  - action: Lower the tools through the top openings. Each spanner rests at its pocket
+      floor. From left to right the sizes are 13, 10, 8 and 7 mm.
+    add: []
+    key: step_04
+    upper_lift_mm: 0
+    withdraw_mm: 0
+  style:
+    border: '000000'
+    border_radius_mm: 3
+    border_width_pt: 3
+    columns: 2
+    component_border_width_pt: 1.1
+    font_body_pt: 7
+    font_code_pt: 6.4
+    font_url_prefix_pt: 4.8
+    gutter_mm: 4
+    margin_mm: 6
+    page_mm:
+    - 297
+    - 210
+    quantity_pt: 5.8
+    quantity_shift_mm: 1
+    rows: 2
+    thumbnail_height_mm: 8.5
+  tool_id: tool_wrench_m13
+  translation_mm:
+  - -41
+  - -25
+  - 4
 body_style: paired_face_up
 construction:
   mirror_second_print_x: false

@@ -1,16 +1,27 @@
 title: Quikpik multi-driver, 200 mm
 oomp_id: tool_screw_driver_multi_driver_200_mm_quikpik
 populate_key: tool_screwdriver_multi_quikpik_200_mm_knife
-model_kind: holder_envelope
-model_task: Build an external tool model
-modelling_and_seating_instructions: Identify the 200 mm multi-driver independently
-  of the shorter Teeny Turner. Measure grip envelope, shoulders, shaft and exposed
-  bit. Stage the compound scene with the separate closed knife in its own slot and
-  check both insertion paths.
-existing_model_note: Geometry follows the holder clearance profile. Its dimensions
-  describe the pocket used in the source design. Physical tool dimensions and fit
-  have yet to be measured.
-declared_tool_parameters: {}
+model_kind: picquic_sixpac
+model_task: Reuse the existing external model
+modelling_and_seating_instructions: The independent model is a representative Picquic
+  SIXPAC Plus using the manufacturer's bit and bolster sizes and the distributor's
+  200 mm overall length and 32 mm handle diameter. Exposed bit, shank and bolster
+  lengths are estimates. Measure the actual workshop tool and verify the mixed bench
+  separately.
+existing_model_note: Representative Picquic SIXPAC Plus, 200 mm overall and 32 mm
+  handle diameter from a distributor listing. Picquic specifies 3-inch quarter-inch
+  bits and a 7/16-inch hex bolster. Exposed bit, shank and bolster lengths are estimates
+  for the stored-bit pose. The handle contour, stored bits and workshop specimen have
+  not been measured.
+declared_tool_parameters:
+  bit_across_flats_mm: 6.35
+  bolster_across_flats_mm: 11.1125
+  bolster_length_mm: 17
+  exposed_bit_length_mm: 57
+  handle_diameter_mm: 32
+  overall_length_mm: 200
+  shank_diameter_mm: 10
+  shank_length_mm: 30
 pocket_reference_only_mm:
 - h: 57
   pos:
@@ -57,20 +68,34 @@ pocket_reference_only_mm:
   - 0
   shape: cylinder
 staged_drawing_from_handoff: resources/tool_screwdriver_multi_quikpik_200_mm_knife.svg
-staged_photo_from_handoff: null
-local_originals: []
+staged_photo_from_handoff: resources/tool_screwdriver_multi_quikpik_200_mm_knife.jpg
+local_originals:
+- path_from_tools_repo: parts/tool_screw_driver_multi_driver_200_mm_quikpik/image.jpg
+  sha256: 3bb53c2315e0dc83b43ecffa3843fc834cdb8d8900a4475daae5947a0e26b4b0
 source_record_from_tools_repo: parts/tool_screw_driver_multi_driver_200_mm_quikpik/working.yaml
 model_files_from_tools_repo: parts/tool_screw_driver_multi_driver_200_mm_quikpik/three_d_model
 source_evidence:
+- supports: Manufacturer identifies three-inch quarter-inch bits and a 7/16-inch hex
+    bolster.
+  title: Picquic SIXPAC Plus
+  url: https://picquic.ca/sixpac-plus/
+- supports: Distributor lists 200 mm overall length, 32 mm diameter and 76.2 mm bits.
+  title: Picquic SIXPAC Plus dimensions
+  url: https://www.harrant.cz/zbozi/picquic-sroubovak-s-vymennymi-bity-sixpac-plus-2/?parameterValueId=3122
+- file: picquic_sixpac_black.jpg
+  part_file: image.jpg
+  supports: Reference view of handle, shank and bit storage.
+  title: Picquic SIXPAC Plus product photograph
+  url: https://hardwickandsons.com/products/picquic-sixpac-plus-multi-bit-screwdriver
 - supports: Upstream tool naming and clearance geometry used in the holder migration.
   title: OOBB v4 tool shapes
   url: https://github.com/oomlout/oomlout_oobb_version_4/blob/41f5386997faef4473c959dfb8c929864d7bf697/oobb_get_items_base_old.py
 additional_manufacturer_references: []
-existing_loaded_guides: []
-remaining_holder_views:
+existing_loaded_guides:
 - id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
   quantity: 1
   layout: bench
 - id: oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38
   quantity: 1
   layout: with_knife
+remaining_holder_views: []

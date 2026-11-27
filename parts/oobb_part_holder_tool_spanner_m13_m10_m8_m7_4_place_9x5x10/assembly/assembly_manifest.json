@@ -1,0 +1,281 @@
+{
+  "configuration_title": "Four metric spanners holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "Four metric spanners holder",
+    "cover_subtitle": "Assembling the two halves and loading the tool",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m13",
+    "details_title": "Tool and holder",
+    "details": [
+      "9 \u00d7 5 OOBB grid. Each half is 5 mm thick. The assembled holder is 10 mm thick.",
+      "Print the supplied two-half layout once. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+      "Align the four spanners with their matching pockets. The 13 and 10 mm ring ends point down; the 8 and 7 mm open ends point down.",
+      "Each spanner rests at its pocket floor. From left to right the sizes are 13, 10, 8 and 7 mm.",
+      "Generic 13 mm combination spanner using the Bahco 111M-13 as a dimensional reference. Length and head widths and thicknesses follow the catalogue. The straight shank, jaw outline and six-point ring are simplified. The workshop specimen has not been measured.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested.",
+      "See the holder README for the dimensions and OOMP references of every tool."
+    ],
+    "summary_title": "Printed halves",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10",
+      "name": "Holder half",
+      "quantity": 2
+    },
+    "tool": {
+      "key": "tool",
+      "id": "tool_wrench_m13",
+      "name": "13 mm spanner",
+      "quantity": 1,
+      "md5": "d087ebb5b1940036c394143ed6aff92d",
+      "md5_6_alpha": "84wyz",
+      "short_label": "oom.lt/a/84wyz",
+      "short_url": "https://oom.lt/a/84wyz",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m13"
+    },
+    "spanner_m10": {
+      "key": "spanner_m10",
+      "id": "tool_wrench_m10",
+      "name": "10 mm spanner",
+      "quantity": 1,
+      "md5": "9ee74bb7ba9c07d38f6191ba309cbd0c",
+      "md5_6_alpha": "677ez",
+      "short_label": "oom.lt/a/677ez",
+      "short_url": "https://oom.lt/a/677ez",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m10"
+    },
+    "spanner_m8": {
+      "key": "spanner_m8",
+      "id": "tool_wrench_m8",
+      "name": "8 mm spanner",
+      "quantity": 1,
+      "md5": "8390db59a836079e962d6e75782afb2d",
+      "md5_6_alpha": "54t0b",
+      "short_label": "oom.lt/a/54t0b",
+      "short_url": "https://oom.lt/a/54t0b",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m8"
+    },
+    "spanner_m7": {
+      "key": "spanner_m7",
+      "id": "tool_wrench_m7",
+      "name": "7 mm spanner",
+      "quantity": 1,
+      "md5": "3ceb3137d85ea40f1fde9913048099f3",
+      "md5_6_alpha": "2dkj5",
+      "short_label": "oom.lt/a/2dkj5",
+      "short_url": "https://oom.lt/a/2dkj5",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m7"
+    }
+  },
+  "steps": [
+    {
+      "action": "Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Face the front half toward the rear pocket. Align the mounting holes and both top openings.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 36,
+      "withdraw_mm": 0,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Bring the halves together until their rims meet. Align the four spanners with their matching pockets. The 13 and 10 mm ring ends point down; the 8 and 7 mm open ends point down.",
+      "add": [
+        "tool",
+        "spanner_m10",
+        "spanner_m8",
+        "spanner_m7"
+      ],
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {
+        "tool": 1,
+        "spanner_m10": 1,
+        "spanner_m8": 1,
+        "spanner_m7": 1
+      }
+    },
+    {
+      "action": "Lower the tools through the top openings. Each spanner rests at its pocket floor. From left to right the sizes are 13, 10, 8 and 7 mm.",
+      "add": [],
+      "key": "step_04",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 6,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -41,
+      -25,
+      4
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 2,
+    "tool_volume_inside_pocket_mm3": 8744.457,
+    "tool_count": 4,
+    "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
+  },
+  "source_sha256": {
+    "holder_stl": "8e98befdaa9057b827ff2604f98ddc61eb97ff0e54d884f929f5acd424ca91d8",
+    "tool_glb": "3669b47d40c139ba60543190066002931557d26fb3d1da3e956b726a56f3f32b",
+    "tool_stl": "5ff42d8dc24dcbc262dc973900cf6df3aa4db0fc0e9d51312d0e995347483bf2",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67",
+    "spanner_m10_glb": "066b1380673bb51a277657de927f351b589e15e78c42c3ecf8aaeffe51121f22",
+    "spanner_m10_stl": "9aa1fc12ec55918fbcb0899f81a21fbd32ac9e04c6f05f83c42b7f2ebd2adb65",
+    "spanner_m8_glb": "8a54efb41e84ccae839c9687c4cdfb1b2b7965e77adc1042d8339c53a404c526",
+    "spanner_m8_stl": "b715fd019158d499e641e4e8d51b6485821952a2163531679c0a28691d26ab85",
+    "spanner_m7_glb": "cab89e87aa7cf212be528f14de6fdca74eeeffa17908ba4630527a99d8276485",
+    "spanner_m7_stl": "cdf909a8b811589d783c651cf161ddcf35121242815f339732ee8f9bee07db85"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10",
+        "name": "Holder half",
+        "quantity": 2
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "tool_wrench_m13",
+        "name": "13 mm spanner",
+        "quantity": 1,
+        "md5": "d087ebb5b1940036c394143ed6aff92d",
+        "md5_6_alpha": "84wyz",
+        "short_label": "oom.lt/a/84wyz",
+        "short_url": "https://oom.lt/a/84wyz",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m13"
+      },
+      {
+        "key": "spanner_m10",
+        "id": "tool_wrench_m10",
+        "name": "10 mm spanner",
+        "quantity": 1,
+        "md5": "9ee74bb7ba9c07d38f6191ba309cbd0c",
+        "md5_6_alpha": "677ez",
+        "short_label": "oom.lt/a/677ez",
+        "short_url": "https://oom.lt/a/677ez",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m10"
+      },
+      {
+        "key": "spanner_m8",
+        "id": "tool_wrench_m8",
+        "name": "8 mm spanner",
+        "quantity": 1,
+        "md5": "8390db59a836079e962d6e75782afb2d",
+        "md5_6_alpha": "54t0b",
+        "short_label": "oom.lt/a/54t0b",
+        "short_url": "https://oom.lt/a/54t0b",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m8"
+      },
+      {
+        "key": "spanner_m7",
+        "id": "tool_wrench_m7",
+        "name": "7 mm spanner",
+        "quantity": 1,
+        "md5": "3ceb3137d85ea40f1fde9913048099f3",
+        "md5_6_alpha": "2dkj5",
+        "short_label": "oom.lt/a/2dkj5",
+        "short_url": "https://oom.lt/a/2dkj5",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m7"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "summary",
+      "number": 5
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 2
+}

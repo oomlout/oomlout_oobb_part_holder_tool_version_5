@@ -1896,7 +1896,25 @@ oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66:
     tool_wrench_m10: 2
     tool_wrench_m7: 1
     tool_wrench_m8: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_side_cutters_110_mm_length_red
+  - tool_pliers_needle_nose_130_mm_length_blue
+  - tool_wire_strippers_120_mm_length_red
+  - tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001
+  - tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_mm_wera_2054_series_05118068001
+  - tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001
+  - tool_screw_driver_multi_driver_200_mm_quikpik
+  - tool_wrench_m7
+  - tool_wrench_m8
+  - tool_wrench_m10
+  - tool_wrench_m10
+  - tool_knife_craft_17_mm_black_exacto_style
+  - tool_hex_key_1_5_mm
+  - tool_hex_key_2_mm
+  - tool_hex_key_2_5_mm
+  - tool_hex_key_3_mm
+  - tool_hex_key_4_mm
+  - stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/working.yaml
   production_stl: parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/3dpr.stl
@@ -2738,7 +2756,9 @@ oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38:
   members_and_quantities:
     tool_knife_craft_17_mm_black_exacto_style: 1
     tool_screw_driver_multi_driver_200_mm_quikpik: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_screw_driver_multi_driver_200_mm_quikpik
+  - tool_knife_craft_17_mm_black_exacto_style
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/working.yaml
   production_stl: parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/3dpr.stl
@@ -3142,7 +3162,11 @@ oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10:
     tool_wrench_m13: 1
     tool_wrench_m7: 1
     tool_wrench_m8: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_wrench_m13
+  - tool_wrench_m10
+  - tool_wrench_m8
+  - tool_wrench_m7
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/working.yaml
   production_stl: parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/3dpr.stl
@@ -3248,7 +3272,8 @@ oobb_part_holder_tool_spanner_m21_1_place_5x5x12:
     pocket_on_underside: false
   members_and_quantities:
     tool_wrench_m21: 1
-  published_guide_tools: []
+  published_guide_tools:
+  - tool_wrench_m21
   occupancy: simultaneous
   source: parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/working.yaml
   production_stl: parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/3dpr.stl

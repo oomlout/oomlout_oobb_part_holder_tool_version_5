@@ -12,12 +12,14 @@ Print two copies of the holder STL. The dark teal half sits against the wall. Th
 
 1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.
 2. Face the front half toward the rear pocket. Align the mounting holes and both top openings.
-3. Bring the halves together until their rims meet. Close the caliper jaws and lower the end of the beam into the opening, with the display facing forward.
-4. Lower the tool through the top opening. The beam rests at the pocket floor and the closed jaws and display remain visible above the holder.
+3. Bring the halves together until their rims meet. Close the caliper jaws and lower the wide jaw end into the opening, with the display facing forward.
+4. Lower the tool through the top opening. The wide jaw end rests at the pocket floor and the beam projects above the holder.
 
 ## Model and fit
 
 Closed caliper. Overall length, beam width and outside jaw length follow the Mitutoyo dimensional drawing. Slider, jaws and display are simplified for identification. The illustrated pose was checked against the production STL at the original model scale. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30)
+
+
 
 
 

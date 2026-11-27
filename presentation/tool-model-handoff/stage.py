@@ -74,7 +74,7 @@ def stage(**kwargs):
     index = [
         "# Tool modelling queue", "",
         f"{len(tools)} tool packets cover {len(layouts)} production layouts. Each packet includes the tool brief, evidence, dimensional inputs, holder IDs, quantities and outstanding views.",
-        "", "[Agent instructions](AGENTS.md) · [Launch prompt](LAUNCH.md) · [Layout placements and dependencies](layouts.yaml)", "",
+        "", "[Agent instructions](AGENTS.md) · [Launch prompt](LAUNCH.md) · [Layout placements and dependencies](layouts.yaml) · [Outstanding evidence](OUTSTANDING.md)", "",
         "| Tool packet | Model | Loaded layouts for this tool |", "| --- | --- | ---: |",
     ]
     for tool_id, tool in sorted(tools.items()):

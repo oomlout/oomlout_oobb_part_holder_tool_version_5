@@ -56,13 +56,13 @@ additional_manufacturer_references:
   url: https://www.bahco.com/int_en/metric-flat-combination-wrenches-with-chrome-finish-pb_111m_.html
   use: Compare head widths and thicknesses against the positioned pocket.
 existing_loaded_guides:
-- id: oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5
-  quantity: 1
-  layout: 1_place
-remaining_holder_views:
 - id: oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66
   quantity: 1
   layout: bench
 - id: oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10
   quantity: 1
   layout: 4_place
+- id: oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5
+  quantity: 1
+  layout: 1_place
+remaining_holder_views: []

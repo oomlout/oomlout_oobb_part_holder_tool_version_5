@@ -1,6 +1,10 @@
 <!-- oobb-presentation:start -->
 # OOBB tool holders
 
+[![Yellow and turquoise tool holders mounted on a black captive nut plate, with round covers on the mounting bolts](source_file/image_main/working_1024.jpg)](source_file/image_main/working.jpg)
+
+Print files for the [bolt covers](https://github.com/oomlout/oomlout_oobb_part_cosmetic_nut_screw_adapter_version_5) and the [black captive nut plate behind the holders](https://github.com/oomlout/oomlout_oobb_part_plate_captive_nut_version_5) are available in their respective repositories.
+
 AI-generated CAD images and instructions. Errors possible.
 
 ## Summary
@@ -8,10 +12,6 @@ AI-generated CAD images and instructions. Errors possible.
 Printable holders for workshop hand tools on the 15 mm OOBB grid. These designs come from Oomlout’s [vertical tool holders](https://github.com/oomlout/oomlout_oobb_part_tool_holder_vertical) and [OOBB version 4](https://github.com/oomlout/oomlout_oobb_version_4).
 
 This is an entirely AI-generated coding project. The generated outputs are included and usually work. The project is published so others can modify and regenerate the designs with their own AI tools.
-
-[![CAD views of Blue needle-nose pliers, 130 mm](parts/oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12/3dpr_presentation.png)](parts/oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12/README.md)
-
-[Blue needle-nose pliers, 130 mm](parts/oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12/README.md)
 
 ## Details
 
@@ -25,7 +25,7 @@ Width and height use 15 mm grid units. A 3 × 5 holder has a nominal footprint o
 
 ## Assembly
 
-49 holders have illustrated assembly and loading instructions using OOMP tool models. Each viewer opens offline. The print booklets use landscape A4 pages. Physical fit remains unverified.
+53 holders have illustrated assembly and loading instructions using OOMP tool models. Each viewer opens offline. The print booklets use landscape A4 pages. Physical fit remains unverified.
 
 For future renders, show vertical holders as they sit on the wall, with the opening and tool handles pointing up. Show the halves touching in the assembled view and move the front half outward along the mounting holes for the exploded view. Print the Quikpik combination, utility knife, Prit combination, metric hex-key sets and four-size spanner layout once to obtain both halves. The quarter-inch bit blocks and mixed-tool bench stand each print as one piece.
 
@@ -61,6 +61,7 @@ For future renders, show vertical holders as they sit on the wall, with the open
 | [13 mm marker, 3-place](parts/oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_marker_sharpie_style_13mm_3_place_5x5x17/assembly/assembly_instructions.pdf) |
 | [13 mm marker, 4-place](parts/oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_marker_sharpie_style_13mm_4_place_7x5x17/assembly/assembly_instructions.pdf) |
 | [13 mm marker, 5-place](parts/oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_marker_sharpie_style_13mm_5_place_8x5x17/assembly/assembly_instructions.pdf) |
+| [Mixed tool bench stand](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/assembly_instructions.pdf) |
 | [Blue needle-nose pliers](parts/oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_pliers_needle_nose_130mm_1_place_5x5x12/assembly/assembly_instructions.pdf) |
 | [Picquic Teeny Turner](parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_screwdriver_picquic_teeny_turner_1_place_3x3x31/assembly/assembly_instructions.pdf) |
 | [1.5 mm tall precision screwdriver](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m1d5_1_place_3x5x20/assembly/assembly_instructions.pdf) |
@@ -69,12 +70,15 @@ For future renders, show vertical holders as they sit on the wall, with the open
 | [2.5 mm drivers, 2-place](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_2_place_5x5x20/assembly/assembly_instructions.pdf) |
 | [2.5 mm drivers, 4-place](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_4_place_7x5x20/assembly/assembly_instructions.pdf) |
 | [2.5 mm drivers, 5-place](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_screwdriver_precision_tall_hex_60mm_m2d5_5_place_9x5x20/assembly/assembly_instructions.pdf) |
+| [Multi-driver and knife](parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/assembly/assembly_instructions.pdf) |
 | [Red side cutters](parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_side_cutters_generic_110mm_1_place_5x5x13/assembly/assembly_instructions.pdf) |
 | [10 mm spanner](parts/oobb_part_holder_tool_spanner_m10_1_place_3x5x9/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_spanner_m10_1_place_3x5x9/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_spanner_m10_1_place_3x5x9/assembly/assembly_instructions.pdf) |
 | [Two 10 mm spanners](parts/oobb_part_holder_tool_spanner_m10_2_place_5x5x9/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_spanner_m10_2_place_5x5x9/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_spanner_m10_2_place_5x5x9/assembly/assembly_instructions.pdf) |
 | [Three 10 mm spanners](parts/oobb_part_holder_tool_spanner_m10_3_place_7x5x9/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_spanner_m10_3_place_7x5x9/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_spanner_m10_3_place_7x5x9/assembly/assembly_instructions.pdf) |
 | [Four 10 mm spanners](parts/oobb_part_holder_tool_spanner_m10_4_place_9x5x9/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_spanner_m10_4_place_9x5x9/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_spanner_m10_4_place_9x5x9/assembly/assembly_instructions.pdf) |
 | [13 mm spanner](parts/oobb_part_holder_tool_spanner_m13_1_place_3x5x10/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_spanner_m13_1_place_3x5x10/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_spanner_m13_1_place_3x5x10/assembly/assembly_instructions.pdf) |
+| [Four metric spanners](parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/assembly/assembly_instructions.pdf) |
+| [21 mm spanner](parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/assembly/assembly_instructions.pdf) |
 | [7 mm open spanner](parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_spanner_m7_1_place_3x5x6d5/assembly/assembly_instructions.pdf) |
 | [8 mm spanner](parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_spanner_m8_1_place_3x5x7d5/assembly/assembly_instructions.pdf) |
 | [Stanley 5 m tape measure](parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/README.md#assembly) | [Offline HTML](parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/assembly_instructions.html) | [Download PDF](parts/oobb_part_holder_tool_tape_measure_stanley_1_30_696_1_place_7x3x44/assembly/assembly_instructions.pdf) |
@@ -104,8 +108,8 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_01.png)
 2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_02.png)
-3. Bring the halves together until their rims meet. Close the caliper jaws and lower the end of the beam into the opening, with the display facing forward. [View step 3](parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_03.png)
-4. Lower the tool through the top opening. The beam rests at the pocket floor and the closed jaws and display remain visible above the holder. [View step 4](parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_04.png)
+3. Bring the halves together until their rims meet. Close the caliper jaws and lower the wide jaw end into the opening, with the display facing forward. [View step 3](parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_03.png)
+4. Lower the tool through the top opening. The wide jaw end rests at the pocket floor and the beam projects above the holder. [View step 4](parts/oobb_part_holder_tool_caliper_mitutoyo_500_196_30_1_place_7x6x18/assembly/render/raw/step_04.png)
 
 <details><summary>Illustrated assembly steps</summary>
 
@@ -291,7 +295,7 @@ The seven staggered front positions are open-face grooves. Retention of the bits
 
 ### 23 quarter-inch bits in 3 rows
 
-Print the holder once. Place the block upright with its openings facing up.
+Print the holder once. Place the holder upright with its openings facing up.
 
 1. Place the printed block upright with all pocket openings facing up. [View step 1](parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24/assembly/render/raw/step_01.png)
 2. Align the bits vertically above the staggered rows of openings. [View step 2](parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_3_rows_9x3x24/assembly/render/raw/step_02.png)
@@ -307,7 +311,7 @@ Representative Wera 851/4 Z PH2 bit, 89 mm long with a quarter-inch drive. The t
 
 ### 38 quarter-inch bits in 5 rows
 
-Print the holder once. Place the block upright with its openings facing up.
+Print the holder once. Place the holder upright with its openings facing up.
 
 1. Place the printed block upright with all pocket openings facing up. [View step 1](parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36/assembly/render/raw/step_01.png)
 2. Align the bits vertically above the staggered rows of openings. [View step 2](parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_5_rows_9x3x36/assembly/render/raw/step_02.png)
@@ -323,7 +327,7 @@ Representative Wera 851/4 Z PH2 bit, 89 mm long with a quarter-inch drive. The t
 
 ### 53 quarter-inch bits in 7 rows
 
-Print the holder once. Place the block upright with its openings facing up.
+Print the holder once. Place the holder upright with its openings facing up.
 
 1. Place the printed block upright with all pocket openings facing up. [View step 1](parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/assembly/render/raw/step_01.png)
 2. Align the bits vertically above the staggered rows of openings. [View step 2](parts/oobb_part_holder_tool_driver_bit_quarter_inch_block_7_rows_9x3x48/assembly/render/raw/step_02.png)
@@ -618,6 +622,61 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Nominal capped body from the vertical holder's tool identity. The 14 mm pocket includes clearance. Cap and barrel split are illustrative. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_felt_tip_pen_13_mm_diameter_137_mm_length_sharpie_style)
 
+### Mixed tool bench stand
+
+Print the holder once. Place the holder upright with its openings facing up.
+
+1. Place the printed stand upright on its flat base. [View step 1](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/render/raw/step_01.png)
+2. Lower the closed cutters, pliers and wire strippers into the wide front pockets. [View step 2](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/render/raw/step_02.png)
+3. Place the three precision drivers and the multi-driver in their round pockets. [View step 3](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/render/raw/step_03.png)
+4. Place the 7 mm and 8 mm spanners open-end down and the two 10 mm spanners ring-end down. [View step 4](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/render/raw/step_04.png)
+5. Keep the utility knife closed and place it in its slot. Add the 1.5, 2 and 2.5 mm hex keys. [View step 5](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/render/raw/step_05.png)
+6. Add the 3 and 4 mm hex keys and the capped marker. [View step 6](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/render/raw/step_06.png)
+7. Seat every tool and keep all handles and short key arms accessible. [View step 7](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/render/raw/step_07.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the mixed tool bench stand holder](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/pages/page_03.png)
+![Assembly steps for the mixed tool bench stand holder](parts/oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66/assembly/pages/page_04.png)
+
+</details>
+
+Open-pose photo trace with a provisional 110 mm closed-length reference (Rapid SA-706 RED). Grip thickness is estimated. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_side_cutters_110_mm_length_red)
+
+Open-pose photo trace with a provisional 130 mm closed-length reference (Rapid PC-022). Jaw and grip depths are estimated. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_pliers_needle_nose_130_mm_length_blue)
+
+Open-pose photo trace scaled to the candidate Anvil AV-LDWS catalogue length of 130 mm. The 120 mm OOMP label is retained. Thickness is estimated. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wire_strippers_120_mm_length_red)
+
+Wera specifies the shaft diameter, shaft length and handle length. The archived OOMP record supplies the 18 mm handle envelope. Grip taper, cap and tip transition are illustrative. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_1_5_mm_wera_2054_series_05118066001)
+
+Wera specifies the shaft diameter, shaft length and handle length. The archived OOMP record supplies the 18 mm handle envelope. Grip taper, cap and tip transition are illustrative. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_mm_wera_2054_series_05118068001)
+
+Wera specifies the shaft diameter, shaft length and handle length. The archived OOMP record supplies the 18 mm handle envelope. Grip taper, cap and tip transition are illustrative. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001)
+
+Representative Picquic SIXPAC Plus, 200 mm overall and 32 mm handle diameter from a distributor listing. Picquic specifies 3-inch quarter-inch bits and a 7/16-inch hex bolster. Exposed bit, shank and bolster lengths are estimates for the stored-bit pose. The handle contour, stored bits and workshop specimen have not been measured. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_multi_driver_200_mm_quikpik)
+
+Generic 7 mm open-end spanner using the FACOM 34.7 as a dimensional reference. Length, maximum head width and thickness follow the catalogue. The square-on jaws and shank are simplified, and the workshop specimen has not been measured. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m7)
+
+Generic 8 mm combination spanner using Stahlwille OPEN BOX 14 article 40100808 as a dimensional reference. Length and both head widths and thicknesses follow the catalogue. The straight body, head outlines and ring offset are simplified. The workshop specimen has not been measured. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m8)
+
+Generic 10 mm combination spanner using the Bahco 111M-10 as a dimensional reference. Length and head widths and thicknesses follow the catalogue. The straight shank, jaw outline and six-point ring are simplified. The workshop specimen has not been measured. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m10)
+
+Generic 10 mm combination spanner using the Bahco 111M-10 as a dimensional reference. Length and head widths and thicknesses follow the catalogue. The straight shank, jaw outline and six-point ring are simplified. The workshop specimen has not been measured. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m10)
+
+Closed exterior based on the photo and a provisional 165 mm STANLEY 0-10-151 reference. The 17 mm OOMP label is retained. Size variant awaits measurement. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_craft_17_mm_black_exacto_style)
+
+The holder specifies the hex size. Arm lengths follow the Wiha 350 short series as a representative example. The holder source leaves the key manufacturer unspecified. The elbow is simplified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_1_5_mm)
+
+The holder specifies the hex size. Arm lengths follow the Wiha 350 short series as a representative example. The holder source leaves the key manufacturer unspecified. The elbow is simplified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_2_mm)
+
+The holder specifies the hex size. Arm lengths follow the Wiha 350 short series as a representative example. The holder source leaves the key manufacturer unspecified. The elbow is simplified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_2_5_mm)
+
+The holder specifies the hex size. Arm lengths follow the Wiha 350 short series as a representative example. The holder source leaves the key manufacturer unspecified. The elbow is simplified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_3_mm)
+
+The holder specifies the hex size. Arm lengths follow the Wiha 350 short series as a representative example. The holder source leaves the key manufacturer unspecified. The elbow is simplified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_hex_key_4_mm)
+
+The standard-tip OOMP record matches the branded v4 profile in diameter and length. Cap and barrel split are illustrative. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/stationery_felt_tip_pen_sharpie_standard_tip_style_13_mm_diameter_137_mm_length_sharpie)
+
 ### Blue needle-nose pliers
 
 Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.
@@ -754,6 +813,25 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 
 Wera specifies the shaft diameter, shaft length and handle length. The archived OOMP record supplies the 18 mm handle envelope. Grip taper, cap and tip transition are illustrative. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_precision_kraftform_micro_style_18_mm_diameter_157_mm_depth_hex_head_2_5_mm_wera_2054_series_05118070001)
 
+### Multi-driver and knife
+
+Print the supplied two-half layout once. The dark teal half sits against the wall and the light teal half faces the room.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Keep the utility knife closed and align it edge-on with its slot. Point the multi-driver bit down into the round pocket. [View step 3](parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/assembly/render/raw/step_03.png)
+4. Lower the tools through the top openings. The closed knife and multi-driver sit in their separate pockets with their handles accessible. [View step 4](parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the multi-driver and knife holder](parts/oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38/assembly/pages/page_03.png)
+
+</details>
+
+Representative Picquic SIXPAC Plus, 200 mm overall and 32 mm handle diameter from a distributor listing. Picquic specifies 3-inch quarter-inch bits and a 7/16-inch hex bolster. Exposed bit, shank and bolster lengths are estimates for the stored-bit pose. The handle contour, stored bits and workshop specimen have not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_multi_driver_200_mm_quikpik)
+
+Closed exterior based on the photo and a provisional 165 mm STANLEY 0-10-151 reference. The 17 mm OOMP label is retained. Size variant awaits measurement. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_craft_17_mm_black_exacto_style)
+
 ### Red side cutters
 
 Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.
@@ -855,6 +933,46 @@ Print two copies of the holder STL. The dark teal half sits against the wall and
 </details>
 
 Generic 13 mm combination spanner using the Bahco 111M-13 as a dimensional reference. Length and head widths and thicknesses follow the catalogue. The straight shank, jaw outline and six-point ring are simplified. The workshop specimen has not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m13)
+
+### Four metric spanners
+
+Print the supplied two-half layout once. The dark teal half sits against the wall and the light teal half faces the room.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Align the four spanners with their matching pockets. The 13 and 10 mm ring ends point down; the 8 and 7 mm open ends point down. [View step 3](parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/assembly/render/raw/step_03.png)
+4. Lower the tools through the top openings. Each spanner rests at its pocket floor. From left to right the sizes are 13, 10, 8 and 7 mm. [View step 4](parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the four metric spanners holder](parts/oobb_part_holder_tool_spanner_m13_m10_m8_m7_4_place_9x5x10/assembly/pages/page_03.png)
+
+</details>
+
+Generic 13 mm combination spanner using the Bahco 111M-13 as a dimensional reference. Length and head widths and thicknesses follow the catalogue. The straight shank, jaw outline and six-point ring are simplified. The workshop specimen has not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m13)
+
+Generic 10 mm combination spanner using the Bahco 111M-10 as a dimensional reference. Length and head widths and thicknesses follow the catalogue. The straight shank, jaw outline and six-point ring are simplified. The workshop specimen has not been measured. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m10)
+
+Generic 8 mm combination spanner using Stahlwille OPEN BOX 14 article 40100808 as a dimensional reference. Length and both head widths and thicknesses follow the catalogue. The straight body, head outlines and ring offset are simplified. The workshop specimen has not been measured. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m8)
+
+Generic 7 mm open-end spanner using the FACOM 34.7 as a dimensional reference. Length, maximum head width and thickness follow the catalogue. The square-on jaws and shank are simplified, and the workshop specimen has not been measured. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m7)
+
+### 21 mm spanner
+
+Print two copies of the holder STL. The dark teal half sits against the wall and the light teal half faces the room.
+
+1. Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top. [View step 1](parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/assembly/render/raw/step_01.png)
+2. Face the front half toward the rear pocket. Align the mounting holes and both top openings. [View step 2](parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/assembly/render/raw/step_02.png)
+3. Bring the halves together until their rims meet. Point the open jaws down and centre them over the pocket. [View step 3](parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/assembly/render/raw/step_03.png)
+4. Lower the tool through the top opening. The open head rests at the pocket floor and the ring end remains accessible above the holder. [View step 4](parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/assembly/render/raw/step_04.png)
+
+<details><summary>Illustrated assembly steps</summary>
+
+![Assembly steps for the 21 mm spanner holder](parts/oobb_part_holder_tool_spanner_m21_1_place_5x5x12/assembly/pages/page_03.png)
+
+</details>
+
+Generic 21 mm combination spanner using Stahlwille OPEN BOX 14 article 40102121 as a dimensional reference. Length and both head widths and thicknesses follow the catalogue. The straight body, head outlines and ring offset are simplified. The workshop specimen has not been measured. The digital model was checked against the printed holder. Physical fit remains unverified. [OOMP tool record](https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_wrench_m21)
 
 ### 7 mm open spanner
 

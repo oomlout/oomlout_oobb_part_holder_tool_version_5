@@ -1,0 +1,229 @@
+{
+  "configuration_title": "Multi-driver and knife holder",
+  "style": {
+    "border": "000000",
+    "border_radius_mm": 3,
+    "border_width_pt": 3,
+    "columns": 2,
+    "component_border_width_pt": 1.1,
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "gutter_mm": 4,
+    "margin_mm": 6,
+    "page_mm": [
+      297,
+      210
+    ],
+    "quantity_pt": 5.8,
+    "quantity_shift_mm": 1,
+    "rows": 2,
+    "thumbnail_height_mm": 8.5
+  },
+  "book": {
+    "cover_title": "Multi-driver and knife holder",
+    "cover_subtitle": "Assembling the two halves and loading the tool",
+    "project_name": "oomlout_oobb_part_holder_tool_version_5 / OOMP tool reference",
+    "project_url": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_multi_driver_200_mm_quikpik",
+    "details_title": "Tool and holder",
+    "details": [
+      "5 \u00d7 5 OOBB grid. Each half is 19 mm thick. The assembled holder is 38 mm thick.",
+      "Print the supplied two-half layout once. Face the pockets inward and align the mounting holes. With the opening at the top, lower the tool into the assembled holder.",
+      "Keep the utility knife closed and align it edge-on with its slot. Point the multi-driver bit down into the round pocket.",
+      "The closed knife and multi-driver sit in their separate pockets with their handles accessible.",
+      "Representative Picquic SIXPAC Plus, 200 mm overall and 32 mm handle diameter from a distributor listing. Picquic specifies 3-inch quarter-inch bits and a 7/16-inch hex bolster. Exposed bit, shank and bolster lengths are estimates for the stored-bit pose. The handle contour, stored bits and workshop specimen have not been measured.",
+      "Digital check: the seated tool occupies the pocket with no measurable solid overlap.",
+      "AI-generated CAD images and instructions. Physical fit has yet to be tested.",
+      "Closed exterior based on the photo and a provisional 165 mm STANLEY 0-10-151 reference. The 17 mm OOMP label is retained. Size variant awaits measurement."
+    ],
+    "summary_title": "Printed halves",
+    "hardware_title": "Workshop tool",
+    "summary_view": "loaded_top",
+    "signature_pages": 4,
+    "summary_step": true,
+    "viewer_start": "step-01",
+    "logo_svg": "source_file/tool_models/oomlout-LOGO-unshaded-vector.svg",
+    "logo_symbol_subpaths": 3
+  },
+  "parts": {
+    "holder": {
+      "key": "holder",
+      "id": "oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38",
+      "name": "Holder half",
+      "quantity": 2
+    },
+    "tool": {
+      "key": "tool",
+      "id": "tool_screw_driver_multi_driver_200_mm_quikpik",
+      "name": "Picquic multi-driver",
+      "quantity": 1,
+      "md5": "074a81eef6f00d4a55f3e5a358fa0958",
+      "md5_6_alpha": "a8ox",
+      "short_label": "oom.lt/a/a8ox",
+      "short_url": "https://oom.lt/a/a8ox",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_multi_driver_200_mm_quikpik"
+    },
+    "knife": {
+      "key": "knife",
+      "id": "tool_knife_craft_17_mm_black_exacto_style",
+      "name": "Closed utility knife",
+      "quantity": 1,
+      "md5": "3ed7d22b2fe767aa640e0ad35fbcb6b1",
+      "md5_6_alpha": "2g9ua",
+      "short_label": "oom.lt/a/2g9ua",
+      "short_url": "https://oom.lt/a/2g9ua",
+      "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_craft_17_mm_black_exacto_style"
+    }
+  },
+  "steps": [
+    {
+      "action": "Orient the rear half as it sits on the wall, with the pocket facing you and the opening at the top.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_01",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 1",
+      "number": 1,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Face the front half toward the rear pocket. Align the mounting holes and both top openings.",
+      "add": [
+        "holder"
+      ],
+      "key": "step_02",
+      "upper_lift_mm": 36,
+      "withdraw_mm": 0,
+      "title": "Loading operation 2",
+      "number": 2,
+      "loose_parts": {
+        "holder": 1
+      }
+    },
+    {
+      "action": "Bring the halves together until their rims meet. Keep the utility knife closed and align it edge-on with its slot. Point the multi-driver bit down into the round pocket.",
+      "add": [
+        "tool",
+        "knife"
+      ],
+      "key": "step_03",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 70,
+      "title": "Loading operation 3",
+      "number": 3,
+      "loose_parts": {
+        "tool": 1,
+        "knife": 1
+      }
+    },
+    {
+      "action": "Lower the tools through the top openings. The closed knife and multi-driver sit in their separate pockets with their handles accessible.",
+      "add": [],
+      "key": "step_04",
+      "upper_lift_mm": 0,
+      "withdraw_mm": 0,
+      "title": "Loading operation 4",
+      "number": 4,
+      "loose_parts": {}
+    }
+  ],
+  "physical_item_count": 4,
+  "printed_keys": [
+    "holder"
+  ],
+  "pose": {
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      15,
+      -25,
+      18
+    ]
+  },
+  "fit_check": {
+    "holder_intersection_mm3": 0.0,
+    "insertion_positions_checked": 15,
+    "printed_halves_checked": 2,
+    "tool_volume_inside_pocket_mm3": 17098.887,
+    "tool_count": 2,
+    "physical_fit": "Unverified. See the OOMP tool record for dimensional evidence."
+  },
+  "source_sha256": {
+    "holder_stl": "40e621ca029f2e9eb8696f735468a070fd025a5aa7d8507c0f7799adec09b699",
+    "tool_glb": "a697d008473f5e968a7a4e1dee4a72016b5530b584fd827c71f9fb3aec61c362",
+    "tool_stl": "a537a84bb94054f9dac3e4591c53882046617dc5af0576c6eb96d1de2d0140a4",
+    "logo": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67",
+    "knife_glb": "006eb1f4674e4d709210abf1698029679c14ea6c6af4fc6362fab7b98bdec52a",
+    "knife_stl": "b89dce0ce0f7a40e97498d3c9d9400cc952b6ecab68c4d838b4c87f9690f5b02"
+  },
+  "summary_inventory": {
+    "printed": [
+      {
+        "key": "holder",
+        "id": "oobb_part_holder_tool_screwdriver_quikpik_200mm_with_knife_5x5x38",
+        "name": "Holder half",
+        "quantity": 2
+      }
+    ],
+    "hardware": [
+      {
+        "key": "tool",
+        "id": "tool_screw_driver_multi_driver_200_mm_quikpik",
+        "name": "Picquic multi-driver",
+        "quantity": 1,
+        "md5": "074a81eef6f00d4a55f3e5a358fa0958",
+        "md5_6_alpha": "a8ox",
+        "short_label": "oom.lt/a/a8ox",
+        "short_url": "https://oom.lt/a/a8ox",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_screw_driver_multi_driver_200_mm_quikpik"
+      },
+      {
+        "key": "knife",
+        "id": "tool_knife_craft_17_mm_black_exacto_style",
+        "name": "Closed utility knife",
+        "quantity": 1,
+        "md5": "3ed7d22b2fe767aa640e0ad35fbcb6b1",
+        "md5_6_alpha": "2g9ua",
+        "short_label": "oom.lt/a/2g9ua",
+        "short_url": "https://oom.lt/a/2g9ua",
+        "identity_source": "https://github.com/oomlout/oomp_tool_version_5/tree/main/parts/tool_knife_craft_17_mm_black_exacto_style"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "summary",
+      "number": 5
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "spacer"
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 2
+}

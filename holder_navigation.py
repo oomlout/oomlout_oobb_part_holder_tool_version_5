@@ -21,7 +21,6 @@ PROJECT_ORIGIN = (
 )
 VERTICAL = "https://github.com/oomlout/oomlout_oobb_part_tool_holder_vertical"
 VERSION_4 = "https://github.com/oomlout/oomlout_oobb_version_4"
-HERO = "oobb_part_holder_tool_mixed_tools_basic_stand_bench_7x10x66"
 
 
 def relative(folder, target):
@@ -48,7 +47,7 @@ def assembly_instructions(**kwargs):
     source_file = ROOT / "source_file" / "tool_models" / recipe["tool_id"] / "source.json"
     source = json.loads(source_file.read_text(encoding="utf-8"))
     single_piece = part["construction"]["mode"] in ("block", "stand")
-    placement = " Place the block upright with its openings facing up." if single_piece else " The dark teal half sits against the wall and the light teal half faces the room."
+    placement = " Place the holder upright with its openings facing up." if single_piece else " The dark teal half sits against the wall and the light teal half faces the room."
     lines = [
         print_instruction(part=part) + placement,
         "",
@@ -266,10 +265,6 @@ def publish_catalogue(**kwargs):
     inventory.extend(["", "[Illustrated loading guides and print booklets](README.md#assembly)"])
     write_block(root / "TOOLS.md", "\n".join(inventory))
     guides = [p for p in parts.values() if p.get("assembly_details")]
-    featured = next((p["id"] for p in guides if p["tool_type"] == "pliers"), HERO)
-    hero_id = featured if featured in parts else sorted(parts)[0]
-    hero = parts[hero_id]
-    destination = f"parts/{hero_id}/"
     guide_table = [
         "| Holder README | Offline viewer | Print booklet |",
         "| --- | --- | --- |",
@@ -285,6 +280,10 @@ def publish_catalogue(**kwargs):
     guide_steps = "\n\n".join(sequences)
     landing = f"""# OOBB tool holders
 
+[![Yellow and turquoise tool holders mounted on a black captive nut plate, with round covers on the mounting bolts](source_file/image_main/working_1024.jpg)](source_file/image_main/working.jpg)
+
+Print files for the [bolt covers](https://github.com/oomlout/oomlout_oobb_part_cosmetic_nut_screw_adapter_version_5) and the [black captive nut plate behind the holders](https://github.com/oomlout/oomlout_oobb_part_plate_captive_nut_version_5) are available in their respective repositories.
+
 {NOTICE}
 
 ## Summary
@@ -292,10 +291,6 @@ def publish_catalogue(**kwargs):
 Printable holders for workshop hand tools on the 15 mm OOBB grid. These designs come from Oomlout’s [vertical tool holders]({VERTICAL}) and [OOBB version 4]({VERSION_4}).
 
 {PROJECT_ORIGIN}
-
-[![CAD views of {hero['title']}]({destination}3dpr_presentation.png)]({destination}README.md)
-
-[{hero['title']}]({destination}README.md)
 
 ## Details
 
